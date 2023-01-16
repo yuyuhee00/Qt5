@@ -28,6 +28,7 @@
 #include <QTextStream> //Text
 #include <QDataStream> //Raw data (non-text)
 
+
 void writeDevice(QIODevice &device, QByteArray &data)
 {
     if(!device.isWritable())
