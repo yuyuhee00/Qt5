@@ -7,3 +7,4 @@ SUBDIRS     = \
               30_No_Throw_Guarantee
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

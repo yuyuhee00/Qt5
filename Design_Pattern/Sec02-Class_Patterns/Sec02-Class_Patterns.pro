@@ -10,3 +10,4 @@ SUBDIRS     = \
               Code_Deprecation
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

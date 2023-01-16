@@ -11,3 +11,4 @@ SUBDIRS     = \
               39_Smart_Pointers_in_STL
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

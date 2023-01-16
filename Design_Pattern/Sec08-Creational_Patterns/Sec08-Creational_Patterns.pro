@@ -9,3 +9,4 @@ SUBDIRS     = \
               66_Magic_Statics
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

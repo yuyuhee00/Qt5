@@ -8,3 +8,4 @@ SUBDIRS     = \
               Dependency_Inversion_Principle
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

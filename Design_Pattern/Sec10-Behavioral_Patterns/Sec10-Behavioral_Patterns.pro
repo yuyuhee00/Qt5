@@ -15,3 +15,4 @@ SUBDIRS     = \
               86_Visitor
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

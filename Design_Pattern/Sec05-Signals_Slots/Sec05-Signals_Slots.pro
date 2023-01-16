@@ -9,3 +9,4 @@ SUBDIRS     = \
               46_Signals_Slots_in_LIB
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

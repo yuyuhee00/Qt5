@@ -12,3 +12,4 @@ SUBDIRS     = \
               96_QHistory_State
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

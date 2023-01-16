@@ -8,3 +8,4 @@ SUBDIRS     = \
               59_QT_SmartPointers_in_Template
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

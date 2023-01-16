@@ -9,3 +9,4 @@ SUBDIRS     = \
               53_Update_QML_from_Thread
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check

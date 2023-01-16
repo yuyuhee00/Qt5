@@ -9,3 +9,4 @@ SUBDIRS     = \
               73_Flyweight
 
 CONFIG += ordered
+CONFIG += sdk_no_version_check
