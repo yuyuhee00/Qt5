@@ -14,7 +14,8 @@ SUBDIRS     = \
               Sec12-QMake_Patterns \
               Sec13-CMake_Patterns \
               Sec14-Library_Patterns \
-              Sec15-IO_Patterns
+              Sec15-IO_Patterns \
+              Sec16-Operating_System_Patterns
 
 CONFIG += ordered
 CONFIG += sdk_no_version_check
