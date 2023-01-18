@@ -1,5 +1,8 @@
+TEMPLATE = subdirs
 
-TEMPLATE    = subdirs
+CONFIG += ordered
+CONFIG += sdk_no_version_check
+
 SUBDIRS     = \
               Sec02-Class_Patterns \
               Sec03-Exception_Patterns \
@@ -17,5 +20,3 @@ SUBDIRS     = \
               Sec15-IO_Patterns \
               Sec16-Operating_System_Patterns
 
-CONFIG += ordered
-CONFIG += sdk_no_version_check

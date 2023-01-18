@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 9.0.1, 2023-01-17T11:56:03. -->
+<!-- Written by QtCreator 9.0.1, 2023-01-18T00:11:22. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -92,11 +92,11 @@
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{6272b6bf-f977-459a-bdbc-e6671e35baf5}</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">86</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Design_Pattern/../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -134,8 +134,8 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Release</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Design_Pattern/../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -175,8 +175,8 @@
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Profile</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Design_Pattern/../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -243,7 +243,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Access_Modifiers</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Access_Modifiers</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -259,7 +259,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Code_Deprecation</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Code_Deprecation</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.10">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -275,7 +275,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Single_Responsibility_Principle</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Single_Responsibility_Principle</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.11">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -291,7 +291,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec03-Exception_Patterns/27_No_Exception_Safety</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec03-Exception_Patterns/27_No_Exception_Safety</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.12">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -307,7 +307,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec03-Exception_Patterns/28_Basic_Exception_Safety</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec03-Exception_Patterns/28_Basic_Exception_Safety</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.13">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -323,7 +323,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec03-Exception_Patterns/29_Strong_Exception_Safety</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec03-Exception_Patterns/29_Strong_Exception_Safety</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.14">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -339,7 +339,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec03-Exception_Patterns/30_No_Throw_Guarantee</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec03-Exception_Patterns/30_No_Throw_Guarantee</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.15">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -355,7 +355,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/32_The_Stack</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/32_The_Stack</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.16">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -371,7 +371,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/33_The_Heap</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/33_The_Heap</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.17">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -387,7 +387,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/34_Leaks_and_Bad_Pointers</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/34_Leaks_and_Bad_Pointers</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.18">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -403,7 +403,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/35_Parent_Child</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/35_Parent_Child</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.19">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -419,7 +419,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/36_RAII</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/36_RAII</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -435,7 +435,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Donot_Repeat_Yourself</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Donot_Repeat_Yourself</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.20">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -451,7 +451,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/37_Scoped_Pointers</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/37_Scoped_Pointers</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.21">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -467,7 +467,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/38_Shared_Pointers</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/38_Shared_Pointers</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.22">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -483,7 +483,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/39_Smart_Pointers_in_STL</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec04-Memory_Patterns/39_Smart_Pointers_in_STL</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.23">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -499,7 +499,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/41_Signals_Slots_Basics</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/41_Signals_Slots_Basics</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.24">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -515,7 +515,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/42_Disconnecting</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/42_Disconnecting</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.25">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -531,7 +531,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/43_Detecting_Child_Events</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/43_Detecting_Child_Events</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.26">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -547,7 +547,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/44_Sender_Function</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/44_Sender_Function</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.27">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -563,7 +563,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/45_Connection_Types</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/45_Connection_Types</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.28">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -572,6 +572,7 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">myapp (Sec05-Signals_Slots/46_Signals_Slots_in_LIB/myapp/myapp.pro)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec05-Signals_Slots/46_Signals_Slots_in_LIB/myapp/myapp.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec05-Signals_Slots/46_Signals_Slots_in_LIB/myapp/myapp.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
@@ -579,7 +580,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/46_Signals_Slots_in_LIB/myapp</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec05-Signals_Slots/46_Signals_Slots_in_LIB/myapp</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.29">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -595,7 +596,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/48_Inheriting_QThread</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/48_Inheriting_QThread</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.3">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -611,7 +612,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Encapsulation</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Encapsulation</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.30">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -627,7 +628,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/49_QThread_moveTo</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/49_QThread_moveTo</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.31">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -643,7 +644,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/50_QThreadPool</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/50_QThreadPool</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.32">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -659,7 +660,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/51_QT_Concurrent</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/51_QT_Concurrent</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.33">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -675,7 +676,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/52_Update_GUI_from_Thread/52_Update_GUI_from_Thread.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/52_Update_GUI_from_Thread/52_Update_GUI_from_Thread.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.34">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -691,7 +692,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/53_Update_QML_from_Thread/53_Update_QML_from_Thread.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec06-Thread_Patterns/53_Update_QML_from_Thread/53_Update_QML_from_Thread.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.35">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -707,7 +708,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/55_Using_Templates</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/55_Using_Templates</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.36">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -723,7 +724,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/56_Templates_in_QObject</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/56_Templates_in_QObject</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.37">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -739,7 +740,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/57_QObjects_in_Template</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/57_QObjects_in_Template</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.38">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -755,7 +756,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/58_QT_Template_Classes</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/58_QT_Template_Classes</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.39">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -771,7 +772,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/59_QT_SmartPointers_in_Template</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec07-Template_Patterns/59_QT_SmartPointers_in_Template</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.4">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -787,7 +788,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Keep_It_Simple</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Keep_It_Simple</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.40">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -803,7 +804,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/61_Abstract_Factory</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/61_Abstract_Factory</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.41">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -819,7 +820,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/62_Builder</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/62_Builder</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.42">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -835,7 +836,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/63_Factory_Method</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/63_Factory_Method</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.43">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -851,7 +852,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/64_Object_Pool</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/64_Object_Pool</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.44">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -867,7 +868,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/65_Prototype</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/65_Prototype</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.45">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -883,7 +884,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/66_Magic_Statics</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec08-Creational_Patterns/66_Magic_Statics</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.46">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -899,7 +900,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/68_Adapter</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/68_Adapter</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.47">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -915,7 +916,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/69_Bridge</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/69_Bridge</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.48">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -931,7 +932,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/70_Composite</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/70_Composite</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.49">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -947,7 +948,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/71_Decorator</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/71_Decorator</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.5">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -963,7 +964,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Property_System/Property_System.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/Property_System/Property_System.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.50">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -979,7 +980,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/72_Facade</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/72_Facade</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.51">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -995,7 +996,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/73_Flyweight</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec09-Structural_Patterns/73_Flyweight</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.52">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1011,7 +1012,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/75_Chain_of_Responsibility</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/75_Chain_of_Responsibility</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.53">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1027,7 +1028,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/76_Command</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/76_Command</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.54">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1043,7 +1044,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/77_Interpreter</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/77_Interpreter</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.55">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1059,7 +1060,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/78_Iterator</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/78_Iterator</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.56">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1075,7 +1076,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/79_Mediator</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/79_Mediator</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.57">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1091,7 +1092,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/80_Memento</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/80_Memento</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.58">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1107,7 +1108,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/81_Null_Object</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/81_Null_Object</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.59">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1123,7 +1124,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/82_Observer</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/82_Observer</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.6">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1139,7 +1140,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Dependency_Inversion_Principle</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Dependency_Inversion_Principle</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.60">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1155,7 +1156,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/83_State</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/83_State</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.61">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1171,7 +1172,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/84_Strategy</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/84_Strategy</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.62">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1187,7 +1188,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/85_Template_Method</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/85_Template_Method</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.63">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1203,7 +1204,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/86_Visitor</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec10-Behavioral_Patterns/86_Visitor</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.64">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1219,7 +1220,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/88_StateMachine_Framework</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/88_StateMachine_Framework</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.65">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1235,7 +1236,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/89_StateMachine_Example/89_StateMachine_Example.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/89_StateMachine_Example/89_StateMachine_Example.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.66">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1251,7 +1252,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/90_QFinalState/90_QFinalState.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/90_QFinalState/90_QFinalState.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.67">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1267,7 +1268,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/91_Groups_of_States/91_Groups_of_States.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/91_Groups_of_States/91_Groups_of_States.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.68">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1283,7 +1284,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/92_State_History/92_State_History.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/92_State_History/92_State_History.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.69">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1299,7 +1300,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/93_StateMachine_in_QML/93_StateMachine_in_QML.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/93_StateMachine_in_QML/93_StateMachine_in_QML.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.7">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1315,7 +1316,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Interface_Segregation_Principle</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Interface_Segregation_Principle</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.70">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1331,7 +1332,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/94_QML_Traffic_Light/94_QML_Traffic_Light.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/94_QML_Traffic_Light/94_QML_Traffic_Light.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.71">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1347,7 +1348,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/95_QML_Toggling_Lights/95_QML_Toggling_Lights.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/95_QML_Toggling_Lights/95_QML_Toggling_Lights.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.72">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1363,41 +1364,9 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/96_QHistory_State/96_QHistory_State.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec11-StateMachine_Framework/96_QHistory_State/96_QHistory_State.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.73">
-    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
-    <valuelist type="QVariantList" key="CustomOutputParsers"/>
-    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
-    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec12-QMake_Patterns/99_Start_Script_A_Compiling/99_Start_Script_A_Compiling.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec12-QMake_Patterns/99_Start_Script_A_Compiling/99_Start_Script_A_Compiling.pro</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/99_Start_Script_A_Compiling</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.74">
-    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
-    <valuelist type="QVariantList" key="CustomOutputParsers"/>
-    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
-    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec12-QMake_Patterns/98_Start_Script_B_Compiling/98_Start_Script_B_Compiling.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec12-QMake_Patterns/98_Start_Script_B_Compiling/98_Start_Script_B_Compiling.pro</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/98_Start_Script_B_Compiling</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.75">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
@@ -1411,9 +1380,9 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/100_Start_Script_BA_Linking</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/100_Start_Script_BA_Linking</value>
    </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.76">
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.74">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
@@ -1428,9 +1397,9 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/101_Subdir_Ordered/myapp</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/101_Subdir_Ordered/myapp</value>
    </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.77">
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.75">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
@@ -1444,9 +1413,9 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/102_Project_Include_Files/myapp1</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/102_Project_Include_Files/myapp1</value>
    </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.78">
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.76">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
@@ -1460,7 +1429,39 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/102_Project_Include_Files/myapp2</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/102_Project_Include_Files/myapp2</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.77">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec12-QMake_Patterns/98_Start_Script_B_Compiling/98_Start_Script_B_Compiling.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec12-QMake_Patterns/98_Start_Script_B_Compiling/98_Start_Script_B_Compiling.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/98_Start_Script_B_Compiling</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.78">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec12-QMake_Patterns/99_Start_Script_A_Compiling/99_Start_Script_A_Compiling.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec12-QMake_Patterns/99_Start_Script_A_Compiling/99_Start_Script_A_Compiling.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec12-QMake_Patterns/99_Start_Script_A_Compiling</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.79">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1477,7 +1478,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/107_Creating_Shared_Library/myapp</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/107_Creating_Shared_Library/myapp</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.8">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1493,7 +1494,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Liskov_Substitution_Principle</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Liskov_Substitution_Principle</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.80">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1509,7 +1510,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/108_Using_Shared_Library</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/108_Using_Shared_Library</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.81">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1526,7 +1527,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/109_Lib_Dependency_Tree/myapp</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/109_Lib_Dependency_Tree/myapp</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.82">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1543,7 +1544,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/110_Loading_Lib_Dynamically/myapp</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/110_Loading_Lib_Dynamically/myapp</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.83">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1560,7 +1561,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/111_QPlugin_Loader/myapp</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/111_QPlugin_Loader/myapp</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.84">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1576,7 +1577,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/113_Fast_IO</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/113_Fast_IO</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.85">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1592,7 +1593,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/114_TextStreams</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/114_TextStreams</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.86">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1608,7 +1609,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/115_DataStreams</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/115_DataStreams</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.87">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1624,7 +1625,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/116_Object_Serialization</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/116_Object_Serialization</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.88">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1640,7 +1641,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/117_Object_Serialization_in_Widget/117_Object_Serialization_in_Widget.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/117_Object_Serialization_in_Widget/117_Object_Serialization_in_Widget.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.89">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1656,7 +1657,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/118_Object_Serialization_in_QML/118_Object_Serialization_in_QML.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/118_Object_Serialization_in_QML/118_Object_Serialization_in_QML.app/Contents/MacOS</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.9">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -1672,9 +1673,121 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Open_Closed_Principle</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec02-Class_Patterns/SOLID/Open_Closed_Principle</value>
    </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">90</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.90">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec15-IO_Patterns/119_QTemporaryFile/119_QTemporaryFile.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec15-IO_Patterns/119_QTemporaryFile/119_QTemporaryFile.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/119_QTemporaryFile</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.91">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec15-IO_Patterns/120_QSaveFile/120_QSaveFile.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec15-IO_Patterns/120_QSaveFile/120_QSaveFile.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/120_QSaveFile</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.92">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec15-IO_Patterns/121_QCryptographicHash/121_QCryptographicHash.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec15-IO_Patterns/121_QCryptographicHash/121_QCryptographicHash.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec15-IO_Patterns/121_QCryptographicHash</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.93">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec16-Operating_System_Patterns/123_QProcess/123_QProcess.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec16-Operating_System_Patterns/123_QProcess/123_QProcess.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec16-Operating_System_Patterns/123_QProcess/123_QProcess.app/Contents/MacOS</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.94">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec16-Operating_System_Patterns/124_QDesktopServices/124_QDesktopServices.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec16-Operating_System_Patterns/124_QDesktopServices/124_QDesktopServices.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec16-Operating_System_Patterns/124_QDesktopServices/124_QDesktopServices.app/Contents/MacOS</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.95">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec16-Operating_System_Patterns/125_Running_Code_Base_on_OS/125_Running_Code_Base_on_OS.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec16-Operating_System_Patterns/125_Running_Code_Base_on_OS/125_Running_Code_Base_on_OS.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec16-Operating_System_Patterns/125_Running_Code_Base_on_OS</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.96">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec16-Operating_System_Patterns/126_Running_Process_From_QML/126_Running_Process_From_QML.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/Sec16-Operating_System_Patterns/126_Running_Process_From_QML/126_Running_Process_From_QML.pro</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/yuyuhee/Language/C++/Qt5/Design_Pattern/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec16-Operating_System_Patterns/126_Running_Process_From_QML/126_Running_Process_From_QML.app/Contents/MacOS</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">97</value>
   </valuemap>
  </data>
  <data>
