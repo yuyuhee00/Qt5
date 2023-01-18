@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
  SOLID - https://en.wikipedia.org/wiki/SOLID
@@ -14,6 +12,7 @@
 
  Define
  Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification
+ - Should not modify the interface, but a class inheriting the interface.
 
  Why
  Avoids breaking things in the future if we modify the code
@@ -25,7 +24,7 @@
 
  */
 
-
+#include <QCoreApplication>
 #include <QDebug>
 #include <QStringList>
 #include "shop.h"
@@ -42,11 +41,13 @@ int main(int argc, char *argv[])
 
     //CoffeeMachine machine;
     CoffeeMachine machine;
-    shop.sellDrink(list, &machine);
+    //shop.sellDrink(list, &machine);
+    Shop::sellDrink(list, &machine);
 
     // Growth
     Caffeinator3000 c3000;
-    shop.sellDrink(list, &c3000);
+    //shop.sellDrink(list, &c3000);
+    Shop::sellDrink(list, &c3000);
 
     return a.exec();
 }

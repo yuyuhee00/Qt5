@@ -5,7 +5,6 @@ AdvancedOven::AdvancedOven(QObject *parent) : QObject(parent)
 
 }
 
-
 void AdvancedOven::bake()
 {
     qInfo() << this << "do advanced stuff";

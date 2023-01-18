@@ -8,11 +8,11 @@
 class BasicOven : public QObject, public iOven
 {
     Q_OBJECT
+
 public:
     explicit BasicOven(QObject *parent = nullptr);
 
 signals:
-
 
     // iOven interface
 public:

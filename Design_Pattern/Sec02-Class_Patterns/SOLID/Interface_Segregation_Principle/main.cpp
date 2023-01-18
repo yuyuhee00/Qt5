@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
  SOLID - https://en.wikipedia.org/wiki/SOLID
@@ -24,6 +22,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "interfaces/iFlying.h"
 #include "interfaces/iMachine.h"
 #include "bird.h"

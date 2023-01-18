@@ -8,10 +8,11 @@
 class Shop : public QObject
 {
     Q_OBJECT
+
 public:
     explicit Shop(QObject *parent = nullptr);
 
-        void sellDrink(QStringList list, iBrew *machine);
+    static void sellDrink(QStringList list, iBrew *machine);
 
 signals:
 
