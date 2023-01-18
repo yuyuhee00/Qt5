@@ -1,5 +1,8 @@
-
 TEMPLATE    = subdirs
+
+CONFIG += ordered
+CONFIG += sdk_no_version_check
+
 SUBDIRS     = \
               SOLID \
               Keep_It_Simple \
@@ -9,5 +12,4 @@ SUBDIRS     = \
               Property_System \
               Code_Deprecation
 
-CONFIG += ordered
-CONFIG += sdk_no_version_check
+
