@@ -1,0 +1,22 @@
+{
+    "time": "08:25:37 AM",
+    "date": "09-23",
+    "success": true,
+    "properties": [
+        {
+            "ID": 1001,
+            "PropertyName": "Kim Dae Jin",
+            "key": "kr723"
+        },
+        {
+            "ID": 1002,
+            "PropertyName": "Qt Developer site",
+            "key": "kr546"
+        },
+        {
+            "ID": 1003,
+            "PropertyName": "www.Qt-dev.com",
+            "key": "kr633"
+        }
+    ]
+}

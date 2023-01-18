@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Example 소프트웨어</DisplayName>
+    <Description>Example 소프트웨어는 아날로그 시계 예제 입니다.</Description>
+    <Version>1.0.0-1</Version>
+    <ReleaseDate>2030-05-18</ReleaseDate>
+    <Licenses>
+        <License name="My License Agreement" file="license.txt" />
+    </Licenses>
+    <Default>script</Default>
+    <Script>installscript.qs</Script>
+</Package>
