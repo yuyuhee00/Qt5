@@ -1,10 +1,21 @@
 
 TEMPLATE    = subdirs
-SUBDIRS     = \
-              01_Console_App \
-              02_Gui_App
 
-01_Console_App.file = 01_Console_App/01_Console_App.pro
-02_Gui_App.file = 02_Gui_App/02_Gui_App.pro
+CONFIG += ordered
+CONFIG += sdk_no_version_check
+
+SUBDIRS     = \
+            01_TcpServer \
+            01_TcpClient \
+            02_QTcpSocket_Sync \
+            02_QTcpSocket_Async \
+            03_UDP_Server \
+            03_UDP_Client \
+            04_Broadcast_Receiver \
+            04_Broadcast_Sender \
+            05_Multicast_Receiver \
+            05_Multicast_Sender \
+            06_ChatServer \
+            06_ChatClient
 
 

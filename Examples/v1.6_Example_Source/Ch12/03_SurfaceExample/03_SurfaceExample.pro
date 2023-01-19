@@ -8,6 +8,8 @@ TEMPLATE = app
 
 DEFINES += QT_DEPRECATED_WARNINGS
 
+CONFIG += sdk_no_version_check
+
 SOURCES += \
         main.cpp
 

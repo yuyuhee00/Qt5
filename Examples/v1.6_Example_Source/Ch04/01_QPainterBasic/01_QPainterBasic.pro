@@ -6,6 +6,8 @@
 
 QT       += core gui
 
+CONFIG += sdk_no_version_check
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = 02_04_01_QPainterBasic

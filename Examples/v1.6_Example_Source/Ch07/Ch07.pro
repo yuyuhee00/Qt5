@@ -1,10 +1,11 @@
 
 TEMPLATE    = subdirs
-SUBDIRS     = \
-              01_Console_App \
-              02_Gui_App
 
-01_Console_App.file = 01_Console_App/01_Console_App.pro
-02_Gui_App.file = 02_Gui_App/02_Gui_App.pro
+CONFIG += ordered
+CONFIG += sdk_no_version_check
+
+SUBDIRS     = \
+              01_SimpleOpenGL \
+              02_2dpainting
 
 

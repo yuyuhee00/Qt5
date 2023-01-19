@@ -4,6 +4,8 @@ TARGET = 01_SimpleOpenGL
 
 TEMPLATE = app
 
+CONFIG += sdk_no_version_check
+
 SOURCES += main.cpp\
            glwidget.cpp
 

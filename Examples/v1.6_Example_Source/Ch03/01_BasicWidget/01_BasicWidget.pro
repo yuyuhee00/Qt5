@@ -1,5 +1,9 @@
-
 TEMPLATE    = subdirs
+
+CONFIG += ordered
+CONFIG += sdk_no_version_check
+
+
 SUBDIRS     = \
               01_QCheckBox \
               02_QComboBox \
@@ -26,7 +30,4 @@ SUBDIRS     = \
               23_QTabBar \
               24_QToolBox \
               25_QToolButton
-
-
-CONFIG += ordered
 
