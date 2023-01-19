@@ -12,9 +12,7 @@ Task::Task(const QString& name, QWidget *parent) :
     setName(name);
 
     connect(ui->editButton, &QPushButton::clicked, this, &Task::rename);
-    connect(ui->removeButton, &QPushButton::clicked, [this] {
-        emit removed(this);
-    });
+    connect(ui->removeButton, &QPushButton::clicked, [this] (){ emit removed(this); });
     connect(ui->checkbox, &QCheckBox::toggled, this, &Task::checked);
 }
 

@@ -11,8 +11,7 @@ SysInfoWidget::SysInfoWidget(QWidget *parent,
     mChartView(this)
 {
     mRefreshTimer.setInterval(updateSeriesDelayMs);
-    connect(&mRefreshTimer, &QTimer::timeout,
-            this, &SysInfoWidget::updateSeries);
+    connect(&mRefreshTimer, &QTimer::timeout, this, &SysInfoWidget::updateSeries);
     mRefreshTimer.start(startDelayMs);
 
     mChartView.setRenderHint(QPainter::Antialiasing);
