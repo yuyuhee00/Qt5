@@ -23,4 +23,7 @@ SUBDIRS     = \
               Ch18 \
               Ch19 \
               Ch20 \
-              Ch21
+              Ch21 \
+              Appendix_A_Custom_Widgets
+
+
