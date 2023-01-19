@@ -7,16 +7,21 @@
 class Widget : public QWidget
 {
     Q_OBJECT
+
 public:
     Widget(QWidget *parent = 0);
     ~Widget();
 
 private:
-    QPropertyAnimation *animation;
+    QPropertyAnimation* m_animation;
 
 public slots:
     void btnClicked();
 
+
+    // QWidget interface
+protected:
+    void paintEvent(QPaintEvent *event);
 };
 
 #endif // WIDGET_H

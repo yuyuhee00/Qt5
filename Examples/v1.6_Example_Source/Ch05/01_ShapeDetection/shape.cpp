@@ -11,7 +11,7 @@ Shape::Shape()
     setFlags(QGraphicsItem::ItemIsSelectable|
              QGraphicsItem::ItemIsMovable);
 
-    color = QColor(QRandomGenerator::global()->bounded(256),
+    m_color = QColor(QRandomGenerator::global()->bounded(256),
                    QRandomGenerator::global()->bounded(256),
                    QRandomGenerator::global()->bounded(256));
 }
@@ -34,7 +34,7 @@ void Shape::paint(QPainter *painter,
                   QWidget *)
 {
     if(scene()->collidingItems(this).isEmpty()) {
-        painter->setBrush(color);
+        painter->setBrush(m_color);
     } else {
         painter->setBrush(QColor(Qt::red));
     }

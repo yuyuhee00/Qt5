@@ -12,6 +12,10 @@ void Widget::paintEvent(QPaintEvent *event)
     QPainter painter;
     painter.begin(this);
 
+    int w = this->window()->width();
+    int h = this->window()->height();
+
+
 //    painter.setBrush(QBrush(Qt::green, Qt::Dense3Pattern));
 //    painter.setPen(Qt::blue);
 //    painter.drawEllipse(10, 10, 100,100);
@@ -22,15 +26,31 @@ void Widget::paintEvent(QPaintEvent *event)
 
     //-----------
 
+    /*
     QPixmap pixmap(":resources/qtblog.png");
     int w = pixmap.width();
     int h = pixmap.height();
     pixmap.scaled(w, h, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+    */
 
-    QBrush brush(pixmap);
+    QPixmap imgPixmap = QPixmap(":resources/qtblog.png")
+                        .scaled(w, h, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+    int imgWidth = imgPixmap.width();
+    int imgHeight = imgPixmap.height();
+
+    int xPos = 0;
+    int yPos = 0;
+
+    if(w > imgWidth)
+        xPos = (w - imgWidth) / 2;
+    else if( h > imgHeight)
+        yPos = (h - imgHeight) / 2;
+
+
+    QBrush brush(imgPixmap);
     painter.setBrush(brush);
     painter.setPen(Qt::blue);
-    painter.drawRect(0, 0, w, h);
+    painter.drawRect(xPos, yPos, imgWidth, imgHeight);
 
     //-----------
 

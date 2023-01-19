@@ -16,6 +16,16 @@ public:
     Widget(QWidget *parent = 0);
     ~Widget();
 
+private:
+    QStateMachine* m_stateMachine;
+    QState* m_state1;
+    QState* m_state2;
+
+    QPushButton *m_button;
+
+    // QWidget interface
+protected:
+    void paintEvent(QPaintEvent *event) override;
 };
 
 #endif // WIDGET_H

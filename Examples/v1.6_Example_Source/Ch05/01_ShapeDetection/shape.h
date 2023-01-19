@@ -9,6 +9,7 @@ class Shape : public QGraphicsItem
 public:
     Shape();
 
+public:
     QRectF boundingRect() const override;
     QPainterPath shape() const override;
     void paint(QPainter *painter,
@@ -20,7 +21,7 @@ protected:
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;
 
 private:
-    QColor color;
+    QColor m_color;
 };
 
 #endif // SHAPE_H

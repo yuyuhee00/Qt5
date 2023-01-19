@@ -43,7 +43,7 @@ Widget::~Widget()
 
 void Widget::timerStart()
 {
-    m_timer.start(30);
+   m_timer.start(30);
 }
 
 
