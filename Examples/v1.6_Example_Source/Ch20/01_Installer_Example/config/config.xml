@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Example Software</Name>
+    <Version>1.0.0</Version>
+    <Title>Example Software</Title>
+    <Publisher>Qt 개발자</Publisher>
+    <StartMenuDir>Qt 개발자 메뉴</StartMenuDir>
+    <TargetDir>C:/Example_Software</TargetDir>
+</Installer>

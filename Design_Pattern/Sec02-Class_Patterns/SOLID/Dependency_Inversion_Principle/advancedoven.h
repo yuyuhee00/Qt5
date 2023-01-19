@@ -9,6 +9,7 @@
 class AdvancedOven : public QObject, public iEvenHeat, public iOven
 {
     Q_OBJECT
+
 public:
     explicit AdvancedOven(QObject *parent = nullptr);
 

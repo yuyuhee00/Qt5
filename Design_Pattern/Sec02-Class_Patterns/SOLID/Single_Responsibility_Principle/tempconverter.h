@@ -6,6 +6,7 @@
 class TempConverter : public QObject
 {
     Q_OBJECT
+
 public:
     explicit TempConverter(QObject *parent = nullptr);
 

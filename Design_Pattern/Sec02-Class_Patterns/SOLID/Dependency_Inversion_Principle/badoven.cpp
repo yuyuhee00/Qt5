@@ -5,7 +5,6 @@ BadOven::BadOven(QObject *parent) : BasicOven(parent)
 
 }
 
-
 void BadOven::bake()
 {
    // qInfo() << this << "do bad oven stuff";

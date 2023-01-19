@@ -1,0 +1,20 @@
+TEMPLATE = subdirs
+
+CONFIG += ordered
+CONFIG += sdk_no_version_check
+
+SUBDIRS = \
+           Chapter01 \
+           Chapter02 \
+           Chapter03 \
+           Chapter04 \
+           Chapter05 \
+           Chapter06 \
+           Chapter07 \
+           Chapter08 \
+           Chapter09 \
+           Chapter10 \
+           Chapter11 \
+           Chapter12 \
+           Chapter13 \
+           Chapter14

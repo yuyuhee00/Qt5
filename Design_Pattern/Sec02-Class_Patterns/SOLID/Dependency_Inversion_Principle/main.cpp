@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
  SOLID - https://en.wikipedia.org/wiki/SOLID
@@ -28,6 +26,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "basicoven.h"
 #include "badoven.h"
 #include "advancedoven.h"

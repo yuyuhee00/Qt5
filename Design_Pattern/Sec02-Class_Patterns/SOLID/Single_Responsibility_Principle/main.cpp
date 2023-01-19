@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  SOLID - https://en.wikipedia.org/wiki/SOLID
  Single Responsibility Principle
  Open/Closed Principle
@@ -23,6 +22,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include "tempconverter.h"
 #include "tempconverter2.h"
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
     TempConverter t;
 
-    int value = 32;
+    auto value = 32;
     qInfo() << "c to f" << t.celsiusToFahrenheit(value);
     qInfo() << "f to c" << t.fahrenheitToCelsius(value);
 

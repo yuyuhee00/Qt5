@@ -8,11 +8,11 @@
 class MySocket : public QTcpSocket
 {
     Q_OBJECT
+
 public:
     explicit MySocket(QObject *parent = nullptr);
 
 signals:
-
 
     // QIODevice interface
 public:

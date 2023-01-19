@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
  SOLID - https://en.wikipedia.org/wiki/SOLID
@@ -26,6 +24,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QTcpSocket>
 #include "mysocket.h"
@@ -34,11 +33,11 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    //QTcpSocket socket;
+    // QTcpSocket socket;
     MySocket socket;
 
     qInfo() << "Connecting...";
-    socket.connectToHost("voidrealms.com",80);
+    socket.connectToHost("voidrealms.com", 80);
     socket.waitForConnected();
 
     qInfo() << "Connected";
@@ -46,6 +45,7 @@ int main(int argc, char *argv[])
 
     qInfo() << "Closing...";
     socket.close();
+
     if(socket.isOpen()) socket.waitForDisconnected();
 
     qInfo() << "Complete!";

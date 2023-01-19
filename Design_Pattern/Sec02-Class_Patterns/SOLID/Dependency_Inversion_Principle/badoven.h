@@ -9,11 +9,11 @@
 class BadOven : public BasicOven, public iEvenHeat
 {
     Q_OBJECT
+
 public:
     explicit BadOven(QObject *parent = nullptr);
 
 signals:
-
 
     // iOven interface
 public:
