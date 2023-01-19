@@ -1,0 +1,3 @@
+module myapp.mycomponents
+MyLineEdit 1.0 MyLineEdit-1.0.qml
+MyLineEdit 1.1 MyLineEdit-1.1.qml

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>grid_exam_1.qml</file>
+        <file>grid_exam_ani.qml</file>
+        <file>listmodel_exam_1.qml</file>
+        <file>listmodel_exam_2.qml</file>
+        <file>list-view-header-footer.qml</file>
+        <file>xml_exam.qml</file>
+        <file>images/101.JPG</file>
+        <file>images/102.JPG</file>
+        <file>images/103.JPG</file>
+        <file>images/104.JPG</file>
+        <file>item.xml</file>
+    </qresource>
+</RCC>

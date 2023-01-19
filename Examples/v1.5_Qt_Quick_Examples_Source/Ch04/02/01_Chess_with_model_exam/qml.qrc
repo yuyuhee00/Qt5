@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>chess-board1.qml</file>
+        <file>chess-board2.qml</file>
+        <file>chess-board3.qml</file>
+        <file>images/knight.png</file>
+    </qresource>
+</RCC>

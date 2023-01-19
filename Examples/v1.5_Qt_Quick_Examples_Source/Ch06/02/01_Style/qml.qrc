@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>buttonstyle.qml</file>
+        <file>tabviewstyle.qml</file>
+    </qresource>
+</RCC>

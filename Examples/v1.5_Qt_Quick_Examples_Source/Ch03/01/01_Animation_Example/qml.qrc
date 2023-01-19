@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>numberanimation.qml</file>
+        <file>propertyanimation.qml</file>
+        <file>rotationanimation.qml</file>
+        <file>animation_event.qml</file>
+        <file>ani_event_complex.qml</file>
+        <file>smoothedanimation.qml</file>
+        <file>behaivor.qml</file>
+        <file>springanimation.qml</file>
+        <file>sequencialanimation.qml</file>
+        <file>parallelanimation.qml</file>
+        <file>easingcurve.qml</file>
+        <file>sequential-animation-nested.qml</file>
+        <file>sequential-parallel-animation.qml</file>
+        <file>images/qtlogo.png</file>
+        <file>pauseanimation.qml</file>
+    </qresource>
+</RCC>

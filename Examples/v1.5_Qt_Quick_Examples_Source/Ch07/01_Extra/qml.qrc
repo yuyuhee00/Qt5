@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>delaybutton.qml</file>
+        <file>dial.qml</file>
+        <file>piemenu.qml</file>
+        <file>togglebutton.qml</file>
+        <file>tumbler.qml</file>
+        <file>tumbler_model.qml</file>
+        <file>circulargauge.qml</file>
+        <file>gauge.qml</file>
+        <file>gauge2.qml</file>
+        <file>statusindicator.qml</file>
+        <file>images/ma.png</file>
+        <file>images/pinwheel.png</file>
+        <file>images/qtlogo.png</file>
+    </qresource>
+</RCC>

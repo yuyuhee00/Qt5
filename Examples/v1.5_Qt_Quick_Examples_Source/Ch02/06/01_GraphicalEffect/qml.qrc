@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>effect1.qml</file>
+        <file>effect2.qml</file>
+        <file>effect3.qml</file>
+        <file>effect4.qml</file>
+        <file>effect5.qml</file>
+        <file>effect6.qml</file>
+        <file>effect7.qml</file>
+        <file>effect8.qml</file>
+        <file>effect9.qml</file>
+        <file>effect10.qml</file>
+        <file>effect11.qml</file>
+        <file>effect12.qml</file>
+        <file>effect13.qml</file>
+        <file>effect14.qml</file>
+        <file>effect15.qml</file>
+        <file>effect16.qml</file>
+        <file>images/butterfly.png</file>
+        <file>images/lenna.png</file>
+        <file>images/bug.jpg</file>
+        <file>effect_Gradient.qml</file>
+        <file>images/glass_normal.png</file>
+        <file>images/masksource.png</file>
+        <file>images/ball.png</file>
+        <file>images/glow_butterfly.png</file>
+    </qresource>
+</RCC>

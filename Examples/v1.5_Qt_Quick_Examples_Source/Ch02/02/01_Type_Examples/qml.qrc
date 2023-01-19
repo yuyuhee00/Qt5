@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>rectangle.qml</file>
+        <file>image.qml</file>
+        <file>images/qtlogo.png</file>
+        <file>borderimage.qml</file>
+        <file>images/borderframe.png</file>
+        <file>animatedimage.qml</file>
+        <file>anchors.qml</file>
+        <file>gradient.qml</file>
+        <file>systempalette.qml</file>
+        <file>screen.qml</file>
+        <file>loader.qml</file>
+        <file>transformation.qml</file>
+        <file>simple_accessible.qml</file>
+        <file>content/Slider.qml</file>
+        <file>content/Checkbox.qml</file>
+        <file>content/Button.qml</file>
+        <file>text_image_anchors.qml</file>
+        <file>images/bluebackground.png</file>
+        <file>images/bluebutton.png</file>
+        <file>images/signout.png</file>
+        <file>images/login.png</file>
+        <file>fontloader.qml</file>
+        <file>repeater.qml</file>
+        <file>images/ani.gif</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>columnlayout.qml</file>
+        <file>gridlayout.qml</file>
+        <file>rowlayout.qml</file>
+    </qresource>
+</RCC>

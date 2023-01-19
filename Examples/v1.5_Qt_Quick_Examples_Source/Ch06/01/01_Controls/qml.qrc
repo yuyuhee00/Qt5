@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>busyindicator.qml</file>
+        <file>button.qml</file>
+        <file>calendar.qml</file>
+        <file>checkbox.qml</file>
+        <file>combobox.qml</file>
+        <file>groupbox.qml</file>
+        <file>exclusivegroup.qml</file>
+        <file>label.qml</file>
+        <file>progressbar.qml</file>
+        <file>radiobutton.qml</file>
+        <file>slider.qml</file>
+        <file>spinbox.qml</file>
+        <file>switch.qml</file>
+        <file>textarea.qml</file>
+        <file>textfield.qml</file>
+        <file>toolbutton.qml</file>
+        <file>slider_event.qml</file>
+        <file>spinbox_event.qml</file>
+        <file>images/new.png</file>
+        <file>images/open.png</file>
+        <file>images/paste.png</file>
+    </qresource>
+</RCC>

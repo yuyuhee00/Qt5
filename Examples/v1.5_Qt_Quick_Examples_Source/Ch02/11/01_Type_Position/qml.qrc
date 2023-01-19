@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>positioner.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>state.qml</file>
+        <file>transition.qml</file>
+        <file>transition-rotate.qml</file>
+        <file>state-when.qml</file>
+        <file>images/clear.svg</file>
+        <file>images/player.png</file>
+    </qresource>
+</RCC>

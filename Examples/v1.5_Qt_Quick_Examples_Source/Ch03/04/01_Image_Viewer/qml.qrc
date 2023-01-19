@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ImageViewer.qml</file>
+        <file>module/Button.qml</file>
+        <file>module/Thumbnail.qml</file>
+        <file>module/RotationButton.qml</file>
+        <file>images/105.jpg</file>
+        <file>images/101.JPG</file>
+        <file>images/102.JPG</file>
+        <file>images/103.JPG</file>
+        <file>images/104.JPG</file>
+        <file>images/106.JPG</file>
+        <file>images/107.JPG</file>
+        <file>images/108.JPG</file>
+        <file>images/109.JPG</file>
+        <file>images/110.JPG</file>
+        <file>images/111.JPG</file>
+    </qresource>
+</RCC>

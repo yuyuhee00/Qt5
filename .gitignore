@@ -1,7 +1,7 @@
 .DS_Store
 *.user
+*.zip
 build-*
-Examples
 Tests
 
-*.zip
+

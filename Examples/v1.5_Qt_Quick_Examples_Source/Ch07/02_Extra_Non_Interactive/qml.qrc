@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>circulargauge.qml</file>
+        <file>gauge.qml</file>
+        <file>gauge2.qml</file>
+        <file>statusindicator.qml</file>
+    </qresource>
+</RCC>

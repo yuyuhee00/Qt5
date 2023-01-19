@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>basic_circulargauge.qml</file>
+        <file>circulargauge_style1.qml</file>
+        <file>circulargauge_style2.qml</file>
+        <file>circulargauge_style3.qml</file>
+        <file>circulargauge_style4.qml</file>
+        <file>circulargauge_style5.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>page1.qml</file>
+        <file>dynamic_main.qml</file>
+        <file>dynamic_component.qml</file>
+        <file>myitem.qml</file>
+        <file>application.qml</file>
+        <file>key_main.qml</file>
+        <file>keyreader.qml</file>
+        <file>square.qml</file>
+        <file>status.qml</file>
+        <file>value_change.qml</file>
+        <file>ExComponent.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>LineEdit.qml</file>
+        <file>NewLineEdit.qml</file>
+        <file>new_main.qml</file>
+        <file>checked_main.qml</file>
+        <file>content/NewCheckBox.qml</file>
+        <file>images/checked.svg</file>
+        <file>images/unchecked.svg</file>
+        <file>alias.qml</file>
+        <file>myqt.qml</file>
+    </qresource>
+</RCC>
