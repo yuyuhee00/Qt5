@@ -10,7 +10,15 @@ class SysInfoMacImpl : public SysInfo
 {
 public:
     SysInfoMacImpl();
+    ~SysInfoMacImpl() = default;
 
+    SysInfoMacImpl(SysInfoMacImpl const&) = delete;
+    SysInfoMacImpl& operator=(SysInfoMacImpl const&) = delete;
+
+    SysInfoMacImpl(SysInfoMacImpl const&&) = delete;
+    SysInfoMacImpl& operator=(SysInfoMacImpl const&&) = delete;
+
+public:
     void init() override;
     double cpuLoadAverage() override;
     double memoryUsed() override;

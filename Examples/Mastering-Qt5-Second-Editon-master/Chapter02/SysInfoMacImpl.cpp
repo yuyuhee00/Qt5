@@ -6,6 +6,8 @@
 #include <mach/mach_host.h>
 #include <mach/vm_map.h>
 
+#include <QDebug>
+
 SysInfoMacImpl::SysInfoMacImpl() :
     SysInfo(),
     mCpuLoadLastValues()
@@ -56,6 +58,11 @@ double SysInfoMacImpl::memoryUsed()
     qulonglong totalMemory = freeMemory + totalMemoryUsed;
 
     double percent = (double)totalMemoryUsed / (double)totalMemory * 100.0;
+
+//    qInfo() << "Total Memory : " << totalMemory;
+//    qInfo() << "Used Memory : " << totalMemoryUsed;
+//    qInfo() << "Memory Used : " << percent;
+
     return qBound(0.0, percent, 100.0);
 }
 

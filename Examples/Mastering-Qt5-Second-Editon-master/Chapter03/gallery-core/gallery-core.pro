@@ -9,6 +9,7 @@ QT       -= gui
 
 TARGET = gallery-core
 TEMPLATE = lib
+
 CONFIG += lib c++11
 CONFIG   += sdk_no_version_check
 

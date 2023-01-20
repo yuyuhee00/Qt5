@@ -12,6 +12,15 @@ class SysInfoWindowsImpl : public SysInfo
 {
 public:
     SysInfoWindowsImpl();
+    ~SysInfoWindowsImpl() = default;
+
+    SysInfoWindowsImpl(SysInfoWindowsImpl const&) = delete;
+    SysInfoWindowsImpl& operator=(SysInfoWindowsImpl const&) = delete;
+
+    SysInfoWindowsImpl(SysInfoWindowsImpl const&&) = delete;
+    SysInfoWindowsImpl& operator=(SysInfoWindowsImpl const&&) = delete;
+
+public:
 
     void init() override;
     double cpuLoadAverage() override;

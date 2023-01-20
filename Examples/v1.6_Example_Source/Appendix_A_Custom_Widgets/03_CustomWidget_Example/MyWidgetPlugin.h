@@ -1,7 +1,8 @@
 #ifndef MYWIDGETPLUGIN_H
 #define MYWIDGETPLUGIN_H
 
-#include <QDesignerCustomWidgetInterface>
+//#include <QDesignerCustomWidgetInterface>
+#include <QtUiPlugin/QDesignerCustomWidgetInterface>
 
 class MyWidgetPlugin : public QObject, public QDesignerCustomWidgetInterface
 {

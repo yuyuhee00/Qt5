@@ -10,7 +10,15 @@ class SysInfoLinuxImpl : public SysInfo
 {
 public:
     SysInfoLinuxImpl();
+    ~SysInfoLinuxImpl() = default;
 
+    SysInfoLinuxImpl(SysInfoLinuxImpl const&) = delete;
+    SysInfoLinuxImpl& operator=(SysInfoLinuxImpl const&) = delete;
+
+    SysInfoLinuxImpl(SysInfoLinuxImpl const&&) = delete;
+    SysInfoLinuxImpl& operator=(SysInfoLinuxImpl const&&) = delete;
+
+public:
     void init() override;
     double cpuLoadAverage() override;
     double memoryUsed() override;

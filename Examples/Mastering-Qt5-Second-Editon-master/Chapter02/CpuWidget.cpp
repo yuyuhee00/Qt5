@@ -2,7 +2,7 @@
 
 #include "SysInfo.h"
 
-using namespace QtCharts;
+//using namespace QtCharts;
 
 CpuWidget::CpuWidget(QWidget* parent) :
     SysInfoWidget(parent),

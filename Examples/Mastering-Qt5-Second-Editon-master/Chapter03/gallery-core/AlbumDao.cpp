@@ -61,7 +61,7 @@ unique_ptr<vector<unique_ptr<Album>>> AlbumDao::albums() const
         unique_ptr<Album> album(new Album());
         album->setId(query.value("id").toInt());
         album->setName(query.value("name").toString());
-        list->push_back(move(album));
+        list->push_back(std::move(album));
     }
     return list;
 }

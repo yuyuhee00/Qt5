@@ -6,7 +6,7 @@
 
 #include "SysInfo.h"
 
-using namespace QtCharts;
+//using namespace QtCharts;
 
 const int CHART_X_RANGE_COUNT = 50;
 const int CHART_X_RANGE_MAX = CHART_X_RANGE_COUNT - 1;

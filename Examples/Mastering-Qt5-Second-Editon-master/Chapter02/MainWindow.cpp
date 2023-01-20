@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
     mMemoryWidget(this)
 {
     ui->setupUi(this);
+
     ui->centralWidget->setLayout(new QHBoxLayout());
     ui->centralWidget->layout()->addWidget(&mCpuWidget);
     ui->centralWidget->layout()->addWidget(&mMemoryWidget);

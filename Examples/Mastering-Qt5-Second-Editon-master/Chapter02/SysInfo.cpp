@@ -23,10 +23,10 @@ SysInfo& SysInfo::instance()
     return singleton;
 }
 
-SysInfo::SysInfo()
-{
-}
+//SysInfo::SysInfo()
+//{
+//}
 
-SysInfo::~SysInfo()
-{
-}
+//SysInfo::~SysInfo()
+//{
+//}

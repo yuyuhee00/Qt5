@@ -6,18 +6,21 @@ class SysInfo
 {
 public:
     static SysInfo& instance();
-    virtual ~SysInfo();
+    virtual ~SysInfo() = default;
 
     virtual void init() = 0;
     virtual double cpuLoadAverage() = 0;
     virtual double memoryUsed() = 0;
 
 protected:
-    explicit SysInfo();
+    explicit SysInfo() = default;
 
-private:
-    SysInfo(const SysInfo& rhs);
-    SysInfo& operator=(const SysInfo& rhs);
+public:
+    SysInfo(const SysInfo&) = delete;
+    SysInfo& operator=(const SysInfo&) = delete;
+
+    SysInfo(const SysInfo&&) = delete;
+    SysInfo& operator=(const SysInfo&&) = delete;
 };
 
 #endif // SYSINFO_H

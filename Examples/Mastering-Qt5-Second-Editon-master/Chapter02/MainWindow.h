@@ -20,6 +20,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
     CpuWidget mCpuWidget;
     MemoryWidget mMemoryWidget;
 };

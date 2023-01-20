@@ -2,7 +2,7 @@
 
 #include <QVBoxLayout>
 
-using namespace QtCharts;
+//using namespace QtCharts;
 
 SysInfoWidget::SysInfoWidget(QWidget *parent,
                              int startDelayMs,
