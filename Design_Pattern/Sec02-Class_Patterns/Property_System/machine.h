@@ -11,7 +11,8 @@ class Machine : public QObject
 
     Q_PROPERTY(int count READ count WRITE setCount NOTIFY countChanged) // getter, setter, signal
     Q_PROPERTY(int max READ max WRITE setMax NOTIFY maxChanged) // getter, setter, signal
-    Q_PROPERTY(QString name READ name WRITE setName) // getter, setter
+    Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged) // getter, setter
+
 public:
     explicit Machine(QObject *parent = nullptr);
 
@@ -19,7 +20,6 @@ public:
     void setCount(int count);
 
     int max() const;
-
 
     QString name() const;
     void setName(const QString &name);
@@ -30,6 +30,7 @@ signals:
     void paused();
     void maxChanged(int value);
     void countChanged(int value);
+    void nameChanged(QString name);
 
 public slots:
     void start();
@@ -45,7 +46,6 @@ private:
     int m_max;
     QString m_name;
     QTimer m_timer;
-
 };
 
 #endif // MACHINE_H

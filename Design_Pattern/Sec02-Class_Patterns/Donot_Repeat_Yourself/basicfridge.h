@@ -8,11 +8,11 @@
 class BasicFridge : public QObject, public iFridge
 {
     Q_OBJECT
+
 public:
     explicit BasicFridge(QObject *parent = nullptr);
 
 signals:
-
 
     // iFridge interface
 public:

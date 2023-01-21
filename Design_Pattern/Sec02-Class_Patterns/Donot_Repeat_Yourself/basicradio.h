@@ -5,15 +5,14 @@
 #include <QDebug>
 #include "interfaces/iRadio.h"
 
-
 class BasicRadio : public QObject, public iRadio
 {
     Q_OBJECT
+
 public:
     explicit BasicRadio(QObject *parent = nullptr);
 
 signals:
-
 
     // iRadio interface
 public:

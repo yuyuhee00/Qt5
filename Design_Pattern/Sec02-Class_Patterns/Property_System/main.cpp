@@ -1,6 +1,3 @@
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
-
 /*
 
   What:
@@ -18,6 +15,8 @@
 
  */
 
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
 #include <QDebug>
 #include "machine.h"
 
@@ -30,16 +29,14 @@ void test()
     machine.setMax(5);
 
     qInfo() << "Max = " << machine.max();
-    machine.setProperty("name","Bryan");
+    machine.setProperty("name", "Bryan");
     qInfo() << "Name = " << machine.name();
 }
 
 
-#include <QDebug>
-
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    //QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     QGuiApplication app(argc, argv);
 

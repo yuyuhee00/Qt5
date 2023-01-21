@@ -9,6 +9,7 @@ void Counter::count(int max)
 {
     m_count = 0;
     m_max = max;
+
     performcount();
 }
 

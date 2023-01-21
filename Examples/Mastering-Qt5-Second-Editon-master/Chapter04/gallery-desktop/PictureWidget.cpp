@@ -13,11 +13,8 @@ PictureWidget::PictureWidget(QWidget *parent) :
     ui->setupUi(this);
     ui->pictureLabel->setMinimumSize(1, 1);
 
-    connect(ui->backButton, &QPushButton::clicked,
-        this, &PictureWidget::backToGallery);
-
-    connect(ui->deleteButton, &QPushButton::clicked,
-            this, &PictureWidget::deletePicture);
+    connect(ui->backButton, &QPushButton::clicked, this, &PictureWidget::backToGallery);
+    connect(ui->deleteButton, &QPushButton::clicked, this, &PictureWidget::deletePicture);
 
     connect(ui->previousButton, &QPushButton::clicked, [this] () {
         QModelIndex currentModelIndex = mSelectionModel->currentIndex();

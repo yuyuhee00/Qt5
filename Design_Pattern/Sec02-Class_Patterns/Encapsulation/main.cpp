@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -16,6 +14,8 @@
 
 
  */
+
+#include <QCoreApplication>
 
 #include <QTextStream>
 #include <QDebug>
@@ -46,6 +46,8 @@ void userInput()
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
+
     userInput();
+
     return a.exec();
 }

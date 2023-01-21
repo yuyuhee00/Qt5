@@ -17,23 +17,25 @@ Protected - Only this class or its sub classes
 
 class MyServer : public QTcpServer
 {
-    //Private
+    // Private
     Q_OBJECT
-public: //Any class
+
+    // Any class
+public:
     explicit MyServer(QObject *parent = nullptr);
 
-    //Public
+    // Public
 signals:
 
-private slots: //Private - Only this class
+    // Private - Only this class
+private slots:
     void handleSocket(QTcpSocket *socket);
 
-protected slots: //Public - Any class
-    //void handleSocket(QTcpSocket *socket);
+    // Protected - Only this class or its sub classes
+protected slots:
 
-public slots: //Protected - Only this class or its sub classes
-
-
+     // Public - Any class
+public slots:
 
     // QTcpServer interface
 protected:

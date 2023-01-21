@@ -17,6 +17,7 @@
 class AdvancedFridge : public BasicFridge
 {
     Q_OBJECT
+
 public:
     explicit AdvancedFridge(QObject *parent = nullptr);
 
@@ -29,7 +30,6 @@ signals:
 
 private:
     iRadio *m_radio;
-
 };
 
 #endif // ADVANCEDFRIDGE_H

@@ -6,6 +6,7 @@
 class PictureDelegate : public QStyledItemDelegate
 {
     Q_OBJECT
+
 public:
     PictureDelegate(QObject* parent = 0);
 

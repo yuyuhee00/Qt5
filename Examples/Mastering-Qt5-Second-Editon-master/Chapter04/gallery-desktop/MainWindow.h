@@ -25,6 +25,7 @@ public slots:
 
 private:
     Ui::MainWindow *ui;
+
     GalleryWidget* mGalleryWidget;
     PictureWidget* mPictureWidget;
     QStackedWidget* mStackedWidget;

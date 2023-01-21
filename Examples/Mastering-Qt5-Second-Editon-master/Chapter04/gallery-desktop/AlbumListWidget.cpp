@@ -12,8 +12,7 @@ AlbumListWidget::AlbumListWidget(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(ui->createAlbumButton, &QPushButton::clicked,
-            this, &AlbumListWidget::createAlbum);
+    connect(ui->createAlbumButton, &QPushButton::clicked, this, &AlbumListWidget::createAlbum);
 }
 
 AlbumListWidget::~AlbumListWidget()

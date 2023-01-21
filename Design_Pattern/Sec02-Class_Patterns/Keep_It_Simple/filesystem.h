@@ -10,11 +10,11 @@
 class FileSystem : public QObject, public iFileIO
 {
     Q_OBJECT
+
 public:
     explicit FileSystem(QObject *parent = nullptr);
 
 signals:
-
 
     // iFileIO interface
 public:

@@ -4,7 +4,7 @@ Machine::Machine(QObject *parent) : QObject(parent)
 {
     m_count = 0;
     m_max = 100;
-    connect(&m_timer, &QTimer::timeout,this, &Machine::timeout);
+    connect(&m_timer, &QTimer::timeout, this, &Machine::timeout);
     m_timer.setInterval(1000);
 }
 
@@ -39,6 +39,7 @@ QString Machine::name() const
 void Machine::setName(const QString &name)
 {
     m_name = name;
+    emit nameChanged(name);
 }
 
 void Machine::start()

@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   KEEP IT SIMPLE
@@ -17,6 +15,8 @@
 
 
  */
+
+#include <QCoreApplication>
 
 #include "iFileIO.h"
 #include "filesystem.h"
@@ -50,7 +50,6 @@ void simple(QString path, QString data)
     QFile file(path);
     if(!file.open(QIODevice::ReadWrite))
     {
-
         qCritical() << "Simple test failed!";
         return;
     }
@@ -58,13 +57,12 @@ void simple(QString path, QString data)
     QTextStream stream(&file);
     stream << data;
     stream.flush();
-    stream.seek(0);
 
+    stream.seek(0);
     QString value = stream.readAll();
     file.close();
     Q_ASSERT(value == data);
     qInfo() << "Simpel test passed";
-
 }
 
 
@@ -75,9 +73,11 @@ int main(int argc, char *argv[])
     QString path = "test.txt";
     QString data = "hello world";
 
-    complex(path,data);
+    complex(path, data);
 
-    simple(path,data);
+    qInfo() << "--------------------------------------------";
+
+    simple(path, data);
 
     return a.exec();
 }

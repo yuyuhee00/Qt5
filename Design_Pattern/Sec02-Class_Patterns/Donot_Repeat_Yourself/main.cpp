@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
  What
  DRY - Don't repeat yourself
@@ -8,7 +6,6 @@
  Description
  "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system".
  The principle has been formulated by Andy Hunt and Dave Thomas in their book The Pragmatic Programmer
-
 
  Why
  Reducing repetition of software patterns
@@ -23,6 +20,8 @@
  Classes - the implimentations
  Inheritance - modified implimentations
  */
+
+#include <QCoreApplication>
 
 #include "basicfridge.h"
 #include "advancedfridge.h"
@@ -51,7 +50,6 @@ void testAdvanced(AdvancedFridge *fridge)
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-
 
     BasicFridge fridge;
 

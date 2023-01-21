@@ -3,7 +3,6 @@ QT += network
 
 CONFIG += c++11 console
 CONFIG -= app_bundle
-
 CONFIG += sdk_no_version_check
 
 # The following define makes your compiler emit warnings if you use

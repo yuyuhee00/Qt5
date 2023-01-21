@@ -24,7 +24,6 @@ private:
 
 private:
    QHash<QString, QPixmap*> mThumbnails;
-
 };
 
 #endif // THUMBNAILPROXYMODEL_H

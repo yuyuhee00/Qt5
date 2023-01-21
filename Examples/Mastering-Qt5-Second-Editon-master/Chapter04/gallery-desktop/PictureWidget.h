@@ -19,6 +19,7 @@ class PictureWidget : public QWidget
 public:
     explicit PictureWidget(QWidget *parent = 0);
     ~PictureWidget();
+
     void setModel(ThumbnailProxyModel* model);
     void setSelectionModel(QItemSelectionModel* selectionModel);
 

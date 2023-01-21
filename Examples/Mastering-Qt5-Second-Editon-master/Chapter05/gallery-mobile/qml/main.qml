@@ -19,11 +19,11 @@ ApplicationWindow {
     }
 
     onClosing: {
-        if (Qt.platform.os == "android") {
+       // if (Qt.platform.os == "android") {
             if (stackView.depth > 1) {
                 close.accepted = false
                 stackView.pop()
             }
-        }
+        //}
     }
 }

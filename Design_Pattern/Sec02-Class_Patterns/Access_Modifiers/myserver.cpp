@@ -12,7 +12,6 @@ void MyServer::handleSocket(QTcpSocket *socket)
     socket->waitForBytesWritten();
     socket->close();
     delete socket;
-
 }
 
 

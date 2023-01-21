@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What:
@@ -19,6 +17,7 @@
 
  */
 
+#include <QCoreApplication>
 
 #include "machine.h"
 

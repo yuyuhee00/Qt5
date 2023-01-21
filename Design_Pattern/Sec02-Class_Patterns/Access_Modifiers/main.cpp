@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
  What:
@@ -19,6 +17,8 @@
 
  */
 
+#include <QCoreApplication>
+
 #include <QDebug>
 #include "myserver.h"
 
@@ -26,14 +26,13 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    MyServer server;
     int value = 0;
+    MyServer server;
     if(server.listen(QHostAddress::Any, 3301))
     {
         qInfo() << "Listening";
         value = a.exec();
         server.close();
-
     }
     else
     {
