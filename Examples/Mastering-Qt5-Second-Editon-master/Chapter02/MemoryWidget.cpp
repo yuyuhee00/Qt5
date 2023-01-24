@@ -8,11 +8,11 @@
 
 //using namespace QtCharts;
 
-const int CHART_X_RANGE_COUNT = 50;
-const int CHART_X_RANGE_MAX = CHART_X_RANGE_COUNT - 1;
-const int COLOR_DARK_BLUE = 0x209fdf;
-const int COLOR_LIGHT_BLUE = 0xbfdfef;
-const int PEN_WIDTH = 3;
+constexpr int CHART_X_RANGE_COUNT = 50;
+constexpr int CHART_X_RANGE_MAX = CHART_X_RANGE_COUNT - 1;
+constexpr int COLOR_DARK_BLUE = 0x209fdf;
+constexpr int COLOR_LIGHT_BLUE = 0xbfdfef;
+constexpr int PEN_WIDTH = 3;
 
 MemoryWidget::MemoryWidget(QWidget *parent) :
     SysInfoWidget(parent),
@@ -27,6 +27,7 @@ MemoryWidget::MemoryWidget(QWidget *parent) :
     gradient.setColorAt(0.0, COLOR_LIGHT_BLUE);
     gradient.setCoordinateMode(QGradient::ObjectBoundingMode);
 
+    // QLineSeries* mSeries;
     QAreaSeries* areaSeries = new QAreaSeries(mSeries);
     areaSeries->setPen(pen);
     areaSeries->setBrush(gradient);
@@ -35,9 +36,17 @@ MemoryWidget::MemoryWidget(QWidget *parent) :
     chart->addSeries(areaSeries);
     chart->setTitle("Memory used");
     chart->createDefaultAxes();
-    chart->axisX()->setRange(0, CHART_X_RANGE_MAX);
-    chart->axisX()->setVisible(false);
-    chart->axisY()->setRange(0, 100);
+
+    auto xAxis = chart->axes(Qt::Horizontal);
+    xAxis.at(0)->setRange(0, CHART_X_RANGE_MAX);
+    xAxis.at(0)->setVisible(false);
+
+    auto yAxis = chart->axes(Qt::Vertical);
+    yAxis.at(0)->setRange(0, 100);
+
+//    chart->axisX()->setRange(0, CHART_X_RANGE_MAX);
+//    chart->axisX()->setVisible(false);
+//    chart->axisY()->setRange(0, 100);
 }
 
 void MemoryWidget::updateSeries()
