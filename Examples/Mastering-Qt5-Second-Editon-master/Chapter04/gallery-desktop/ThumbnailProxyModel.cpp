@@ -27,7 +27,7 @@ void ThumbnailProxyModel::setSourceModel(QAbstractItemModel* sourceModel)
         return;
     }
 
-    connect(sourceModel, &QAbstractItemModel::modelReset, [this] {
+    connect(sourceModel, &QAbstractItemModel::modelReset, [this]() {
         reloadThumbnails();
     });
 
