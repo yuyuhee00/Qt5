@@ -1,4 +1,5 @@
 #include "server.h"
+#include <QDebug>
 
 Server::Server(QObject *parent) : QTcpServer(parent)
 {
@@ -12,6 +13,11 @@ Server::~Server()
 
 void Server::close()
 {
+//    for(auto socket: m_clients)
+//    {
+//        socket->close();
+//    }
+
     foreach(QTcpSocket *socket, m_clients)
     {
         socket->close();
@@ -37,9 +43,21 @@ void Server::incomingConnection(qintptr handle)
     emit socket->connected();
 }
 
+bool Server::hasPendingConnections() const
+{
+    qInfo() << "hasPendingConnections() called...";
+    return QTcpServer::hasPendingConnections();
+}
+
+QTcpSocket *Server::nextPendingConnection()
+{
+    qInfo() << "nextPendingConnection() called...";
+    return QTcpServer::nextPendingConnection();
+}
+
 void Server::connected()
 {
-    QTcpSocket *socket = qobject_cast<QTcpSocket*>(sender());
+    QTcpSocket *socket = qobject_cast<QTcpSocket*>(QObject::sender());
     if(!socket) return;
 
     QByteArray data("Enter your name:");
@@ -48,7 +66,7 @@ void Server::connected()
 
 void Server::readyRead()
 {
-    QTcpSocket *socket = qobject_cast<QTcpSocket*>(sender());
+    QTcpSocket *socket = qobject_cast<QTcpSocket*>(QObject::sender());
     if(!socket) return;
 
     // Check the socket for other possible issues

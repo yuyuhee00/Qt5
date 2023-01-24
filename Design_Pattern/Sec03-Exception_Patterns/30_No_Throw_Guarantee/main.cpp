@@ -46,8 +46,6 @@ bool userIO(QTextStream &stream, QList<QString> &list)
 
     int id = 0;
     QString name = "";
-
-
     QStringList items = value.split(" ");
     if(items.length() < 2) return false;
 
@@ -80,7 +78,7 @@ int main(int argc, char *argv[])
     QList<QString> list;
     QTextStream stream(stdin); //Memory leak and potential crash
 
-   while(userIO(stream,list))
+   while(userIO(stream, list))
    {
        qInfo() << "Do it again...";
    }

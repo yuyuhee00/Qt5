@@ -15,7 +15,7 @@ void MyServer::aboutToQuit()
 // qintptr handle : incomming socket descriptor
 void MyServer::incomingConnection(qintptr handle)
 {
-    //Make our runnable
+    // Make our runnable
     MyConnection *client = new MyConnection();      // DANGER, pointer with no parent!
     client->setHandle(handle);                      // Set the handle
     client->setAutoDelete(true);                    // Tell the thread pool to delete this when done

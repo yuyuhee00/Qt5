@@ -9,6 +9,7 @@
 class Alarm : public QObject
 {
     Q_OBJECT
+
 public:
     explicit Alarm(QObject *parent = nullptr);
     ~Alarm();

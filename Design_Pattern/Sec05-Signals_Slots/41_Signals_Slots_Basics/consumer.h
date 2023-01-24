@@ -10,6 +10,7 @@
 class Consumer : public QObject
 {
     Q_OBJECT
+
 public:
     explicit Consumer(QObject *parent = nullptr);
 
@@ -17,6 +18,9 @@ signals:
 
 public slots:
     void readyProduct(QSharedPointer<MyClass> ptr);
+
+    // void readyProduct2(std::unique_ptr<MyClass> ptr);
+    void readyProduct3(std::shared_ptr<MyClass> ptr);
 };
 
 #endif // CONSUMER_H

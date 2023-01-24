@@ -10,6 +10,7 @@
 class MyServer : public QTcpServer
 {
     Q_OBJECT
+
 public:
     explicit MyServer(QObject *parent = nullptr);
 
@@ -17,7 +18,6 @@ signals:
 
 public slots:
     void aboutToQuit();
-
 
 protected:
     void incomingConnection(qintptr handle) override;

@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
     mTasks()
 {
     ui->setupUi(this);
+
     connect(ui->addTaskButton, &QPushButton::clicked, this, &MainWindow::addTask);
     updateStatus();
 }

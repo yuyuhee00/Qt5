@@ -8,9 +8,11 @@
 class Server : public QTcpServer
 {
     Q_OBJECT
+
 public:
     explicit Server(QObject *parent = nullptr);
     ~Server();
+
     void close();
 
 signals:
@@ -18,6 +20,8 @@ signals:
     // QTcpServer interface
 protected:
     void incomingConnection(qintptr handle) override;
+    bool hasPendingConnections() const override;
+    QTcpSocket *nextPendingConnection() override;
 
 public slots:
     void connected();

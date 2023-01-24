@@ -34,11 +34,12 @@ void testUnique()
 
     p1->test("From pointer 1");
 
-    std::unique_ptr<MyClass> p2 = std::move(p1); // take ownership
-    qInfo() << "p1=" << p1.get(); // set to nullptr
+    // take ownership
+    std::unique_ptr<MyClass> p2 = std::move(p1);
+    qInfo() << "p1=" << p1.get(); // set to nullptr (QObject(0x0)
     qInfo() << "p2=" << p2.get();
 
-    //T est the pointers
+    // Test the pointers
     if(p1.get() != nullptr) p1->test("From pointer 1");
     if(p2.get() != nullptr) p2->test("From pointer 2");
 }

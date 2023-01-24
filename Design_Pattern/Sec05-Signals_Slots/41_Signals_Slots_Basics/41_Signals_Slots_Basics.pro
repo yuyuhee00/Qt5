@@ -28,6 +28,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    SignalsAndSlots.h \
     consumer.h \
     myclass.h \
     producer.h

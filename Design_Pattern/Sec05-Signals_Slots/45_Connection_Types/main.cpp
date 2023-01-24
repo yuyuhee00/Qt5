@@ -23,12 +23,32 @@
 #include "myclass.h"
 
 /*
+ *
 Qt::ConnectionType::AutoConnection (Default)
+    - If the receiver lives in th thread that emits the signal, Qt::DirectConnection is used.
+      Otherwise, Qt::QueuedConnection is used.
+    - The connection type is determined when the signal is emitted.
+
 Qt::ConnectionType::DirectConnection
+    - The slot is invoked immedkiately when the signal is emmitted. The shot is executed in the signalling thread.
+
 Qt::ConnectionType::QueuedConnection
+    - The slot is invoked when control returns to the event loop of the receiver's therad. The slot is executed
+      in the receiver's thread.
+
 Qt::ConnectionType::BlockingQueuedConnection
+    - Same as Qt::QueuedConnection, except that the signalling thread blocks until the slot returns.
+      This connection must not be used if the receiver lives in the signalling thread, or else the application
+      will deadlock.
+
 Qt::ConnectionType::UniqueConnection
+    - This is a flat that can be combined with any one of the above connection types, using a bitwise OR.
+      When Qt::UniqueConnection is set, QObject::connect() will fail if the connection already exists
+      (i,e. if the same signal is already connected to the same slot for the same pair of objects).
+    - This flag was introduced in Qt 4.6
+
 */
+
 void test(MyClass *source, MyClass *destination, Qt::ConnectionType type = Qt::ConnectionType::AutoConnection, QThread *thread = nullptr)
 {
     QObject::connect(source, &MyClass::test, destination, &MyClass::onTest, type);

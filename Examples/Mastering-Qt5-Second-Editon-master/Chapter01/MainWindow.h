@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QVector>
+#include <QList>
 
 #include "Task.h"
 
@@ -17,6 +18,8 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+public:
     void updateStatus();
 
 public slots:
@@ -26,7 +29,10 @@ public slots:
 
 private:
     Ui::MainWindow *ui;
-    QVector<Task*> mTasks;
+
+    // QVector<Task*> mTasks;
+    // It could be possible to remove a task in middle of tasks
+    QList<Task*> mTasks;
 };
 
 #endif // MAINWINDOW_H

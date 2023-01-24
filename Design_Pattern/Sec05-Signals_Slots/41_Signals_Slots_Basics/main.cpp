@@ -25,6 +25,7 @@
 #include <QDebug>
 #include "producer.h"
 #include "consumer.h"
+#include "SignalsAndSlots.h"
 
 int main(int argc, char *argv[])
 {
@@ -33,9 +34,7 @@ int main(int argc, char *argv[])
     Producer producer;
     Consumer consumer;
 
-    //Connect the objects
-    QObject::connect(&producer, &Producer::readyProduct, &consumer, &Consumer::readyProduct);
-    QObject::connect(&a, &QCoreApplication::aboutToQuit, &producer, &Producer::stop);
+    ConnectProduerToConsumer(producer, consumer);
 
     producer.start();
 

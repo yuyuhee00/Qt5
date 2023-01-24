@@ -36,14 +36,14 @@ void userIO(QTextStream *stream, QList<QString> *list)
         if(!stream)
         {
             qWarning() << "stream not set";
-            userIO(stream,list);
+            userIO(stream, list);
             return;
         }
 
         if(!list)
         {
             qWarning() << "list not set";
-            userIO(stream,list);
+            userIO(stream, list);
             return;
         }
 
@@ -53,7 +53,7 @@ void userIO(QTextStream *stream, QList<QString> *list)
         if(value.isEmpty())
         {
             qWarning() << "No line read!";
-            userIO(stream,list);
+            userIO(stream, list);
             return;
         }
 
@@ -62,7 +62,7 @@ void userIO(QTextStream *stream, QList<QString> *list)
         if(items.length() < 2)
         {
             qWarning() << "Not enough items!";
-            userIO(stream,list);
+            userIO(stream, list);
             return;
         }
 
@@ -71,7 +71,7 @@ void userIO(QTextStream *stream, QList<QString> *list)
         if(!ok)
         {
             qWarning() << "Not a number";
-            userIO(stream,list);
+            userIO(stream, list);
             return;
         }
 
@@ -84,24 +84,22 @@ void userIO(QTextStream *stream, QList<QString> *list)
             qInfo() << "You entered:" << list->at(id);
         }
 
-
-        userIO(stream,list); //we live here forever - or until the user breaks it
+        userIO(stream, list); //we live here forever - or until the user breaks it
     }
     catch (const std::out_of_range& ex)
     {
         qInfo() << "Out of range" << ex.what();
-        userIO(stream,list);
+        userIO(stream, list);
     }
     catch (const std::exception& ex)
     {
         qInfo() << "Error:" << ex.what();
-        userIO(stream,list);
+        userIO(stream, list);
     }
     catch (...) {
         qInfo() << "Unknown error";
-        userIO(stream,list);
+        userIO(stream, list);
     }
-
 }
 
 

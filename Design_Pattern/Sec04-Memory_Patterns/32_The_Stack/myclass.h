@@ -8,6 +8,7 @@ class MyClass : public QObject
 {
     Q_OBJECT
 
+    // Q_DISABLE_COPY(MyClass);
     // Q_DISABLE_COPY_MOVE(MyClass);
 
 public:

@@ -28,25 +28,24 @@ void fillList(QList<MyClass*> &list, int max)
         myclass->setObjectName("Object " + QString::number(i));
         list.append(myclass);
     }
-
 }
 
 void demoLeak()
 {
     qInfo() << "Making a leak";
     QList<MyClass*> list;
-    fillList(list,5);
+    fillList(list, 5);
 
     list.clear();
 
-    //None of the pointers have been deleted!!!
+    // None of the pointers have been deleted!!!
 }
 
 void demoDanglingPointer()
 {
     qInfo() << "Making a dangling pointers";
     QList<MyClass*> list;
-    fillList(list,5);
+    fillList(list, 5);
 
     // Delete some memory
     // - memory is gone!
@@ -64,17 +63,19 @@ void demoDanglingPointer()
     {
         qInfo() << item->objectName();
     }
-
 }
 
 void demoCorrect()
 {
     qInfo() << "Making a pointers";
     QList<MyClass*> list;
-    fillList(list,5);
+    fillList(list, 5);
 
-    qDeleteAll(list); //Deletes the memory
-    list.clear(); //Removes the dangling pointers
+    // Deletes the memory
+    qDeleteAll(list);
+
+    // Removes the dangling pointers
+    list.clear();
 
     qInfo() << list.length();
 
@@ -82,7 +83,6 @@ void demoCorrect()
     {
         qInfo() << item->objectName();
     }
-
 }
 
 int main(int argc, char *argv[])

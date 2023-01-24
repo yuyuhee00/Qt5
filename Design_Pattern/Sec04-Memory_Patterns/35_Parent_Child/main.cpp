@@ -44,7 +44,7 @@ void listChild(MyClass *parent)
     {
         MyClass *child = qobject_cast<MyClass*>(obj);
 
-        //test child
+        // test child
         qInfo() << child;
     }
 }
@@ -70,11 +70,11 @@ void testQt()
 {
     MyClass parent(nullptr); //stack
     parent.setObjectName("parent");
+
     createChildren(&parent, 5);
     listChild(&parent);
     findChild(&parent, "Child 2");
 }
-
 
 
 int main(int argc, char *argv[])

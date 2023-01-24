@@ -32,6 +32,6 @@ void Alarm::timeout()
         //Sound the alarm
         qInfo() << this << "Alarm";
 
-        disconnect(timer, &QTimer::timeout, this, &Alarm::timeout);
+        QObject::disconnect(timer, &QTimer::timeout, this, &Alarm::timeout);
     }
 }

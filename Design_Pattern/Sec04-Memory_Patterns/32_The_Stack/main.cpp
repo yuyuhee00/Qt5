@@ -30,7 +30,8 @@
   https://doc.qt.io/qt-5/qobject.html#Q_DISABLE_COPY
   https://www.cleanqt.io/blog/why-qobject-subclasses-are-not-copyable
 
-  Because of Q_DISABLE_COPY we are forced to use pointers or address of!
+  Because of Q_DISABLE_COPY, Q_DISABLE_COPY_MOVE we are forced to use pointers or address of!
+
 
  */
 #include "myclass.h"
@@ -53,13 +54,13 @@ void testLifetime()
 void modClass(MyClass* myclass)
 {
     myclass->setObjectName("my class");
-    //myclass->deleteLater(); // anything on the stack should NOT be deleted!
+    // myclass->deleteLater(); // anything on the stack should NOT be deleted!
 }
 
 void modRef(MyClass& myclass)
 {
     myclass.setObjectName("my class");
-    //myclass.deleteLater(); // anything on the stack should NOT be deleted!
+    // myclass.deleteLater(); // anything on the stack should NOT be deleted!
 }
 
 
@@ -67,10 +68,10 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    //testLifetime();
+    // testLifetime();
 
     MyClass myclass;
-    //modClass(&myclass);
+    // modClass(&myclass);
 
     modRef(myclass);
 

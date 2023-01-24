@@ -19,10 +19,11 @@ public:
     void setHandle(const qintptr &handle);
 
 private:
+        void handleConnection();
+
+private:
     QTcpSocket *m_socket; //Has to be a pointer - QObject: Cannot create children for a parent that is in a different thread.
     qintptr m_handle;
-    void handleConnection();
-
 };
 
 #endif // MYCONNECTION_H

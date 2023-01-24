@@ -1,8 +1,10 @@
 TEMPLATE = subdirs
 
+CONFIG += sdk_no_version_check
+
 SUBDIRS += \
     mylib \
     myapp
 
-CONFIG += ordered
-CONFIG += sdk_no_version_check
+myapp.depends = mylib
+

@@ -32,7 +32,7 @@ void testScoped()
     // Take ownership as soon as we get it!
     QScopedPointer<MyClass> p(makeClass("my smart pointer"));
 
-    //COOOL
+    // COOOL
     p->test();
 
     // Goes out of scope and everything is removed
@@ -87,9 +87,9 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    //testScoped();
+    // testScoped();
 
-    //testScopedArray();
+    // testScopedArray();
 
     testCustomDelete();
 

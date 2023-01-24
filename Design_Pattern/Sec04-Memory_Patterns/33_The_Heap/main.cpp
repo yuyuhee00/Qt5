@@ -30,14 +30,14 @@ void testCopy(MyClass object)
 
 void testPointer(MyClass *object)
 {
-    //Whats happening here is C++ is giving us an object at the memory location
+    // Whats happening here is C++ is giving us an object at the memory location
     object->log("Pointer");
     qInfo() << object << "Length: " << object->data().length();
 }
 
 void testAddressOf(MyClass &object)
 {
-    //Whats happening here is C++ is giving us an object at the memory location
+    // Whats happening here is C++ is giving us an object at the memory location
     object.log("AddressOf");
     qInfo() << &object << "Length: " << object.data().length();
 }
@@ -57,7 +57,7 @@ void testCopyPointer()
 
     myclass->log("Hello");
 
-    myclass2 = myclass; //COPY
+    myclass2 = myclass; // COPY
 
     myclass2->log("World");
 
@@ -69,14 +69,14 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     MyClass m;
-    //Test copy
-    //testCopy(m);
+    // Test copy
+    // testCopy(m);
 
-    //testPointer(&m); //Basically same things
+    // testPointer(&m); //Basically same things
 
-    //testAddressOf(m);
+    // testAddressOf(m);
 
-    //testHeap();
+    // testHeap();
 
     testCopyPointer();
 

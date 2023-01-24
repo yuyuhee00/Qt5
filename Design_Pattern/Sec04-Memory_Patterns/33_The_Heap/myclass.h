@@ -12,19 +12,20 @@
 class MyClass
 {
 public:
-    //Constructor
+    // Constructor
     MyClass();
 
-    //Copy Constructor -  we tend to take this for granted and just let C++ copy like crazy
+    // Copy Constructor -  we tend to take this for granted and just let C++ copy like crazy
     MyClass (const MyClass &old);
 
-    //Deconstructor
+    // Deconstructor
     ~MyClass();
 
     QByteArray data() const;
     void setData(const QByteArray &data);
 
     void log(QString message);
+
 private:
     QByteArray m_data;
 };

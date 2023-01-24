@@ -23,7 +23,8 @@ void Job::run()
     double imageHalfHeight = mAreaSize.height() / 2.0;
 
     for (int imageX = 0; imageX < mAreaSize.width(); ++imageX) {
-        if (mAbort.load()) {
+        //if (mAbort.load()) {
+        if (mAbort.loadAcquire()) {
             return;
         }
 
@@ -74,5 +75,6 @@ void Job::setIterationMax(int value)
 
 void Job::abort()
 {
-    mAbort.store(true);
+    //mAbort.store(true);
+    mAbort.storeRelaxed(true);
 }

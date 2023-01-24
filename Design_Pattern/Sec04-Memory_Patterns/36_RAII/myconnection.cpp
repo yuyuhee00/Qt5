@@ -23,7 +23,7 @@ MyConnection::~MyConnection()
 
 void MyConnection::run()
 {
-    // xecution starts!
+    // Execution starts!
     // Gather resources here
 
     qInfo() << this << "Running" << QThread::currentThread();
@@ -32,16 +32,17 @@ void MyConnection::run()
 
     // Take socket ownership to me
     m_socket->setSocketDescriptor(m_handle);
-
     m_socket->waitForConnected();
+
     handleConnection();
 }
 
 void MyConnection::handleConnection()
 {
     qInfo() << this << "Handle Connection" << QThread::currentThread();
+
     QByteArray data;
-    data.append("Hello World");
+    data.append("Hello World\n");
     m_socket->write(data);
     m_socket->waitForBytesWritten();
     m_socket->close(); //Don't hold the connection open longer than needed

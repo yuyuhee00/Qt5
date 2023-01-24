@@ -83,7 +83,8 @@ void MandelbrotWidget::resizeEvent(QResizeEvent* event)
 
 void MandelbrotWidget::wheelEvent(QWheelEvent* event)
 {
-    int delta = event->delta();
+    //int delta = event->delta();
+    int delta = event->angleDelta().manhattanLength();
     mScaleFactor *= qPow(0.75, delta / 120.0);
     emit requestPicture(mAreaSize, mMoveOffset, mScaleFactor, mIterationMax);
 }

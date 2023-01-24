@@ -70,10 +70,10 @@ void userIO(QTextStream *stream, QList<QString> *list)
 
     QString name = items.at(1); //assuming  this exists
 
-    list->insert(id,name); //Assuming we made it this far
+    list->insert(id, name); //Assuming we made it this far
     qInfo() << "You entered:" << list->last();
 
-    userIO(stream,list); //we live here forever - or until the user breaks it
+    userIO(stream, list); //we live here forever - or until the user breaks it
 }
 
 
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     QList<QString> list;
     QTextStream *stream = new QTextStream(stdin); //Memory leak and potential crash
 
-    userIO(stream,&list);//recursive function. will kick out a warning
+    userIO(stream, &list);//recursive function. will kick out a warning
 
     return a.exec();
 }
