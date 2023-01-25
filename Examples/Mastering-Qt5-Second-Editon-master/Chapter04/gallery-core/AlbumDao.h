@@ -11,8 +11,9 @@ class AlbumDao
 {
 public:
     AlbumDao(QSqlDatabase& database);
-    void init() const;
 
+public:
+    void init() const;
     void addAlbum(Album& album) const;
     void updateAlbum(const Album& album) const;
     void removeAlbum(int id) const;

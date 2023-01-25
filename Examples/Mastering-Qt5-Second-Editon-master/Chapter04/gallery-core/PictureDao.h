@@ -11,8 +11,9 @@ class PictureDao
 {
 public:
     explicit PictureDao(QSqlDatabase& database);
-    void init() const;
 
+public:
+    void init() const;
     void addPictureInAlbum(int albumId, Picture& picture) const;
     void removePicture(int id) const;
     void removePicturesForAlbum(int albumId) const;
