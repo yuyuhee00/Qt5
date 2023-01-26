@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -19,6 +17,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QObject>
 #include <QTimer>
 #include <QThread>
@@ -31,8 +30,8 @@ QTimer *timer;
 
 void timeout()
 {
-    if(thread) return;
-    if(timer) return;
+    if(!thread) return;
+    if(!timer) return;
 
     if(thread->isRunning() == true && thread->isFinished() == false)
     {

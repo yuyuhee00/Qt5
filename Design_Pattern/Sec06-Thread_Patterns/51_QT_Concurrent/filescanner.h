@@ -11,6 +11,7 @@
 class FileScanner : public QObject
 {
     Q_OBJECT
+
 public:
     explicit FileScanner(QObject *parent = nullptr);
 
@@ -22,7 +23,6 @@ signals:
 private:
     int performscan(QString path);
     qint64 m_count;
-
 };
 
 #endif // FILESCANNER_H

@@ -46,15 +46,15 @@ int main(int argc, char *argv[])
 
     QThread::currentThread()->setObjectName("Main Thread");
 
-      QString path = getPath();
-      while (path.isEmpty()) {
-          path = getPath();
-      }
+//    QString path = getPath();
+//    while (path.isEmpty()) {
+//        path = getPath();
+//    }
 
-      qInfo() << path;
+//    qInfo() << path;
 
-      FileScanner fs;
-      fs.scan(path);
+    FileScanner fs;
+    fs.scan("/");
 
     return a.exec();
 }

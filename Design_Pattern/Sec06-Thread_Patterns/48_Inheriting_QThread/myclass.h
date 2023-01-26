@@ -8,9 +8,11 @@
 class MyClass : public QThread
 {
     Q_OBJECT
+
 public:
     explicit MyClass(QObject *parent = nullptr);
     ~MyClass();
+
 signals:
 
     // QThread interface

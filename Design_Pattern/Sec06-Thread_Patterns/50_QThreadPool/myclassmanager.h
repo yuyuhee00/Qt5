@@ -8,9 +8,11 @@
 class MyClassManager : public QObject
 {
     Q_OBJECT
+
 public:
     explicit MyClassManager(QObject *parent = nullptr);
 
+public:
     void run();
 
 signals:
@@ -19,7 +21,6 @@ public slots:
     void started();
     void finished();
     void progress(int value);
-
 };
 
 #endif // MYCLASSMANAGER_H

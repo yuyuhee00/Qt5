@@ -11,12 +11,16 @@ void FileScanner::scan(QString path)
     m_count = 0;
 
     // This could take a long time
-    QFuture<int> future = QtConcurrent::run(this, &FileScanner::performscan, path);
+    // QFuture<int> future = QtConcurrent::run(this, &FileScanner::performscan, path);
+    QFuture<int> future = QtConcurrent::run(&FileScanner::performscan, this, path);
 
     // Main thread is not blocked, we can do other things
     qInfo() << "Main thread is free to do other things...";
 
-    qInfo() << "Result:" << future.result(); //get the result from the Concurrent thread
+    // Do something on Main Thread..........
+
+    // Get the result from the Concurrent thread
+    qInfo() << "Result:" << future.result();
 }
 
 int FileScanner::performscan(QString path)

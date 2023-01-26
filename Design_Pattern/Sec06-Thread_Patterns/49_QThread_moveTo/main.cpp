@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
     What
@@ -17,6 +15,7 @@
 
 */
 
+#include <QCoreApplication>
 #include <QObject>
 #include <QTimer>
 #include <QThread>
@@ -41,6 +40,7 @@ void timeout()
     {
         qInfo() << "Thread is Finished!";
         timer->stop();
+
         thread->deleteLater();
         timer->deleteLater();
         myclass->deleteLater();
@@ -76,7 +76,6 @@ int main(int argc, char *argv[])
     thread->start(); //QThread::start calls QThread::run()
 
     //Do other things in the background
-
 
     return a.exec();
 }

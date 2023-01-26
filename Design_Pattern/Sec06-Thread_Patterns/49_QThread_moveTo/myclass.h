@@ -8,6 +8,7 @@
 class MyClass : public QObject
 {
     Q_OBJECT
+
 public:
     explicit MyClass(QObject *parent = nullptr);
     ~MyClass();
@@ -17,7 +18,6 @@ signals:
 
 public slots:
     void run();
-
 };
 
 #endif // MYCLASS_H

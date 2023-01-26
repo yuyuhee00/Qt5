@@ -10,6 +10,7 @@
 class MyClass : public QObject, public QRunnable
 {
     Q_OBJECT
+
 public:
     explicit MyClass(QObject *parent = nullptr);
     ~MyClass();

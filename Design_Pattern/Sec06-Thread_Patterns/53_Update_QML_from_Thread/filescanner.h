@@ -15,9 +15,9 @@ class FileScanner : public QObject
     Q_OBJECT
 
     Q_PROPERTY(QString path READ path)
+
 public:
     explicit FileScanner(QObject *parent = nullptr);
-
 
     QString path();
 
@@ -35,11 +35,9 @@ private slots:
     void finished(int value);
     void timeout();
 
-
 private:
     QTimer m_timer;
     int m_count;
-
 };
 
 #endif // FILESCANNER_H

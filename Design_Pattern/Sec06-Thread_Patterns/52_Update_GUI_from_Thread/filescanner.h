@@ -12,6 +12,7 @@
 class FileScanner : public QObject
 {
     Q_OBJECT
+
 public:
     explicit FileScanner(QObject *parent = nullptr);
 
@@ -32,7 +33,6 @@ private slots:
 private:
     QTimer m_timer;
     int m_count;
-
 };
 
 #endif // FILESCANNER_H

@@ -12,6 +12,7 @@
 class Scanner : public QObject, public QRunnable
 {
     Q_OBJECT
+
 public:
     explicit Scanner(QObject *parent = nullptr);
     void run() override;
@@ -28,7 +29,6 @@ private:
     QString m_path;
     int m_count;
     void performScan(QString path);
-
 };
 
 #endif // SCANNER_H
