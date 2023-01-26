@@ -1,8 +1,10 @@
-#include <QCoreApplication>
-
 /*
+ *
     What
     How to use a QObject and a template
+    - QObject has members :
+        QString objectName() const,
+        void setObjectName(QString const&)
 
     Description
     Pointers / Ref to the rescue!
@@ -15,6 +17,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include "myclass.h"
 #include "notqt.h"
@@ -23,7 +26,7 @@
 template <class T>
 void testQObject(T& x)
 {
-    if(!std::is_base_of<QObject, T>::value)
+    if(!std::is_base_of_v<QObject, T>)
     {
         qInfo() << "Not a QObject";
         return;
@@ -34,7 +37,8 @@ void testQObject(T& x)
 
 void testQObjectPtr(QObject *x)
 {
-    //No template maddness!!!!
+    Q_UNUSED(x)
+    // No template maddness!!!!
 }
 
 int main(int argc, char *argv[])
@@ -49,7 +53,6 @@ int main(int argc, char *argv[])
 
     testQObject(nq);
     qInfo() << nq.objectName();
-
 
     return a.exec();
 }

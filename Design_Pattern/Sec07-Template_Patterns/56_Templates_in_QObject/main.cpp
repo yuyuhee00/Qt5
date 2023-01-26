@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
     What
     Generics in QObjects
 
@@ -15,6 +14,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include "myclass.h"
 

@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
     What
     Using generics
 
@@ -13,8 +12,10 @@
     Example
     Basic generics
     QObjects typically don't work with generics as QObjects are not copyable
+ *
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include "myclass.h"
 
@@ -35,6 +36,7 @@ int main(int argc, char *argv[])
     qInfo() << "Double: " << valueDouble;
 
     QString valueString = add(QString("Hello"), QString("World"));
+    valueString = add(valueString, QString("\t%1 - %2").arg(valueInt).arg(valueDouble));
     qInfo() << "String: " << valueString;
 
     MyClass m1;
@@ -43,7 +45,7 @@ int main(int argc, char *argv[])
     m1.setValue(3);
     m2.setValue(5);
 
-    // Will not workwaaA
+    // QObjects typically don't work with generics as QObjects are not copyable
     // MyClass m3 = add(m1, m2);
 
     MyClass m3;

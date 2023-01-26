@@ -4,3 +4,4 @@ MyClass::MyClass(QObject *parent) : QObject(parent)
 {
 
 }
+

@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
     What
     Using Smart pointers with Qt Templated classes
 
@@ -12,13 +11,18 @@
 
     Example
     QSharedPointer
+
 */
 
+#include <QCoreApplication>
 #include <QDebug>
+#include <QScopedPointer>
+#include <QScopedArrayPointer>
 #include <QSharedPointer>
+#include <QWeakPointer>
 #include "myclass.h"
 
-void addItems(QList<QSharedPointer<MyClass>> &list)
+void addItems(QList<QSharedPointer<MyClass>>& list)
 {
      for(int i = 0; i < 10; i++)
      {
