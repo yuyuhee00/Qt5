@@ -68,9 +68,13 @@ std::unique_ptr<std::vector<std::unique_ptr<Picture>>> PictureDao::picturesForAl
     query.bindValue(":album_id", albumId);
     query.exec();
     DatabaseManager::debugQuery(query);
-    std::unique_ptr<std::vector<std::unique_ptr<Picture>>> list(new std::vector<std::unique_ptr<Picture>>());
+    //std::unique_ptr<std::vector<std::unique_ptr<Picture>>> list(new std::vector<std::unique_ptr<Picture>>());
+    using picture_T = std::unique_ptr<Picture>;
+    using picture_VecT = std::vector<picture_T >;
+    std::unique_ptr<picture_VecT> list(std::make_unique<picture_VecT>());
     while(query.next()) {
-        std::unique_ptr<Picture> picture(new Picture());
+        //std::unique_ptr<Picture> picture(new Picture());
+        picture_T picture(std::make_unique<Picture>());
         picture->setId(query.value("id").toInt());
         picture->setAlbumId(query.value("album_id").toInt());
         picture->setFileUrl(query.value("url").toString());

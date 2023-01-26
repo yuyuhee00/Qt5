@@ -6,6 +6,7 @@
 
 QT       += core gui widgets
 
+CONFIG += c++14
 CONFIG   += sdk_no_version_check
 
 TARGET = gallery-desktop
