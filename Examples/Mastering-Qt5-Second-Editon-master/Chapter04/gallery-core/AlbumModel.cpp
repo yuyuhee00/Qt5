@@ -13,9 +13,9 @@ QModelIndex AlbumModel::addAlbum(const Album& album)
 {
     int rowIndex = rowCount();
     beginInsertRows(QModelIndex(), rowIndex, rowIndex);
-    unique_ptr<Album> newAlbum(new Album(album));
+    std::unique_ptr<Album> newAlbum(std::make_unique<Album>(album));
     mDb.albumDao.addAlbum(*newAlbum);
-    mAlbums->push_back(move(newAlbum));
+    mAlbums->push_back(std::move(newAlbum));
     endInsertRows();
     return index(rowIndex, 0);
 }
@@ -48,8 +48,7 @@ QVariant AlbumModel::data(const QModelIndex& index, int role) const
 
 bool AlbumModel::setData(const QModelIndex& index, const QVariant& value, int role)
 {
-    if (!isIndexValid(index)
-            || role != Roles::NameRole) {
+    if (!isIndexValid(index) || role != Roles::NameRole) {
         return false;
     }
     Album& album = *mAlbums->at(index.row());
@@ -73,8 +72,7 @@ bool AlbumModel::removeRows(int row, int count, const QModelIndex& parent)
         const Album& album = *mAlbums->at(row + countLeft);
         mDb.albumDao.removeAlbum(album.id());
     }
-    mAlbums->erase(mAlbums->begin() + row,
-                  mAlbums->begin() + row + count);
+    mAlbums->erase(mAlbums->begin() + row, mAlbums->begin() + row + count);
     endRemoveRows();
     return true;
 }

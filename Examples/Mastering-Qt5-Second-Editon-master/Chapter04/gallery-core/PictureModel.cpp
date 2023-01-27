@@ -10,19 +10,18 @@ PictureModel::PictureModel(const AlbumModel& albumModel, QObject* parent) :
     QAbstractListModel(parent),
     mDb(DatabaseManager::instance()),
     mAlbumId(-1),
-    mPictures(new vector<unique_ptr<Picture>>())
+    mPictures(std::make_unique<std::vector<std::unique_ptr<Picture>>>())
 {
-    connect(&albumModel, &AlbumModel::rowsRemoved,
-            this, &PictureModel::deletePicturesForAlbum);
+    connect(&albumModel, &AlbumModel::rowsRemoved, this, &PictureModel::deletePicturesForAlbum);
 }
 
 QModelIndex PictureModel::addPicture(const Picture& picture)
 {
     int rows = rowCount();
     beginInsertRows(QModelIndex(), rows, rows);
-    unique_ptr<Picture>newPicture(new Picture(picture));
+    std::unique_ptr<Picture>newPicture = std::make_unique<Picture>(picture);
     mDb.pictureDao.addPictureInAlbum(mAlbumId, *newPicture);
-    mPictures->push_back(move(newPicture));
+    mPictures->push_back(std::move(newPicture));
     endInsertRows();
     return index(rows, 0);
 }
@@ -73,10 +72,8 @@ bool PictureModel::removeRows(int row, int count, const QModelIndex& parent)
         const Picture& picture = *mPictures->at(row + countLeft);
         mDb.pictureDao.removePicture(picture.id());
     }
-    mPictures->erase(mPictures->begin() + row,
-                    mPictures->begin() + row + count);
+    mPictures->erase(mPictures->begin() + row, mPictures->begin() + row + count);
     endRemoveRows();
-
 
     return true;
 }
@@ -112,7 +109,8 @@ void PictureModel::deletePicturesForAlbum()
 void PictureModel::loadPictures(int albumId)
 {
     if (albumId <= 0) {
-        mPictures.reset(new vector<unique_ptr<Picture>>());
+        //mPictures.reset(new std::vector<unique_ptr<Picture>>());
+        mPictures = std::make_unique<std::vector<unique_ptr<Picture>>>();
         return;
     }
     mPictures = mDb.pictureDao.picturesForAlbum(albumId);
