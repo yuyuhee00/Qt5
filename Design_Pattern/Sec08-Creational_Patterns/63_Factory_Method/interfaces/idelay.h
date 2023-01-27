@@ -6,10 +6,10 @@
 class iDelay
 {
 public:
+    virtual ~iDelay() {} //This will annoy people
 
     virtual void delay(int ms) = 0;
     virtual bool isComplete() = 0;
-    virtual ~iDelay() {} //This will annoy people
 };
 
 #endif // IDELAY_H

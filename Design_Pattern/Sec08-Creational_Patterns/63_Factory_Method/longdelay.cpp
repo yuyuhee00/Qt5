@@ -10,7 +10,6 @@ void LongDelay::delay(int ms)
 {
     m_complete = false;
     m_timer.singleShot(ms, this, &LongDelay::timeout);
-
 }
 
 bool LongDelay::isComplete()

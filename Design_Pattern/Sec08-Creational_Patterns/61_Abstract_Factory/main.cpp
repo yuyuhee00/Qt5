@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -7,6 +5,8 @@
 
   Description
   Create related items without specifying a concrete class
+  - C++ has no built-in concepts of interfaces. You can implement it using abstract classes which contains
+    only pure virtual functions.
 
   Why
   Future proof the application
@@ -17,6 +17,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QRandomGenerator>
 #include "cats/catfactory.h"

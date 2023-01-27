@@ -12,12 +12,12 @@ class ShortDelay : public QObject, public iDelay
 public:
     explicit ShortDelay(QObject *parent = nullptr);
 
-signals:
-
     // iDelay interface
 public:
     void delay(int ms) override;
     bool isComplete() override;
+
+signals:
 
 private:
     bool m_complete;

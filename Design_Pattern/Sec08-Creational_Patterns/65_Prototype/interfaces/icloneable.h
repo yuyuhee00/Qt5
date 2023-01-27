@@ -6,8 +6,8 @@
 class iCloneable
 {
 public:
-
     virtual ~iCloneable() {}
+
     virtual QObject* clone() = 0;
 };
 

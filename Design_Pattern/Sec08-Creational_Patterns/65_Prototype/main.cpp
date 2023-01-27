@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -21,6 +19,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "myclass.h"
 
 //This will fail and we can not get past the copy constructor being removed

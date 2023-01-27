@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -21,6 +19,7 @@
   http://www.nuonsoft.com/blog/2017/08/10/implementing-a-thread-safe-singleton-with-c11-using-magic-statics/
  */
 
+#include <QCoreApplication>
 #include "myclass.h"
 #include "singleton.h"
 #include <QDebug>

@@ -7,8 +7,9 @@
 class iDirector
 {
 public:
-    virtual iMeal* create(iBuilder *builder) = 0;
     virtual ~iDirector() {}; //we are going to make some people mad... but we need to free the memory
+
+    virtual iMeal* create(iBuilder *builder) = 0;
 };
 
 #endif // IDIRECTOR_H

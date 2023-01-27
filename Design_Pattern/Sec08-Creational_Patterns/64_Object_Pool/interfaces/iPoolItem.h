@@ -4,9 +4,10 @@
 class iPoolItem
 {
 public:
+    virtual ~iPoolItem() {}
+
     virtual void reset() = 0;
     virtual bool aquired() = 0;
-    virtual ~iPoolItem() {}
 };
 
 #endif // IPOOLITEM_H

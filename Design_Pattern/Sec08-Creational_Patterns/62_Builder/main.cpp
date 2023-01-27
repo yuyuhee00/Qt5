@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -9,9 +7,9 @@
   Separate the construction of a complex object from its representation so that the
   same construction process can create different representations.
   - Builder focuses on constrcuting a complex object step by step.
-  . Custormer -> director   -> nomal    -> normal burger
-                            -> turkey   -> turkey burger
-                            -> beggie   -> beggie burger
+  . Custormer -> director       ->hamburger builder    -> normal burger
+                                            -> turkeyburger builder  -> turkey burger
+                                            ->veggieburger builder   -> veggie burger
 
   Why
   Constructors are not always the best answer
@@ -26,6 +24,7 @@
 
 */
 
+#include <QCoreApplication>
 #include "interfaces/iDirector.h"
 #include "interfaces/iBuilder.h"
 #include "interfaces/iMeal.h"

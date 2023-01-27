@@ -7,6 +7,7 @@ class iPool
 {
 public:
     virtual ~iPool() {}
+
     virtual iPoolItem* aquire() = 0;
     virtual void release(iPoolItem* item) = 0;
 };

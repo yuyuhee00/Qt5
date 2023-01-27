@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -16,6 +14,8 @@
   Threaded vs non threaded (short delay vs long delay)
 
  */
+
+#include <QCoreApplication>
 #include <QObject>
 #include <QTimer>
 #include <QDebug>
@@ -72,10 +72,11 @@ int main(int argc, char *argv[])
     QObject::connect(&a, &QCoreApplication::aboutToQuit, timer.data(), &QTimer::stop);
     QObject::connect(timer.data(), &QTimer::timeout, timeout);
 
-    int value = getTimeout();
-    ptr.reset(getDelay(value));
+    // int value = getTimeout();
+    // ptr.reset(getDelay(value));
+    ptr.reset(getDelay(200));
     timer->start();
-    ptr->delay(value);
+    ptr->delay(1000);
 
     return a.exec();
 }

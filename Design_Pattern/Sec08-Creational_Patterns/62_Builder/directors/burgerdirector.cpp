@@ -14,8 +14,8 @@ iMeal *BurgerDirector::create(iBuilder *builder)
 {
     qInfo() << this << "building a burger";
 
-    //Do things in the order you want
-    //builder->someting();
+    // Do things in the order you want
+    // builder->someting();
 
     return builder->build();
 }

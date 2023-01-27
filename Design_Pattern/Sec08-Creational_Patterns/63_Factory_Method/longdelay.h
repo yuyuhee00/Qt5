@@ -12,12 +12,12 @@ class LongDelay : public QObject, public iDelay
 public:
     explicit LongDelay(QObject *parent = nullptr);
 
-signals:
-
     // iDelay interface
 public:
     void delay(int ms) override;
     bool isComplete() override;
+
+signals:
 
 private slots:
     void timeout();

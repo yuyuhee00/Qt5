@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
   What
   Object pool
@@ -18,6 +16,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "interfaces/iPoolItem.h"
 #include "pools/mypool.h"
 #include "pools/mypoolitem.h"
@@ -53,6 +52,7 @@ int main(int argc, char *argv[])
     useItems(pool, 5);
 
     MyPoolItem* item = static_cast<MyPoolItem*>(pool.aquire());
+    item->test();
 
     useItems(pool, 3);
 
