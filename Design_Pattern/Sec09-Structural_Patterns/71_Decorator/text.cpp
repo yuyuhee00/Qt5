@@ -7,9 +7,9 @@ Text::Text(QObject *parent) : QObject(parent)
 
 void Text::process(QString &input)
 {
-    if(parent())
+    if(this->parent())
     {
-        Text *text= qobject_cast<Text*>(parent());
+        Text *text= qobject_cast<Text*>(this->parent());
         if(text) text->process(input);
     }
 }

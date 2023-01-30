@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -19,10 +17,9 @@
 
  */
 
+#include <QCoreApplication>
 #include "filelogger.h"
 #include "logadapter.h"
-
-
 
 int main(int argc, char *argv[])
 {

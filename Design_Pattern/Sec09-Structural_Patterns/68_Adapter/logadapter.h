@@ -22,7 +22,6 @@ signals:
 
 private:
     FileLogger *m_logger;
-
 };
 
 #endif // LOGADAPTER_H

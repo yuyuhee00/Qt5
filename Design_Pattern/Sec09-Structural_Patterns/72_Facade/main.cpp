@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -20,6 +18,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "hotel.h"
 
 int main(int argc, char *argv[])
@@ -28,7 +27,6 @@ int main(int argc, char *argv[])
 
     Hotel hotel;
     hotel.bookRoom();
-
 
     return a.exec();
 }

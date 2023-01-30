@@ -1,10 +1,10 @@
 #include "lengthvalidator.h"
+#include <QRegularExpression>
 
 LengthValidator::LengthValidator(QObject *parent) : QObject(parent)
 {
 
 }
-
 
 bool LengthValidator::check(QString &value)
 {

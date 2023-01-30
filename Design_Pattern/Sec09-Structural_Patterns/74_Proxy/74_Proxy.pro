@@ -1,7 +1,6 @@
 QT -= gui
-QT += core5compat
 
-CONFIG += c++14 console
+CONFIG += c++11 console
 CONFIG -= app_bundle
 
 CONFIG += sdk_no_version_check
@@ -18,11 +17,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        main.cpp \
-        passwordvalidator.cpp \
-        validators/lengthvalidator.cpp \
-        validators/numbervalidator.cpp \
-        validators/specialvalidator.cpp
+        Person.cpp \
+        PettyCash.cpp \
+        PettyCashProtected.cpp \
+        main.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -30,8 +28,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    interfaces/iValidator.h \
-    passwordvalidator.h \
-    validators/lengthvalidator.h \
-    validators/numbervalidator.h \
-    validators/specialvalidator.h
+	Person.h \
+	PettyCash.h \
+	PettyCashProtected.h

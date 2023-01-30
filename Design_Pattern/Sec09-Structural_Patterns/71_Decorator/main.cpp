@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -18,6 +16,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QString>
 #include <QDebug>
 #include "text.h"

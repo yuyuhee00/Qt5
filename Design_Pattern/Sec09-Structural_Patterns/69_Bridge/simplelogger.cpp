@@ -5,7 +5,6 @@ SimpleLogger::SimpleLogger(QObject *parent) : QObject(parent)
 
 }
 
-
 void SimpleLogger::write(QString message)
 {
     QFile file("SimpleLogger.txt");

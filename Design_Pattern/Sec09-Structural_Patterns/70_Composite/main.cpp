@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -22,6 +20,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "school.h"
 #include "teacher.h"
 #include "student.h"

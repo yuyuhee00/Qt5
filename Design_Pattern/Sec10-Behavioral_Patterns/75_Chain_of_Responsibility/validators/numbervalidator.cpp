@@ -1,4 +1,5 @@
 #include "numbervalidator.h"
+#include <QRegularExpression>
 
 NumberValidator::NumberValidator(QObject *parent) : QObject(parent)
 {
@@ -8,7 +9,7 @@ NumberValidator::NumberValidator(QObject *parent) : QObject(parent)
 bool NumberValidator::check(QString &value)
 {
     qInfo()  << this << "Checking the for numbers";
-    QRegExp regex;
+    QRegularExpression regex;
     regex.setPattern("\\d"); // notice the double slash
     if(!value.contains(regex))
     {

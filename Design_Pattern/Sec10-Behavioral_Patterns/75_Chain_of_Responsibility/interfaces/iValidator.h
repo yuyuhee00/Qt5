@@ -5,6 +5,8 @@
 
 class iValidator{
 public:
+    virtual ~iValidator() {}
+
     virtual bool check(QString &value) = 0;
     virtual bool checkNext(QString &value) = 0;
 };

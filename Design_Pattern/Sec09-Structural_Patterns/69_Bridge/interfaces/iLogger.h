@@ -9,6 +9,7 @@ class iLogger
 {
 public:
     virtual ~iLogger() {}
+
     virtual void write(QString message) = 0;
 };
 

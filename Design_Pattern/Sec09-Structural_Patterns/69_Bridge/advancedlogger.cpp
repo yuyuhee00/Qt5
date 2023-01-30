@@ -5,7 +5,6 @@ AdvancedLogger::AdvancedLogger(QObject *parent) : QObject(parent)
 
 }
 
-
 void AdvancedLogger::write(QString message)
 {
     QFile file("AdvancedLogger.txt");
