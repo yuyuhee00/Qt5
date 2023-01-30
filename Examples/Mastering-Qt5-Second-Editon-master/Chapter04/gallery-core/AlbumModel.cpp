@@ -44,6 +44,20 @@ QVariant AlbumModel::data(const QModelIndex& index, int role) const
         default:
             return QVariant();
     }
+
+//    if(role == Qt::DisplayRole) {
+//        const int pos = index.row();
+//        const Album& album = *mAlbums->at(pos);
+
+//        switch(pos) {
+//        case Roles::IdRole:
+//            return album.id();
+//        case Roles::NameRole:
+//            return album.name();
+//        }
+//    }
+
+//    return QVariant();
 }
 
 bool AlbumModel::setData(const QModelIndex& index, const QVariant& value, int role)

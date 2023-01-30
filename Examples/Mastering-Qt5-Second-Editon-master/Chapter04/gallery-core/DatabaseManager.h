@@ -16,10 +16,10 @@ const QString DATABASE_FILENAME = "gallery.db";
 class DatabaseManager
 {
 public:
-    static void debugQuery(const QSqlQuery& query);
+        ~DatabaseManager();
 
+    static void debugQuery(const QSqlQuery& query);
     static DatabaseManager& instance();
-    ~DatabaseManager();
 
 protected:
     DatabaseManager(const QString& path = DATABASE_FILENAME);

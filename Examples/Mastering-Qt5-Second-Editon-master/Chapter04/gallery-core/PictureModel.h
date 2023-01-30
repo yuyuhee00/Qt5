@@ -16,6 +16,7 @@ class AlbumModel;
 class GALLERYCORESHARED_EXPORT PictureModel : public QAbstractListModel
 {
     Q_OBJECT
+
 public:
 
     enum Roles {

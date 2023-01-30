@@ -22,8 +22,8 @@ DatabaseManager&DatabaseManager::instance()
 }
 
 DatabaseManager::DatabaseManager(const QString& path) :
-    mDatabase(new QSqlDatabase(QSqlDatabase::addDatabase("QSQLITE"))),
-    albumDao(*mDatabase),
+    mDatabase(new QSqlDatabase(QSqlDatabase::addDatabase("QSQLITE"))) ,
+    albumDao(*mDatabase) ,
     pictureDao(*mDatabase)
 {
     mDatabase->setDatabaseName(path);
