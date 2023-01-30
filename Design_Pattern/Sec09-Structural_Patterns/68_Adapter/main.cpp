@@ -21,6 +21,10 @@
 #include "filelogger.h"
 #include "logadapter.h"
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);

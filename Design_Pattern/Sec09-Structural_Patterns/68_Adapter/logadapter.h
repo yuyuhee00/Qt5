@@ -19,7 +19,6 @@ public:
 
 signals:
 
-
 private:
     FileLogger *m_logger;
 };

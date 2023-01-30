@@ -2,7 +2,6 @@
 
 FileLogger::FileLogger(QObject *parent) : QObject(parent)
 {
-
 }
 
 void FileLogger::write(QString message)
