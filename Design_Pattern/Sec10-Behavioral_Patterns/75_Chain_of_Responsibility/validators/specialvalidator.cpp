@@ -26,13 +26,13 @@ bool SpecialValidator::check(QString &value)
 
 bool SpecialValidator::checkNext(QString &value)
 {
-    if(children().length() == 0)
+    if(this->children().length() == 0)
     {
         qInfo() << this << "No next validator!";
         return true;
     }
 
-    iValidator* validator = dynamic_cast<iValidator*>(children().at(0));
+    iValidator* validator = dynamic_cast<iValidator*>(this->children().at(0));
     if(!validator)
     {
         qInfo() << this << "No castable next validator!";

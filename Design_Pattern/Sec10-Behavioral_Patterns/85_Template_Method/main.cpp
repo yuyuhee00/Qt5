@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -21,6 +19,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "baker.h"
 
 int main(int argc, char *argv[])

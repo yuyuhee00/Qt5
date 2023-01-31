@@ -20,10 +20,10 @@ void Auctioneer::sellThing(QString item, int limit)
 void Auctioneer::bid(int value)
 {
     if(!m_timer.isActive()) return;
-    if(!sender()) return;
+    if(! this->sender()) return;
 
-    m_bids.insert(sender(), value);
-    qInfo() << sender() << " bids: " << value;
+    m_bids.insert(this->sender(), value);
+    qInfo() << this->sender() << " bids: " << value;
 }
 
 void Auctioneer::timeout()
@@ -36,7 +36,8 @@ void Auctioneer::timeout()
 void Auctioneer::pickWinner()
 {
     m_timer.stop();
-    QObject *winner;
+
+    QObject *winner = nullptr;
     int highest = 0;
 
     foreach(QObject* key, m_bids.keys())
@@ -50,7 +51,7 @@ void Auctioneer::pickWinner()
         }
     }
 
-    if(!winner)
+    if(winner == nullptr)
     {
         qInfo() << "No Winners!";
     }

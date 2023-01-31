@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -16,6 +14,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QFile>
 #include "logger.h"
 
@@ -28,10 +27,16 @@ int main(int argc, char *argv[])
     logger.log("Hello World"); // Should warn us and somewhat works!
 
     QFile file("test.txt");
+//    if(! file.open(QFile::ReadWrite | QFile::Text)) {
+//        if(file.exists()) {
+//            logger.setFile(&file);
+//            logger.log("Hello again");
+//            file.close();
+//        }
+//    }
+
     logger.setFile(&file);
-
     logger.log("Hello again");
-
     file.close();
 
     return a.exec();

@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -19,8 +17,10 @@
 
  */
 
+#include <QCoreApplication>
 #include "cart.h"
 #include "shirt.h"
+#include "Pants.h"
 
 int main(int argc, char *argv[])
 {
@@ -30,6 +30,8 @@ int main(int argc, char *argv[])
     Shirt shirt;
     shirt.accept(&cart);
 
+    Pants pants;
+    pants.accept(&cart);
 
     return a.exec();
 }

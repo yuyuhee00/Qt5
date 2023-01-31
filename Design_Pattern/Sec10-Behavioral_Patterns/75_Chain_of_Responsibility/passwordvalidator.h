@@ -10,6 +10,7 @@ class PasswordValidator : public QObject
 
 public:
     explicit PasswordValidator(QObject *parent = nullptr);
+
     bool check(QString &value);
 
 signals:

@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -18,6 +16,7 @@
   Note...Qt has a QStateMachine we will cover later but this is different!
  */
 
+#include <QCoreApplication>
 #include "trafficlight.h"
 
 int main(int argc, char *argv[])

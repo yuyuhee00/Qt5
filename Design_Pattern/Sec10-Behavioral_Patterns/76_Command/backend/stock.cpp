@@ -6,6 +6,11 @@ Stock::Stock(QString name, int value, QObject *parent) : QObject(parent)
     m_quantity = value;
 }
 
+Stock::~Stock()
+{
+     qInfo() << "Stock Destroyed";
+}
+
 QString Stock::symbol() const
 {
     return m_symbol;

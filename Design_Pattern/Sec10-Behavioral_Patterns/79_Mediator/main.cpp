@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -17,6 +15,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "manager.h"
 #include "developer.h"
 #include "marketing.h"
@@ -34,7 +33,7 @@ int main(int argc, char *argv[])
         Developer *dev = new Developer(&manager);
         developers.append(dev);
 
-        QObject::connect(&manager, &Manager::getToWork, dev,&Developer::createPrograms);
+        QObject::connect(&manager, &Manager::getToWork, dev, &Developer::createPrograms);
 
         QObject::connect(dev, &Developer::completed, &manager, &Manager::complete);
     }

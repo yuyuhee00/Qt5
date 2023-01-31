@@ -13,6 +13,8 @@ class SellOrder : public QObject, public iOrder
 
 public:
     explicit SellOrder(Stock *stock,QObject *parent = nullptr);
+    ~SellOrder();
+
     void execute() override;
     Stock *stock() const;
 

@@ -23,7 +23,6 @@ void TrafficLight::stop()
     m_current->powerOff();
     delete m_current;
     m_current = nullptr;
-
 }
 
 iLight *TrafficLight::state()

@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -17,6 +15,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QRandomGenerator>
 #include "interfaces/iWorker.h"
@@ -48,7 +47,7 @@ void fillList(QList<iWorker*> &list)
 
 void performWork(QList<iWorker*> &list)
 {
-    foreach (iWorker *worker, list)
+    foreach (auto worker, list)
     {
         worker->work();
     }
@@ -59,8 +58,10 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     QList<iWorker*> list;
+
     fillList(list);
     performWork(list);
+
     qDeleteAll(list);
     list.clear();
 

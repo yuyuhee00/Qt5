@@ -19,6 +19,9 @@ signals:
     // iVisitor interface
 public:
     void visit(iElement *element) override;
+
+private:
+    double m_total;
 };
 
 #endif // CART_H

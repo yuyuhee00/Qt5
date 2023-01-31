@@ -5,7 +5,6 @@ Surgen::Surgen(QObject *parent) : QObject(parent)
 
 }
 
-
 void Surgen::work()
 {
     qInfo() << this << "Put on gown and mask";

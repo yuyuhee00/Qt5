@@ -12,6 +12,8 @@ class BuyOrder : public QObject, public iOrder
 
 public:
     explicit BuyOrder(Stock *stock,QObject *parent = nullptr);
+    ~BuyOrder();
+
     void execute() override;
     Stock *stock() const;
 

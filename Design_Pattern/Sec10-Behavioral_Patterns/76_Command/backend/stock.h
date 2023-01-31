@@ -10,6 +10,7 @@ class Stock : public QObject
 
 public:
     explicit Stock(QString name, int value, QObject *parent = nullptr);
+    ~ Stock();
 
     QString symbol() const;
     void setSymbol(const QString &symbol);

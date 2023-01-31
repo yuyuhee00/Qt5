@@ -5,7 +5,6 @@ Construction::Construction(QObject *parent) : QObject(parent)
 
 }
 
-
 void Construction::work()
 {
     qInfo() << this << "Mix concrete";

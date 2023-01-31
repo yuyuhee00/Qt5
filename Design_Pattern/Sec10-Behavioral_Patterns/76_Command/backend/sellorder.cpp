@@ -7,6 +7,10 @@ SellOrder::SellOrder(Stock *stock, QObject *parent) : QObject(parent)
     if(m_stock) m_stock->setParent(this);
 }
 
+SellOrder::~SellOrder()
+{
+     qInfo() << "SellOrder Destroyed";
+}
 
 void SellOrder::execute()
 {

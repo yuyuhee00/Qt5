@@ -7,6 +7,10 @@ BuyOrder::BuyOrder(Stock *stock, QObject *parent) : QObject(parent)
     if(m_stock) m_stock->setParent(this);
 }
 
+BuyOrder::~BuyOrder()
+{
+     qInfo() << "BuyOrder Destroyed";
+}
 
 void BuyOrder::execute()
 {

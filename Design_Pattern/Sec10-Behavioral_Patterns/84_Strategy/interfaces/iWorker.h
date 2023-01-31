@@ -5,6 +5,7 @@ class iWorker
 {
 public:
     virtual ~iWorker() {} //this will make people mad
+
     virtual void work() = 0;
 };
 

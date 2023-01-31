@@ -10,6 +10,7 @@ class Manager : public QObject
 
 public:
     explicit Manager(QObject *parent = nullptr);
+
     void startProject();
 
 signals:

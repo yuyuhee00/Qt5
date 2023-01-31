@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -17,6 +15,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include "backend/buyorder.h"
 #include "backend/sellorder.h"
@@ -27,15 +26,16 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    Broker broker;
-    qInfo() << "Adding orders";
-    broker.addOrder(new BuyOrder(new Stock("AAPL", 100)));
-    broker.addOrder(new SellOrder(new Stock("JNJ", 15)));
-    broker.addOrder(new BuyOrder(new Stock("ATVI", 5)));
+    {
+        Broker broker;
+        qInfo() << "Adding orders";
+        broker.addOrder(new BuyOrder(new Stock("AAPL", 100)));
+        broker.addOrder(new SellOrder(new Stock("JNJ", 15)));
+        broker.addOrder(new BuyOrder(new Stock("ATVI", 5)));
 
-    qInfo() << "Place orders...";
-    broker.placeOrders();
-
+        qInfo() << "Place orders...";
+        broker.placeOrders();
+    }
 
     return a.exec();
 }

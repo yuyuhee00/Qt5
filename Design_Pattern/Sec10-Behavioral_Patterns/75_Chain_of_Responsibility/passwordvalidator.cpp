@@ -21,7 +21,7 @@ bool PasswordValidator::check(QString &value)
         return true;
     }
 
-    iValidator* validator = dynamic_cast<iValidator*>(children().at(0));
+    iValidator* validator = dynamic_cast<iValidator*>(this->children().at(0));
     if(!validator)
     {
         qInfo() << this << "No castable next validator!";

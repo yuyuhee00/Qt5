@@ -3,8 +3,9 @@
 
 class iOrder {
 public:
-    virtual void execute() = 0;
     virtual ~iOrder() {} //This will make people mad
+
+      virtual void execute() = 0;
 };
 
 #endif // IORDER_H

@@ -5,6 +5,8 @@
 #include <QDebug>
 #include "interfaces/iOrder.h"
 
+#include <list>
+
 class Broker : public QObject
 {
     Q_OBJECT
@@ -20,6 +22,8 @@ signals:
 
 private:
     QList<iOrder*> m_orders;
+
+    //std::unique_ptr<std::list<iOrder*>> m_orders;
     void cleanup();
 };
 

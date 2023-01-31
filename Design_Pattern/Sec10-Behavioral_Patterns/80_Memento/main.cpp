@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -17,6 +15,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include "memento.h"
 
