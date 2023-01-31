@@ -32,25 +32,27 @@ void ThumbnailProxyModel::setSourceModel(QAbstractItemModel* sourceModel)
     });
 
     connect(sourceModel, &QAbstractItemModel::rowsInserted, [this](const QModelIndex& parent, int first, int last) {
-        generateThumbnails(index(first, 0), last - first + 1);
+        Q_UNUSED(parent)
+        generateThumbnails(this->index(first, 0), last - first + 1);
     });
 }
 
 PictureModel* ThumbnailProxyModel::pictureModel() const
 {
-    return static_cast<PictureModel*>(sourceModel());
+    return static_cast<PictureModel*>(this->sourceModel());
 }
 
 void ThumbnailProxyModel::reloadThumbnails()
 {
     qDeleteAll(mThumbnails);
     mThumbnails.clear();
-    generateThumbnails(index(0, 0), rowCount());
+
+    generateThumbnails(this->index(0, 0), this->rowCount());
 }
 
 void ThumbnailProxyModel::generateThumbnails(const QModelIndex& startIndex, int count)
 {
-    if (!startIndex.isValid()) {
+    if (! startIndex.isValid()) {
         return;
     }
 

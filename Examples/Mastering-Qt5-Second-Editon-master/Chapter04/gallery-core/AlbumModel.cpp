@@ -11,13 +11,13 @@ AlbumModel::AlbumModel(QObject* parent) :
 
 QModelIndex AlbumModel::addAlbum(const Album& album)
 {
-    int rowIndex = rowCount();
+    int rowIndex = this->rowCount();
     beginInsertRows(QModelIndex(), rowIndex, rowIndex);
     std::unique_ptr<Album> newAlbum(std::make_unique<Album>(album));
     mDb.albumDao.addAlbum(*newAlbum);
     mAlbums->push_back(std::move(newAlbum));
     endInsertRows();
-    return index(rowIndex, 0);
+    return this->index(rowIndex, 0);
 }
 
 int AlbumModel::rowCount(const QModelIndex& parent) const
@@ -28,7 +28,7 @@ int AlbumModel::rowCount(const QModelIndex& parent) const
 
 QVariant AlbumModel::data(const QModelIndex& index, int role) const
 {
-    if (!isIndexValid(index)) {
+    if (! this->isIndexValid(index)) {
         return QVariant();
     }
     const Album& album = *mAlbums->at(index.row());
@@ -62,7 +62,7 @@ QVariant AlbumModel::data(const QModelIndex& index, int role) const
 
 bool AlbumModel::setData(const QModelIndex& index, const QVariant& value, int role)
 {
-    if (!isIndexValid(index) || role != Roles::NameRole) {
+    if (!this->isIndexValid(index) || role != Roles::NameRole) {
         return false;
     }
     Album& album = *mAlbums->at(index.row());
