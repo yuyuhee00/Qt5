@@ -13,12 +13,14 @@
 class Loader : public QObject
 {
     Q_OBJECT
+
 public:
     explicit Loader(QObject *parent = nullptr);
     ~Loader();
 
     void loadPlugins(QString path);
     void execute(QString command, QStringList args);
+
 signals:
 
 private:

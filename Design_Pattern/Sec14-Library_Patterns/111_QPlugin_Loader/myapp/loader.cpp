@@ -11,6 +11,7 @@ Loader::~Loader()
     {
         if(loader->isLoaded()) loader->unload();
     }
+
     qDeleteAll(m_plugins);
     m_plugins.clear();
 }
@@ -44,7 +45,7 @@ void Loader::loadPlugins(QString path)
         m_plugins.append(pl);
     }
 
-    //Show the loaded plugins
+    // Show the loaded plugins
     qInfo() << "Loaded Plugins:";
     foreach(QPluginLoader *loader, m_plugins)
     {

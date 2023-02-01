@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  Use a lib without creating a dependacy tree
 
@@ -17,7 +16,7 @@
     WHAT A PAIN
  */
 
-
+#include <QCoreApplication>
 #include <QDebug>
 #include <QLibrary>
 
@@ -40,7 +39,8 @@ bool loadlib(QLibrary *lib, QString path)
 void callFunction(QLibrary *lib)
 {
     double value = -1;
-    typedef int (*AvgFunction)(int, int);
+    //typedef int (*AvgFunction)(int, int);
+    using AvgFunction = int(*)(int,int);
     AvgFunction avg = (AvgFunction) lib->resolve("avg");
 
     if(avg) value = avg(5,8);
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    QString path = "/Users/yuyuhee/Language/C++/Qt5/build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/110_Loading_Lib_Dynamically/bla/libbla.1.0.0.dylib";
+    QString path = "/Users/yuyuhee/Language/Qt5/Design_Pattern/Sec14-Library_Patterns/build-110_Loading_Lib_Dynamically-Qt_6_4_2_for_macOS-Debug/bla/libbla.1.0.0.dylib";
     QLibrary lib;
 
     //load

@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
  What
  QMake starting a script before compiling
@@ -15,6 +13,8 @@
  Running python file
 
  */
+
+#include <QCoreApplication>
 
 int main(int argc, char *argv[])
 {
