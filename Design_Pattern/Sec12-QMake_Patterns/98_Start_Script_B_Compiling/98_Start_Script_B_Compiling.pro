@@ -1,6 +1,6 @@
 QT -= gui
 
-CONFIG += c++11 console
+CONFIG += c++14 console
 CONFIG -= app_bundle
 
 CONFIG += sdk_no_version_check
@@ -19,13 +19,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp
 
-
 extralib.target = extra
 extralib.commands = echo "Script starting..."; \
                     python3 $$PWD/test.py; \
                     echo "Scripts complete"; \
 
 QMAKE_EXTRA_TARGETS += extralib
+
 PRE_TARGETDEPS = extra
 
 # Default rules for deployment.

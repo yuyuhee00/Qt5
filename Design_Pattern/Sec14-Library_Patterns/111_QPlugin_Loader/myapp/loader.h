@@ -18,6 +18,7 @@ public:
 
     void loadPlugins(QString path);
     void execute(QString command, QStringList args);
+
 signals:
 
 private:

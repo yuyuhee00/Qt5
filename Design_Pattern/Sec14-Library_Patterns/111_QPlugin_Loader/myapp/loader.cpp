@@ -12,6 +12,7 @@ Loader::~Loader()
     {
         if(loader->isLoaded()) loader->unload();
     }
+
     qDeleteAll(m_plugins);
     m_plugins.clear();
 }

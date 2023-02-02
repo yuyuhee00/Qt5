@@ -4,7 +4,7 @@ QT += network
 TEMPLATE = lib
 DEFINES += UPLOADER_LIBRARY
 
-CONFIG += c++11
+CONFIG += c++14
 
 CONFIG += sdk_no_version_check
 

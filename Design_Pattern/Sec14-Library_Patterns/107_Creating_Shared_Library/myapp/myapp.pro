@@ -1,7 +1,7 @@
 QT -= gui
 QT += network
 
-CONFIG += c++11 console
+CONFIG += c++14 console
 CONFIG -= app_bundle
 
 CONFIG += sdk_no_version_check
