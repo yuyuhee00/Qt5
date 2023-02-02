@@ -40,6 +40,7 @@ private:
 
 private:
     Ui::AlbumWidget* ui;
+
     AlbumModel* mAlbumModel;
     QItemSelectionModel* mAlbumSelectionModel;
 

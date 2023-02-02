@@ -8,11 +8,10 @@
 #include <QFileInfoList>
 #include <QDir>
 
-#include "interfaces/iPlugin.h"
-
 class Loader : public QObject
 {
     Q_OBJECT
+
 public:
     explicit Loader(QObject *parent = nullptr);
     ~Loader();

@@ -1,8 +1,8 @@
-import QtQuick 2.6
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.0
-import QtQuick.Dialogs 1.2
-import QtQuick.Window 2.2
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import QtQuick.Dialogs
+import QtQuick.Window
 import "."
 
 Dialog {
@@ -11,12 +11,18 @@ Dialog {
     property string hint: ""
     property alias editText : editTextItem
 
-    standardButtons: StandardButton.Ok | StandardButton.Cancel
+//    standardButtons: StandardButton.Ok | StandardButton.Cancel
+    standardButtons: Dialog.Ok | Dialog.Cancel
     onVisibleChanged: {
         editTextItem.focus = true
         editTextItem.selectAll()
     }
-    onButtonClicked: {
+
+//    onButtonClicked: {
+//        Qt.inputMethod.hide();
+//    }
+
+    onAccepted: {
         Qt.inputMethod.hide();
     }
 

@@ -1,7 +1,7 @@
-import QtQuick 2.6
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.0
-import QtQuick.Dialogs 1.2
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import QtQuick.Dialogs
 import "."
 
 PageTheme {
@@ -54,7 +54,7 @@ PageTheme {
     FileDialog {
         id: dialog
         title: "Open file"
-        folder: shortcuts.pictures
+        //folder: shortcuts.pictures
         onAccepted: {
             var pictureUrl = dialog.fileUrl
             pictureModel.addPictureFromUrl(pictureUrl)

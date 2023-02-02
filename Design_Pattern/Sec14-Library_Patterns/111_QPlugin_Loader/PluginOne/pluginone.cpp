@@ -13,7 +13,7 @@ QString PluginOne::name()
 
 QStringList PluginOne::commands()
 {
-    //list of supported commands
+    // list of supported commands
     QStringList list;
 
     list << "kittens";

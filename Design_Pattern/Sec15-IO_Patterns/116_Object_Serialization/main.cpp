@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  Data Class
 
@@ -19,6 +18,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "animal.h"
 #include <QDateTime>
 #include <QDebug>

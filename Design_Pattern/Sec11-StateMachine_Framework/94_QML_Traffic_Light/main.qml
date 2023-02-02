@@ -1,13 +1,12 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
-import QtQuick.Controls 2.3
+import QtQuick
+import QtQuick.Window
+import QtQuick.Controls
 
 Window {
     id: window
     visible: true
     width: 640
     height: 480
-    // @disable-check M16
     title: qsTr("Hello World")
 
     TrafficLight {
@@ -42,7 +41,7 @@ Window {
             id: btnToggle
             text: qsTr("Toggle")
             onClicked: {
-                if(trafficLight.state == "stop")
+                if(trafficLight.state === "stop")
                 {
                     trafficLight.state = "go"
                 }

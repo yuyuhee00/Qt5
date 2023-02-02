@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  Text Streams
 
@@ -15,6 +14,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QFile>
 #include <QTextStream>
@@ -22,7 +22,9 @@
 void writeFile(QFile &file)
 {
     qInfo() << "Writing lines";
-    QTextStream stream(&file); //let this handle the details for us, speed, encoding all that
+
+    // let this handle the details for us, speed, encoding all that
+    QTextStream stream(&file);
     QString line = "Hello World";
 
     for(int i = 0; i < 100; i++)
@@ -34,7 +36,9 @@ void writeFile(QFile &file)
 void readFile(QFile &file)
 {
     qInfo() << "Reading lines";
-    QTextStream stream(&file); //let this handle the details for us, speed, encoding all that
+
+    // let this handle the details for us, speed, encoding all that
+    QTextStream stream(&file);
 
     stream.seek(0);
     QString line;
@@ -42,11 +46,10 @@ void readFile(QFile &file)
 
     while (stream.readLineInto(&line))
     {
-        //Do something with the line
+        // Do something with the line
         lines++;
     }
     qInfo() << lines << "lines read";
-
 }
 
 int main(int argc, char *argv[])

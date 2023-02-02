@@ -26,13 +26,12 @@ private slots:
 private:
     Ui::Dialog *ui;
 
-    //The state machine
+    // The state machine
     QStateMachine m_statemachine;
 
-    //Some states we want to have
+    // Some states we want to have
     QState m_state1;
     QState m_state2;
     QState m_state3;
-
 };
 #endif // DIALOG_H

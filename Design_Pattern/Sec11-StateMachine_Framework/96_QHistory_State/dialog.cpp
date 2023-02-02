@@ -12,7 +12,6 @@ Dialog::Dialog(QWidget *parent)
 
     createStates();
     m_statemachine.start();
-
 }
 
 Dialog::~Dialog()
@@ -30,8 +29,6 @@ void Dialog::on_btnBack_clicked()
 {
     if(!m_statemachine.isRunning()) return;
     qInfo() << "Back Clicked";
-
-
 }
 
 void Dialog::stateEntered()
@@ -72,8 +69,8 @@ void Dialog::createStates()
         state->assignProperty(ui->lineEdit,"text",state->objectName());
         if(previous)
         {
-            state->addTransition(ui->btnBack,&QPushButton::clicked, previous);
-            previous->addTransition(ui->btnNext,&QPushButton::clicked, state);
+            state->addTransition(ui->btnBack, &QPushButton::clicked, previous);
+            previous->addTransition(ui->btnNext, &QPushButton::clicked, state);
         }
 
         previous = state;
@@ -90,7 +87,6 @@ void Dialog::on_lineEdit_textEdited(const QString &arg1)
     qInfo() << "Edit" << arg1;
     m_current->setObjectName(arg1);
     m_current->assignProperty(ui->lineEdit, "text", m_current->objectName());
-
 }
 
 void Dialog::on_btnBookmark_clicked()

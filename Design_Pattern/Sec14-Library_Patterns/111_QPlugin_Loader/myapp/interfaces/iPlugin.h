@@ -16,7 +16,7 @@ public:
     virtual void execute(QString command, QStringList args) = 0;
 };
 
-//Declare an interface that we can use
+// Declare an interface that we can use
 #define iInterface_IID "com.company.iPlugin/1.0"
 Q_DECLARE_INTERFACE(iPlugin, iInterface_IID)
 

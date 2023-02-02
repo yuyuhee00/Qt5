@@ -1,12 +1,12 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
+import QtQuick
+import QtQuick.Window
+import QtQuick.Controls
 
 Window {
     id: window
     visible: true
     width: 640
     height: 480
-    // @disable-check M16
     title: qsTr("Hello World")
 
     Component.onCompleted: {

@@ -1,6 +1,5 @@
-#include "dialog.h"
-
 /*
+ *
  What
  using the class in a widgets app
 
@@ -17,6 +16,7 @@
  */
 
 #include <QApplication>
+#include "dialog.h"
 
 int main(int argc, char *argv[])
 {

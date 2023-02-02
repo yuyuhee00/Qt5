@@ -11,7 +11,7 @@ Dialog::Dialog(QWidget *parent)
     m_state2.setObjectName("State2");
     m_state3.setObjectName("State3");
 
-    //Connect the states to slots
+    // Connect the states to slots
     connect(&m_state1, &QState::entered, this, &Dialog::stateEntered);
     connect(&m_state1, &QState::exited, this, &Dialog::stateExited);
     connect(&m_state2, &QState::entered, this, &Dialog::stateEntered);
@@ -29,7 +29,7 @@ Dialog::Dialog(QWidget *parent)
     m_state2.addTransition(ui->pushButton, &QPushButton::clicked, &m_state3);
     m_state3.addTransition(ui->pushButton, &QPushButton::clicked, &m_state1);
 
-    //add them to the machine
+    // add them to the machine
     m_statemachine.addState(&m_state1);
     m_statemachine.addState(&m_state2);
     m_statemachine.addState(&m_state3);
@@ -45,16 +45,15 @@ Dialog::~Dialog()
 
 void Dialog::on_pushButton_clicked()
 {
-    qInfo() << "Clicked";
+    qInfo() << "------------------ Clicked ------------------";
 }
 
 void Dialog::stateEntered()
 {
-    qInfo() << sender() << "Entered";
+    qInfo() << this->sender()->objectName() << "\tEntered";
 }
 
 void Dialog::stateExited()
 {
-    qInfo() << sender() << "Exited";
+    qInfo() << this->sender()->objectName() << "\tExited";
 }
-

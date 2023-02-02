@@ -29,7 +29,9 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     QString path = a.applicationDirPath();
-    path.append("/plugins");
+    //path.append("/plugins");
+    path.append("/../../PluginOne/debug");
+    qInfo() << "Path : " << path;
 
     Loader loader;
     loader.loadPlugins(path);

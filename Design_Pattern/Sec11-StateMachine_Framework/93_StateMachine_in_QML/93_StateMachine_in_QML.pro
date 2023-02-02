@@ -1,6 +1,7 @@
 QT += quick
+QT += statemachine
 
-CONFIG += c++11
+CONFIG += c++14
 
 CONFIG += sdk_no_version_check
 

@@ -4,7 +4,7 @@
 #include <QObject>
 #include <QDebug>
 
-//This class is also part of state (application)
+// This class is also part of state (application)
 class Bulb : public QObject
 {
     Q_OBJECT
@@ -18,7 +18,8 @@ public:
 signals:
 
 private:
-    bool m_powered; //Becomes part of the object state (class)
+    // Becomes part of the object state (class)
+    bool m_powered;
 };
 
 #endif // BULB_H

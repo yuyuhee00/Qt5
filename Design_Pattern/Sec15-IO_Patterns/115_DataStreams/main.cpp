@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  QDataStream
 
@@ -15,6 +14,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QFile>
 #include <QDataStream>
@@ -79,7 +79,6 @@ void saveCats()
 
     file.close();
     qDeleteAll(cats);
-
 }
 
 void loadCats()

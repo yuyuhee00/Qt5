@@ -1,4 +1,5 @@
 #include "loader.h"
+#include "interfaces/iPlugin.h"
 
 Loader::Loader(QObject *parent) : QObject(parent)
 {
@@ -17,7 +18,7 @@ Loader::~Loader()
 
 void Loader::loadPlugins(QString path)
 {
-    //Could do something like search a folder for .so, .dll, .dylib - what ever your platform requires
+    // Could do something like search a folder for .so, .dll, .dylib - what ever your platform requires
 
     qInfo() << "Loading plugins:" << path;
 
@@ -33,18 +34,19 @@ void Loader::loadPlugins(QString path)
     QStringList filters;
     filters << "*.so" << "*.dll" << "*.dylib";
 
-    //Need permissions to the folder or this will fail
+    // Need permissions to the folder or this will fail
     QFileInfoList files =  dir.entryInfoList(filters,QDir::Files | QDir::NoDotAndDotDot);//dir.entryList(filters,QDir::NoDotAndDotDot);
 
     foreach(QFileInfo file, files)
     {
         QPluginLoader *pl = new QPluginLoader(this);
         pl->setFileName(file.absoluteFilePath());
-        if(!pl->load()) qWarning() << file.fileName() << pl->errorString();
+        if(! pl->load())
+            qWarning() << file.fileName() << pl->errorString();
         m_plugins.append(pl);
     }
 
-    //Show the loaded plugins
+    // Show the loaded plugins
     qInfo() << "Loaded Plugins:";
     foreach(QPluginLoader *loader, m_plugins)
     {

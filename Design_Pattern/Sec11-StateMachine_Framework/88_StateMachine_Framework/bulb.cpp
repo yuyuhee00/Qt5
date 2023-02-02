@@ -2,7 +2,8 @@
 
 Bulb::Bulb(QObject *parent) : QObject(parent)
 {
-    m_powered = false; //inital class state
+    // inital class state
+    m_powered = false;
 }
 
 bool Bulb::powered() const
@@ -12,7 +13,8 @@ bool Bulb::powered() const
 
 void Bulb::setPowered(bool powered)
 {
-    m_powered = powered; //state of this object has changed
+    //s tate of this object has changed
+    m_powered = powered;
 
     QString message;
     m_powered ? message = "On" : message = "Off";

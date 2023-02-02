@@ -10,6 +10,7 @@
 class Cat : public QObject
 {
     Q_OBJECT
+
 public:
     explicit Cat(QObject *parent = nullptr);
 

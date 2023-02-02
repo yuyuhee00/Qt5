@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  Fast IO!
 
@@ -21,12 +20,13 @@
  Do not write or read one byte at a time
  */
 
+#include <QCoreApplication>
 #include <QFile>
 #include <QBuffer>
 #include <QIODevice>
 #include <QDebug>
-#include <QTextStream> //Text
-#include <QDataStream> //Raw data (non-text)
+#include <QTextStream> // Text
+#include <QDataStream> // Raw data (non-text)
 
 
 void writeDevice(QIODevice &device, QByteArray &data)
@@ -41,7 +41,7 @@ void writeDevice(QIODevice &device, QByteArray &data)
     stream << data;
 }
 
-void readDevice(QIODevice &device)
+void readDevice(QIODevice& device)
 {
     if(!device.isReadable())
     {
@@ -62,11 +62,13 @@ void testDevice(QIODevice &device)
 
     if(device.open(QIODevice::ReadWrite))
     {
+        qInfo() << "Write Data";
         writeDevice(device, data);
 
-        //device.close()
-        //device.open(...)
+        // device.close()
+        // device.open(...)
 
+        qInfo() << "\nRead Data";
         device.seek(0);
         readDevice(device);
     }

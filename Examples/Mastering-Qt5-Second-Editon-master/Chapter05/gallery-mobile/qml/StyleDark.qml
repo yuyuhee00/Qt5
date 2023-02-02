@@ -1,5 +1,6 @@
 pragma Singleton
-import QtQuick 2.0
+import QtQuick
+import QtQuick.Controls
 
 QtObject {
     property color text: "#eff0f1"

@@ -13,7 +13,6 @@ Dialog::Dialog(QWidget *parent)
 
     // Between Group
     createTransitions();
-
     createFinal();
 
     m_statemachine.setInitialState(m_states.at(0));
@@ -30,30 +29,29 @@ Dialog::~Dialog()
 
 void Dialog::on_pushButton_clicked()
 {
-//    if(m_statemachine.isRunning())
-//        qInfo() << "clicked";
+    if(m_statemachine.isRunning())
+        qInfo() << "---------- Clicked ----------";
 }
 
 
 void Dialog::stateEntered()
 {
-    if(!sender()) return;
-    qInfo() << sender() << "Entered";
+    if(!this->sender()) return;
+    qInfo() << this->sender() << " : Entered";
 }
 
 void Dialog::stateExited()
 {
-    if(!sender()) return;
-    qInfo() << sender() << "Exited";
+    if(!this->sender()) return;
+    qInfo() << this->sender() << " : Exited";
 }
 
 void Dialog::stateFinished()
 {
-    if(!sender()) return;
-    qInfo() << sender() << "Finished";
-    QMessageBox::information(this,"finished", "The state machine has finished");
+    if(!this->sender()) return;
+    qInfo() << this->sender() << ": Finished";
+    QMessageBox::information(this, "finished", "The state machine has finished");
 }
-
 
 void Dialog::createGroup(QString name, int count, QLineEdit *editor)
 {
@@ -67,7 +65,8 @@ void Dialog::createGroup(QString name, int count, QLineEdit *editor)
     {
         QState *state = new QState(parent);
         state->setObjectName(name + ": " + QString::number(i));
-        if(i == 0) parent->setInitialState(state);
+        if(i == 0)
+            parent->setInitialState(state);
         connectState(state, editor);
 
         if(previous)

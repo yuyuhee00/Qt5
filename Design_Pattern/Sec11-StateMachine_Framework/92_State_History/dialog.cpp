@@ -26,33 +26,35 @@ void Dialog::on_lineEdit_textEdited(const QString &arg1)
 
 void Dialog::on_btnBack_clicked()
 {
-    if(!m_statemachine.isRunning()) return;
+    if(!m_statemachine.isRunning())
+        return;
     qInfo() << "Back Clicked";
 }
 
 void Dialog::on_btnNext_clicked()
 {
-    if(!m_statemachine.isRunning()) return;
+    if(!m_statemachine.isRunning())
+        return;
     qInfo() << "Next Clicked";
 }
 
 void Dialog::stateEntered()
 {
-    if(!sender()) return;
-    qInfo() << sender() << "Entered";
-    m_current = qobject_cast<QState*>(sender());
+    if(!this->sender()) return;
+    qInfo() << this->sender() << "Entered";
+    m_current = qobject_cast<QState*>(this->sender());
 }
 
 void Dialog::stateExited()
 {
-    if(!sender()) return;
-    qInfo() << sender() << "Exited";
+    if(!this->sender()) return;
+    qInfo() << this->sender() << "Exited";
 }
 
 void Dialog::stateFinished()
 {
-    if(!sender()) return;
-    qInfo() << sender() << "Finished";
+    if(!this->sender()) return;
+    qInfo() << this->sender() << "Finished";
 }
 
 void Dialog::createStates()
@@ -63,11 +65,12 @@ void Dialog::createStates()
     {
         QState *state = new QState(&m_root);
         state->setObjectName("State: " + QString::number(i));
-        if(i == 0) m_root.setInitialState(state);
+        if(i == 0)
+            m_root.setInitialState(state);
 
-        connect(state, &QState::entered, this,&Dialog::stateEntered);
-        connect(state, &QState::exited, this,&Dialog::stateExited);
-        connect(state, &QState::finished, this,&Dialog::stateFinished);
+        connect(state, &QState::entered, this, &Dialog::stateEntered);
+        connect(state, &QState::exited, this, &Dialog::stateExited);
+        connect(state, &QState::finished, this, &Dialog::stateFinished);
         state->assignProperty(ui->lineEdit, "text", state->objectName());
 
         if(previous)

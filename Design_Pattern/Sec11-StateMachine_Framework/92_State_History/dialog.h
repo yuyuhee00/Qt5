@@ -22,7 +22,6 @@ private:
     void createStates();
 
 private slots:
-
     void on_btnBack_clicked();
     void on_btnNext_clicked();
     void on_lineEdit_textEdited(const QString &arg1);

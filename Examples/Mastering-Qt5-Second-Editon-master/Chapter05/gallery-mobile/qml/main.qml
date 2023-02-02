@@ -1,5 +1,5 @@
-import QtQuick 2.6
-import QtQuick.Controls 2.0
+import QtQuick
+import QtQuick.Controls
 import "." // QTBUG-34418, singletons require explicit import to load qmldir file
 
 ApplicationWindow {
@@ -8,8 +8,8 @@ ApplicationWindow {
 
     id: app
     visible: true
-    width: 768
-    height: 1280
+    width: 1024
+    height: 768
     color: Style.windowBackground
 
     StackView {

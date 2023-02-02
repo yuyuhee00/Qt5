@@ -67,7 +67,6 @@ private:
     QFuture<bool> m_future;
 
     bool concurrentIO(QString path, QIODevice::OpenModeFlag flag);
-
 };
 
 #endif // ANIMAL_H

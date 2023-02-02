@@ -1,34 +1,28 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
-import QtQuick.Controls 2.3
-import QtQml.StateMachine 1.0 as DSM
+import QtQuick
+import QtQuick.Controls
+import QtQml.StateMachine as DSM
 
 Window {
     id: window
     visible: true
     width: 640
     height: 480
-    // @disable-check M16
     title: qsTr("Hello World")
 
     DSM.StateMachine
     {
         id:statemachine
-        // @disable-check M16
         initialState: state1
         running: true
 
         DSM.State {
             id: state1
-            // @disable-check M16
             onEntered: label.text = "State 1"
             DSM.SignalTransition {
-                // @disable-check M16
                 targetState: state2
                 signal:  next.clicked
             }
             DSM.SignalTransition {
-                // @disable-check M16
                 targetState: state3
                 signal:  before.clicked
             }
@@ -36,15 +30,12 @@ Window {
 
         DSM.State {
             id: state2
-            // @disable-check M16
             onEntered: label.text = "State 2"
             DSM.SignalTransition {
-                // @disable-check M16
                 targetState: state3
                 signal:  next.clicked
             }
             DSM.SignalTransition {
-                // @disable-check M16
                 targetState: state1
                 signal:  before.clicked
             }
@@ -52,15 +43,12 @@ Window {
 
         DSM.State {
             id: state3
-            // @disable-check M16
             onEntered: label.text = "State 3"
             DSM.SignalTransition {
-                // @disable-check M16
                 targetState: state1
                 signal:  next.clicked
             }
             DSM.SignalTransition {
-                // @disable-check M16
                 targetState: state2
                 signal:  before.clicked
             }

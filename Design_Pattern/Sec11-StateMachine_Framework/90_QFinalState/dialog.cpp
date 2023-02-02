@@ -14,19 +14,19 @@ Dialog::Dialog(QWidget *parent)
             addState(state);
         }
 
-    //The states are added as children!
+    // The states are added as children!
     qInfo() << "Children:" << m_statemachine.children().length();
 
-    //Add our finaol state
+    // Add our final state
     QFinalState *final = new QFinalState();
-    QState *p = qobject_cast<QState*>(m_states.last()); //could have used the state machines children!
+     // could have used the state machines children!
+    QState *p = qobject_cast<QState*>(m_states.last());
     p->addTransition(ui->pushButton, &QPushButton::clicked, final);
 
     connect(&m_statemachine, &QStateMachine::finished, this, &Dialog::stateFinished);
 
     m_statemachine.addState(final);
     m_statemachine.setInitialState(m_states.at(0));
-
     m_statemachine.start();
 }
 
@@ -40,26 +40,31 @@ Dialog::~Dialog()
 
 void Dialog::on_pushButton_clicked()
 {
-    if(m_statemachine.isRunning()) qInfo() << "Clicked";
+    if(m_statemachine.isRunning())
+        qInfo() << "---------- Clicked ----------";
 }
 
 
 void Dialog::stateEntered()
 {
-    qInfo() << sender() << "Entered";
+    qInfo() << this->sender() << "Entered";
 }
 
 void Dialog::stateExited()
 {
-    qInfo() << sender() << "Exited";
+    qInfo() << this->sender() << "Exited";
 }
 
 
 void Dialog::stateFinished()
 {
-    qInfo() << sender() << "Finished";
+    qInfo() << this->sender() << "Finished";
+
     ui->lineEdit->setText("Complete");
-    ui->pushButton->setEnabled(false);
+
+    // After Finished, m_statemachine.isRunning() is false
+    // ui->pushButton->setEnabled(false);
+
     QMessageBox::information(this,"Finished","The state machine has finished!");
 }
 
