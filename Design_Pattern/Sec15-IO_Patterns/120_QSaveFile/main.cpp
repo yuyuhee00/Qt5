@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -7,6 +5,10 @@
 
   Description
   Allows to easy transactions!
+  - While writing, the contents will be written to a temporary file, and if no error happend,
+    commit() will move it to the final file. This ensures that no data at the final file is lost in case an error happens
+    while writing, an no partially-written file is ever present at the filenal location.
+    Always use QSaveFile when saving entire documents to disk.
 
   Why
   Some times mistakes are made
@@ -16,6 +18,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QSaveFile>
 #include <QTextStream>
 #include <QFile>

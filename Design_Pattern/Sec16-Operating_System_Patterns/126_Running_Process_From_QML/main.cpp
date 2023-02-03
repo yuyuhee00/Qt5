@@ -1,7 +1,5 @@
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
-
 /*
+ *
  What
  Running QProcess from QML
 
@@ -18,15 +16,17 @@
 
  */
 
-#include "process.h"
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
+#include "task.h"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+//    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     QGuiApplication app(argc, argv);
 
-    qmlRegisterType<Process>("com.company.process",1,0,"Process");
+    qmlRegisterType<Task>("com.company.task",1,0,"Task");
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));

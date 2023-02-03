@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  Running code based on the OS
 
@@ -15,6 +14,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 
 void osTask()

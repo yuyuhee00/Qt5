@@ -1,5 +1,6 @@
 #include "dialog.h"
 #include "ui_dialog.h"
+#include <QDebug>
 
 Dialog::Dialog(QWidget *parent)
     : QDialog(parent)
@@ -29,10 +30,13 @@ void Dialog::on_btnFile_clicked()
 
 void Dialog::on_btnCustom_clicked()
 {
+    // Help
     QDesktopServices::openUrl(QUrl("help://HelpME"));
 }
 
 void Dialog::showHelp(const QUrl &url)
 {
-    QMessageBox::information(this,"Help", url.url());
+    // From on_btnCustom_clicked;
+    qInfo() << "Sender : " << sender();
+    QMessageBox::information(this, "Help", url.url());
 }

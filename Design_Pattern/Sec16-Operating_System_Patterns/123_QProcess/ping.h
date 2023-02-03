@@ -9,6 +9,7 @@
 class Ping : public QObject
 {
     Q_OBJECT
+
 public:
     explicit Ping(QObject *parent = nullptr);
 

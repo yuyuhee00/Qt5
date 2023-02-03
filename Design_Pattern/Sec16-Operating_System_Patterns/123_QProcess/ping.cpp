@@ -67,7 +67,7 @@ void Ping::readyReadStandardError()
    qInfo() << Q_FUNC_INFO;
    QByteArray data =  m_process.readAllStandardError();
    QString message = "Standard Error: ";
-   message.append(m_process.readAllStandardError());
+   message.append(QString::fromLocal8Bit(data));
    emit output(message);
 }
 
@@ -76,7 +76,7 @@ void Ping::readyReadStandardOutput()
     if(!m_listening) return;
     qInfo() << Q_FUNC_INFO;
     QByteArray data =  m_process.readAllStandardOutput();
-    emit output(QString(data.trimmed()));
+    emit output(QString(QString::fromLocal8Bit(data)));
 }
 
 void Ping::started()
@@ -108,8 +108,9 @@ void Ping::readyRead()
     if(!m_listening) return;
     qInfo() << Q_FUNC_INFO;
     QByteArray data = m_process.readAll().trimmed();
-    qInfo() << data;
-    emit output(data);
+    QString sdata = QString::fromLocal8Bit(data);
+    qInfo() << sdata;
+    emit output(sdata);
 }
 
 QString Ping::getProcess()
@@ -124,7 +125,7 @@ QString Ping::getProcess()
 void Ping::startPing()
 {
     QByteArray command;
-    command.append("ping " + m_address);
+    command.append("ping " + m_address.toUtf8());
     if(QSysInfo::productType() == "windows") command.append("\r");
     command.append("\n");
     m_process.write(command);

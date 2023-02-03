@@ -1,7 +1,7 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
-import QtQuick.Controls 2.3
-import QtQuick.Dialogs 1.3
+import QtQuick
+import QtQuick.Window
+import QtQuick.Controls
+import QtQuick.Dialogs
 
 import com.company.animal 1.0
 
@@ -77,7 +77,6 @@ Window {
                 id: btnSave
                 text: qsTr("Save")
                 onClicked: {
-
                     animal.name = txtName.text
                     animal.species = txtSpecies.text
                     animal.age = sbAge.value
@@ -85,7 +84,6 @@ Window {
                     animal.fed = d
 
                     saveDialog.open()
-
                 }
             }
 
@@ -112,10 +110,12 @@ Window {
     FileDialog {
         id: saveDialog
         title: "Please choose a file"
-        selectMultiple: false
-        selectExisting : false
+//        selectMultiple: false
+//        selectExisting : false
+        fileMode: FileDialog.SaveFile
         onAccepted: {
-            var path = saveDialog.fileUrl.toString().replace("file://","")
+//            var path = saveDialog.fileUrl.toString().replace("file://","")
+            var path = selectedFile.toLocaleString().replace("file:///", "")
             console.log("You chose: " + path)
             animal.toFile(path)
         }
@@ -127,11 +127,12 @@ Window {
     FileDialog {
         id: openDialog
         title: "Please choose a file"
-        selectMultiple: false
-        selectExisting : true
+//        selectMultiple: false
+//        selectExisting : true
+        fileMode: FileDialog.OpenFile
         onAccepted: {
-
-            var path = openDialog.fileUrl.toString().replace("file://","")
+//            var path = openDialog.fileUrl.toString().replace("file://","")
+            var path = selectedFile.toString().replace("file:///","")
             console.log("You chose: " + path)
             animal.fromFile(path)
         }
@@ -163,7 +164,5 @@ Window {
         Component.onCompleted: {
             updateGUI();
         }
-
     }
-
 }

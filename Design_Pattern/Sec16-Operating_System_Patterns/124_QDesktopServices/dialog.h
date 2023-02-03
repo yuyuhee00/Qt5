@@ -18,7 +18,6 @@ public:
     Dialog(QWidget *parent = nullptr);
     ~Dialog();
 
-
 private slots:
     void on_btnWeb_clicked();
     void on_btnFile_clicked();

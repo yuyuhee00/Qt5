@@ -28,7 +28,6 @@ void Downloader::readyRead()
     QNetworkReply *reply = qobject_cast<QNetworkReply*>(sender());
     if(!reply) return;
     m_file.write(reply->readAll());
-
 }
 
 void Downloader::finished()

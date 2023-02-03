@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  Storing passwords
 
@@ -16,6 +15,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QTextStream>
 #include <QCryptographicHash>
 #include <QSettings>

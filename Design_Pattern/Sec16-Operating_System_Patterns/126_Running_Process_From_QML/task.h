@@ -1,21 +1,22 @@
-#ifndef PROCESS_H
-#define PROCESS_H
+#ifndef TASK_H
+#define TASK_H
 
 #include <QObject>
 #include <QProcess>
 #include <QVariant>
 
-class Process : public QProcess
+class Task : public QProcess
 {
     Q_OBJECT
+
 public:
-    explicit Process(QObject *parent = nullptr);
+    explicit Task(QObject *parent = nullptr);
 
 signals:
 
 public slots:
     void start(const QString &program, const QVariantList &arguments);
-    QByteArray readAll();
+    QString readAll();
 };
 
-#endif // PROCESS_H
+#endif // TASK_H

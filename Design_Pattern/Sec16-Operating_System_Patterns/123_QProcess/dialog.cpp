@@ -9,9 +9,9 @@ Dialog::Dialog(QWidget *parent)
 
     ui->lblOS->setText("OS Detected: " + m_ping.operatingSystem());
     m_ping.setAddress(ui->txtIP->text());
-    connect(ui->btnStart,&QPushButton::clicked,&m_ping,&Ping::start);
-    connect(ui->btnStop,&QPushButton::clicked,&m_ping,&Ping::stop);
-    connect(&m_ping,&Ping::output,this,&Dialog::output);
+    connect(ui->btnStart, &QPushButton::clicked, &m_ping, &Ping::start);
+    connect(ui->btnStop, &QPushButton::clicked, &m_ping, &Ping::stop);
+    connect(&m_ping, &Ping::output, this,& Dialog::output);
 }
 
 Dialog::~Dialog()

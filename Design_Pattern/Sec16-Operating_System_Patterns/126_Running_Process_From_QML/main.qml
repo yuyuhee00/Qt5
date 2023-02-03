@@ -1,7 +1,7 @@
-import QtQuick 2.10
-import QtQuick.Window 2.10
-import QtQuick.Controls 2.3
-import com.company.process 1.0
+import QtQuick
+import QtQuick.Window
+import QtQuick.Controls
+import com.company.task 1.0
 
 Window {
     id: window
@@ -10,10 +10,12 @@ Window {
     height: 480
     title: qsTr("Hello World")
 
-    Process {
-        id: proc
-        onReadyRead: {
-            txtOut.text = proc.readAll();
+    Task {
+        id: task
+//        onReadyRead: {
+        onReadyReadStandardOutput: {
+            console.log("onReadyReadStandardOutput")
+            txtOut.text = task.readAll();
         }
     }
 
@@ -52,18 +54,16 @@ Window {
             TextField {
                 id: txtOut
             }
-
         }
-
 
         Button {
             id: button
             text: qsTr("Go")
             anchors.horizontalCenter: parent.horizontalCenter
             onClicked: {
-                proc.start(txtCommand.text,[txtArg.text])
+//                console.log(txtCommand.text )
+                task.start(txtCommand.text,[txtArg.text])
             }
         }
-
     }
 }

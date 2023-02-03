@@ -30,7 +30,6 @@ void Dialog::on_btnSave_clicked()
    m_animal.setFed(ui->dtFed->dateTime());
 
    m_animal.toFile(path);
-
 }
 
 void Dialog::on_btnClear_clicked()
@@ -58,7 +57,6 @@ void Dialog::finished()
 {
     update();
     QMessageBox::information(this,"Complete","Concurrent IO Complete");
-
 }
 
 void Dialog::update()

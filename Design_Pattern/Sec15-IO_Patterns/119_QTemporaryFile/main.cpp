@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  Temp files!
 
@@ -16,6 +15,7 @@
 
  */
 
+#include <QCoreApplication>
 #include "downloader.h"
 
 int main(int argc, char *argv[])

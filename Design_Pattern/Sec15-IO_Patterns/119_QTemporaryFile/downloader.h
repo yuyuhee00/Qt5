@@ -12,6 +12,7 @@
 class Downloader : public QObject
 {
     Q_OBJECT
+
 public:
     explicit Downloader(QObject *parent = nullptr);
 
@@ -24,7 +25,8 @@ private slots:
     void finished();
 
 private:
-    QTemporaryFile m_file; //when this is destroyed the file is removed!
+    // when this is destroyed the file is removed!
+    QTemporaryFile m_file;
     QNetworkAccessManager m_manager;
 };
 

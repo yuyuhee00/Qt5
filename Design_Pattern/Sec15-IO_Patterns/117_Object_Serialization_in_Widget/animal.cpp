@@ -100,14 +100,14 @@ void Animal::fromFile(QString path)
 {
     //Move the IO to a new thread and let Qt  take care of the details
     //m_watcher.setFuture(m_future);
-    m_future = QtConcurrent::run(this,&Animal::concurrentIO,path, QIODevice::ReadOnly);
+    m_future = QtConcurrent::run(&Animal::concurrentIO, this, path, QIODevice::ReadOnly);
     m_watcher.setFuture(m_future);
 }
 
 void Animal::toFile(QString path)
 {
     //Move the IO to a new thread and let Qt  take care of the details
-    m_future = QtConcurrent::run(this,&Animal::concurrentIO,path, QIODevice::WriteOnly);
+    m_future = QtConcurrent::run(&Animal::concurrentIO, this, path, QIODevice::WriteOnly);
     m_watcher.setFuture(m_future);
 }
 
