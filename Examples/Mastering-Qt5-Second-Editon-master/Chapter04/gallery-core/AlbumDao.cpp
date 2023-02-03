@@ -59,13 +59,13 @@ std::unique_ptr<std::vector<unique_ptr<Album>>> AlbumDao::albums() const
     //std::unique_ptr<std::vector<std::unique_ptr<Album>>> list(new std::vector<std::unique_ptr<Album>>());
     using album_T = std::unique_ptr<Album>;
     using album_VecT = std::vector<album_T>;
-    std::unique_ptr<album_VecT> list(std::make_unique<album_VecT>());
+    std::unique_ptr<album_VecT> vec(std::make_unique<album_VecT>());
     while(query.next()) {
         // std::unique_ptr<Album> album(new Album());
         album_T album(std::make_unique<Album>());
         album->setId(query.value("id").toInt());
         album->setName(query.value("name").toString());
-        list->push_back(std::move(album));
+        vec->push_back(std::move(album));
     }
-    return list;
+    return vec;
 }
