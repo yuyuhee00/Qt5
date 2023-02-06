@@ -3,8 +3,7 @@
   KEEP IT SIMPLE
 
   Just because a design pattern exists, does not mean you should use it
-  There is a menatlity if a program does not use the latest trendy buzzwords that
-  its somehow not a good program
+  There is a menatlity if a program does not use the latest trendy buzzwords that its somehow not a good program
 
   Simple is always better
 
@@ -12,7 +11,6 @@
   QFile vs iFile
 
   Interface and class in this example is OVERY complex and not needed.
-
 
  */
 

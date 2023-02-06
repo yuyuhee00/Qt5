@@ -12,7 +12,6 @@
   Example:
   QML App, show how to add the c++ class, and how to access the property in both QML and C++
 
-
  */
 
 #include <QGuiApplication>
@@ -20,7 +19,7 @@
 #include <QDebug>
 #include "machine.h"
 
-//Properties in C++
+// Properties in C++
 void test()
 {
     qInfo() << "Starting C++ test";
@@ -30,7 +29,7 @@ void test()
 
     qInfo() << "Max = " << machine.max();
     machine.setProperty("name", "Bryan");
-    qInfo() << "Name = " << machine.name();
+    qInfo() << "Name = " << machine.property("name").toString();
 }
 
 
@@ -40,8 +39,8 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
-    //C++ test
-    //test();
+    // C++ test
+    test();
 
     qmlRegisterType<Machine>("com.company.machine",1,0,"Machine");
 

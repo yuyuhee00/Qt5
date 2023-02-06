@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
 
     Machine machine;
     machine.original();
+    machine.newCode();
 
     return a.exec();
 }

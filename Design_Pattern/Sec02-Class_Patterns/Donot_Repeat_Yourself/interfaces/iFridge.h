@@ -4,9 +4,10 @@
 class iFridge
 {
 public:
+   virtual ~iFridge() {};
+
     virtual void chill() = 0;
     virtual void freeze() = 0;
 };
-
 
 #endif // IFRIDGE_H

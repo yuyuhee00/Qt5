@@ -15,9 +15,11 @@ public:
     void count(int max);
 
 private:
+        void performcount();
+
+private:
     int m_count;
     int m_max;
-    void performcount();
 
 signals:
 

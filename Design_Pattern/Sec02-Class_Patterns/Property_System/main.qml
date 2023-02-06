@@ -1,7 +1,6 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
-import QtQuick.Controls 2.3
-import com.company.machine 1.0
+import QtQuick
+import QtQuick.Controls
+import com.company.machine
 
 Window {
     id: window
@@ -85,7 +84,11 @@ Window {
             anchors.horizontalCenter: parent.horizontalCenter
             onClicked: {
                 console.log("Clicked test")
+
+//                 machine.max = 1000
+//                setMax() is in slot:
                 machine.setMax(100)
+
             }
         }
     }

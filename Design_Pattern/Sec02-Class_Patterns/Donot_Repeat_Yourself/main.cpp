@@ -1,4 +1,5 @@
 /*
+ *
  What
  DRY - Don't repeat yourself
  https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
@@ -42,7 +43,7 @@ void testAdvanced(AdvancedFridge *fridge)
     if(fridge->radio())
     {
         fridge->radio()->play();
-        //listen to music for a while...
+        // listen to music for a while...
         fridge->radio()->stop();
     }
 }

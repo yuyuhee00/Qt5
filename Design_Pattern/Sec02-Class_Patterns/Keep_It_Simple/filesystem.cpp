@@ -5,7 +5,6 @@ FileSystem::FileSystem(QObject *parent) : QObject(parent)
 
 }
 
-
 bool FileSystem::write(QString path, QString data)
 {
     QFile file(path);
@@ -31,5 +30,4 @@ QString FileSystem::read(QString path)
     file.close();
 
     return value;
-
 }

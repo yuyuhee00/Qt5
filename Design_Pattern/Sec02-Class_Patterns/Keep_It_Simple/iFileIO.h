@@ -6,6 +6,8 @@
 class iFileIO
 {
 public:
+    virtual ~iFileIO() {};
+
     virtual bool write(QString path, QString data) = 0;
     virtual QString read(QString path) = 0;
 };
