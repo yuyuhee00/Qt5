@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
-/*
+/*'
+ *
  What:
  Exception safety
  https://en.wikipedia.org/wiki/Exception_safety
@@ -21,6 +20,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QTextStream>
 #include <QList>
 #include <QString>
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     QList<QString> list;
     QTextStream *stream = new QTextStream(stdin); //Memory leak and potential crash
 
-    userIO(stream,&list);//recursive function. will kick out a warning
+    userIO(stream, &list);//recursive function. will kick out a warning
 
     return a.exec();
 }

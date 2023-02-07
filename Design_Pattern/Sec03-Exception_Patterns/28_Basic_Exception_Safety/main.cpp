@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What:
  Exception safety
  https://en.wikipedia.org/wiki/Exception_safety
@@ -22,6 +21,7 @@ The basic guarantee states that if an exception occurs, no memory is leaked and 
 
  */
 
+#include <QCoreApplication>
 #include <QTextStream>
 #include <QList>
 #include <QString>

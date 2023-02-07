@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -32,8 +30,9 @@
 
   Because of Q_DISABLE_COPY, Q_DISABLE_COPY_MOVE we are forced to use pointers or address of!
 
-
  */
+
+#include <QCoreApplication>
 #include "myclass.h"
 
 /*

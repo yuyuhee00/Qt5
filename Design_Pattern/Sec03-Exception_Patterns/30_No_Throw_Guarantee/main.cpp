@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What:
  Exception safety
  https://en.wikipedia.org/wiki/Exception_safety
@@ -29,7 +28,7 @@ What if we are out of memory
 What if the user enters a unicode string of 100000000000000 chars
  */
 
-
+#include <QCoreApplication>
 #include <QTextStream>
 #include <QList>
 #include <QString>

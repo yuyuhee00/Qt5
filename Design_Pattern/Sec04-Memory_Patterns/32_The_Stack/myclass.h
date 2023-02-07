@@ -8,6 +8,7 @@ class MyClass : public QObject
 {
     Q_OBJECT
 
+    // By design you can not copy or move a QObject
     // Q_DISABLE_COPY(MyClass);
     // Q_DISABLE_COPY_MOVE(MyClass);
 
@@ -19,7 +20,6 @@ public:
         auto copy = new MyClass;
 
         // Copy data only, not signals and slots
-
         return copy;
     }
 

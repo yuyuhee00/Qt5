@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What:
  Exception safety
  https://en.wikipedia.org/wiki/Exception_safety
@@ -23,6 +22,7 @@ that has commit or rollback semantics: either it completely succeeds or it has n
 
  */
 
+#include <QCoreApplication>
 #include <QTextStream>
 #include <QList>
 #include <QString>
@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
     QList<QString> list;
     QTextStream stream(stdin); //Memory leak and potential crash
 
-    userIO(&stream,&list);//recursive function. will kick out a warning
+    userIO(&stream, &list);//recursive function. will kick out a warning
 
     return a.exec();
 }
