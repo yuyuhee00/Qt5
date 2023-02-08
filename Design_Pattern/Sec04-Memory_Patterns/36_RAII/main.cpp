@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -25,6 +23,7 @@
   QT += network
  */
 
+#include <QCoreApplication>
 #include <QObject>
 #include "myserver.h"
 

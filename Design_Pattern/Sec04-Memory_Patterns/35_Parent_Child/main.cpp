@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -20,8 +18,27 @@ You can look for an object by name and optionally type using findChild() or find
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include "myclass.h"
+
+void createHierichyChildren(MyClass *parent, int count)
+{
+    if(!parent) return;
+    qInfo() << "Creating Hierachy children";
+
+    MyClass* prev = nullptr;
+    for(int i = 0; i < count; i++)
+    {
+        // Heap
+        if(prev == nullptr) {
+           prev = parent;
+         }
+         MyClass* child = new MyClass(prev);
+         child->setObjectName("Child " + QString::number(i));
+         prev = child;
+    }
+}
 
 void createChildren(MyClass *parent, int count)
 {
@@ -34,6 +51,7 @@ void createChildren(MyClass *parent, int count)
         child->setObjectName("Child " + QString::number(i));
     }
 }
+
 
 void listChild(MyClass *parent)
 {
@@ -61,17 +79,20 @@ void findChild(MyClass* parent, QString name)
     {
         MyClass *child = qobject_cast<MyClass*>(obj);
 
-        //test child
+        // test child
         qInfo() << "Found: " << child->objectName();
     }
 }
 
 void testQt()
 {
-    MyClass parent(nullptr); //stack
+    // Stack
+    MyClass parent(nullptr);
     parent.setObjectName("parent");
 
-    createChildren(&parent, 5);
+    // createChildren(&parent, 5);
+    createHierichyChildren(&parent, 5);
+
     listChild(&parent);
     findChild(&parent, "Child 2");
 }

@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  Smart pointers in the standard library
 
@@ -19,6 +18,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <iostream>
 #include <memory>
@@ -29,7 +29,7 @@
 void testUnique()
 {
     qInfo() << "Testing Unique";
-    std::unique_ptr<MyClass> p1(new MyClass());
+    std::unique_ptr<MyClass> p1(std::make_unique<MyClass>());
     qInfo() << "p1=" << p1.get();
 
     p1->test("From pointer 1");
@@ -47,7 +47,7 @@ void testUnique()
 void testShared()
 {
     qInfo() << "Testing shared";
-    std::shared_ptr<MyClass> p1(new MyClass());
+    std::shared_ptr<MyClass> p1(std::make_shared<MyClass>());
     std::shared_ptr<MyClass> p2 = p1;
 
     qInfo() << "p1=" << p1.get();

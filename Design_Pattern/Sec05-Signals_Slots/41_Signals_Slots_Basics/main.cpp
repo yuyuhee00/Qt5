@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -21,6 +19,7 @@
 
 */
 
+#include <QCoreApplication>
 #include <QObject>
 #include <QDebug>
 #include "producer.h"

@@ -19,7 +19,7 @@
   ulimit -s
   ulimit -a
 
-  By design you can not copy or move a QObject
+  ******* By design you can not copy or move a QObject ********
   QObjects are actually rather complex!
   QObjects usually communicate with each other using the signals and slots mechanism
   QObjects are organised in object trees.
@@ -67,12 +67,21 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    // testLifetime();
+    //testLifetime();
 
-    MyClass myclass;
-    // modClass(&myclass);
+    // Stack
+    {
+        MyClass myclass;
+        modClass(&myclass);
+        //modRef(myclass);
+    }
 
-    modRef(myclass);
+    // Heap
+    {
+        MyClass* p = new MyClass;
+        p->setObjectName("my class");
+        p->deleteLater();
+    }
 
     return a.exec();
 }

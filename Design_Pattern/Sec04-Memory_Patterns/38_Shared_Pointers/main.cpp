@@ -1,4 +1,3 @@
-#include <QCoreApplication>
 /*
 
   What
@@ -22,6 +21,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QThread>
 #include <QThreadPool>

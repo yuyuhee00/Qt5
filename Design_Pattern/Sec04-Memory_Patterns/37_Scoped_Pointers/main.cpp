@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -7,6 +5,7 @@
 
   Description
   Automatically deleting when it goes out of scope
+  - QScopedPointer is strictly weaker than std::unique_ptr as it does not support move semantics.
 
   Why
   Takes ownership of a pointer and automatically removes it
@@ -16,6 +15,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QScopedPointer>
 #include <QScopedArrayPointer>
@@ -36,6 +36,16 @@ void testScoped()
     p->test();
 
     // Goes out of scope and everything is removed
+}
+
+void testCopyScoped()
+{
+    QScopedPointer<MyClass> p(makeClass("my smart pointer"));
+    p->test();
+
+    // QScopedPointer is strictly weaker than std::unique_ptr as it does not support move semantics.
+//   QScopedPointer<MyClass> p2( std::move(p));
+//   p2->test();
 }
 
 void testScopedArray()
@@ -87,9 +97,10 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    // testScoped();
+    testScoped();
+    //testCopyScoped()
 
-    // testScopedArray();
+    testScopedArray();
 
     testCustomDelete();
 
