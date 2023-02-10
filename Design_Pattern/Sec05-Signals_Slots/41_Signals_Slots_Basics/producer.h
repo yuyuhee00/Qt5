@@ -14,6 +14,7 @@ class Producer : public QObject
 
 public:
     explicit Producer(QObject *parent = nullptr);
+    ~Producer();
 
 public slots:
     void start();

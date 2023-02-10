@@ -34,4 +34,10 @@ Rectangle {
     height: 48
     color: "#00bde3"
     border.color: Qt.lighter(color)
+
+    property alias text: label.text
+    Text {
+        id: label
+        anchors.centerIn: parent
+    }
 }

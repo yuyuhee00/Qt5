@@ -7,6 +7,10 @@ Producer::Producer(QObject *parent) : QObject(parent)
     connect(&m_timer, &QTimer::timeout, this, &Producer::produced);
 }
 
+Producer::~Producer()
+{
+    qInfo() << this << "Producer Destroyed";
+}
 void Producer::start()
 {
     qInfo() << this << "Producer starting";

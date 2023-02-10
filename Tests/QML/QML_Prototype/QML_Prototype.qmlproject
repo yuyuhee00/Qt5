@@ -7,7 +7,9 @@ Project {
 //    mainFile: "5-2_Core_Elements.qml"
 //    mainFile: "5-3_Components.qml"
 //    mainFile: "5-4_Simple_Transformation.qml"
-    mainFile: "5-5_Positioning_Elements.qml"
+//    mainFile: "5-5_Positioning_Elements.qml"
+//    mainFile: "5-6_Layout_Items.qml"
+    mainFile: "5-7_Input_Elements.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {

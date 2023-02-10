@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -17,6 +15,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include "server.h"
 
@@ -34,7 +33,6 @@ int main(int argc, char *argv[])
     {
         qInfo() << "Server is listening!";
     }
-
 
     return a.exec();
 }

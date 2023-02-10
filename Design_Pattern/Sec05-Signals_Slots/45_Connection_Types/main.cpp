@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -18,6 +16,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QDebug>
 #include <QThread>
 #include "myclass.h"
@@ -25,7 +24,7 @@
 /*
  *
 Qt::ConnectionType::AutoConnection (Default)
-    - If the receiver lives in th thread that emits the signal, Qt::DirectConnection is used.
+    - If the receiver lives in the thread that emits the signal, Qt::DirectConnection is used.
       Otherwise, Qt::QueuedConnection is used.
     - The connection type is determined when the signal is emitted.
 

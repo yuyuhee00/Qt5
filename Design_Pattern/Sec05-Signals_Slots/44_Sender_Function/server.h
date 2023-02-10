@@ -15,6 +15,9 @@ public:
 
     void close();
 
+private:
+    QString readLine(QTcpSocket *socket);
+
 signals:
 
     // QTcpServer interface

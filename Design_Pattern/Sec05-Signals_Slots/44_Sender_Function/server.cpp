@@ -64,15 +64,39 @@ void Server::connected()
     socket->write(data);
 }
 
+QString Server::readLine(QTcpSocket *socket)
+{
+    QString ret = "";
+
+    QByteArray array;
+    while(!array.contains('\n')) {
+        socket->waitForReadyRead();
+        array += socket->readAll();
+    }
+    if(!array.isEmpty()) {
+        int bytes = array.indexOf("\r\n") ;     // Find the end of message
+        QByteArray tmp = array.left(bytes);  // Cut the message
+        ret = QString(tmp);
+    }
+
+    return ret;
+}
+
 void Server::readyRead()
 {
     QTcpSocket *socket = qobject_cast<QTcpSocket*>(QObject::sender());
     if(!socket) return;
 
-    // Check the socket for other possible issues
 
-    QByteArray value = socket->readAll();
-    QString line(value.trimmed());
+    // Check the socket for other possible issues
+//    QString socketIP = socket->peerAddress().toString();
+//    int port = socket->peerPort();
+
+    //QString line = readLine(socket);
+//    QByteArray value = socket->readAll();
+//    QString line(value.trimmed());
+    QString line = readLine(socket);
+    qInfo() << "Input : " << line;
 
     if(socket->objectName() == "")
     {
@@ -112,6 +136,7 @@ void Server::sendAll(QString value)
     foreach(QTcpSocket *socket, m_clients)
     {
         //Check the socket for other possible issues
+
         if(socket) socket->write(data);
     }
 }
