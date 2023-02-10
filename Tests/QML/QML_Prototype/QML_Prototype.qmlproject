@@ -4,12 +4,12 @@ import QmlProject 1.1
 
 Project {
 //    mainFile: "QML_Prototype.qml"
-//    mainFile: "5-2_Core_Elements.qml"
-//    mainFile: "5-3_Components.qml"
-//    mainFile: "5-4_Simple_Transformation.qml"
-//    mainFile: "5-5_Positioning_Elements.qml"
-//    mainFile: "5-6_Layout_Items.qml"
-    mainFile: "5-7_Input_Elements.qml"
+//    mainFile: "4-2_Core_Elements.qml"
+//    mainFile: "4-3_Components.qml"
+//    mainFile: "4-4_Simple_Transformation.qml"
+//    mainFile: "4-5_Positioning_Elements.qml"
+//    mainFile: "4-6_Layout_Items.qml"
+    mainFile: "4-7_Input_Elements.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {

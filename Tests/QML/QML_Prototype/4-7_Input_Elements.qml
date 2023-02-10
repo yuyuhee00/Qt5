@@ -24,7 +24,7 @@ import QtQuick
 //    }
 //}
 
-import "./Ch05"
+import "./Ch04"
 
 //Rectangle {
 //    id: root

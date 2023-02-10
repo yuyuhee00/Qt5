@@ -1,5 +1,5 @@
 import QtQuick
-import "./Ch05"
+import "./Ch04"
 
 Item {
     id: root
