@@ -1,6 +1,6 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
-import QtQuick.Controls 2.3
+import QtQuick
+import QtQuick.Window
+import QtQuick.Controls
 import com.company.filescanner 1.0
 
 Window {
@@ -20,10 +20,10 @@ Window {
             btnScan.enabled = false
             lblStatus.text = "Starting..."
         }
-        onScanUpdated: {
+        onScanUpdated: function(value) {
              lblStatus.text = "Scanning: " + value
         }
-        onScanFinished: {
+        onScanFinished: function(value) {
             btnScan.enabled = true
             lblStatus.text = "Total: " + value
         }

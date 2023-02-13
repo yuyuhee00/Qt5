@@ -16,7 +16,8 @@ void FileScanner::scan(QString path)
     m_timer.start();
 
     Scanner *scanner = new Scanner(nullptr);
-    scanner->setAutoDelete(true);
+    //scanner->setAutoDelete(true);
+    scanner->setAutoDelete(false);
     scanner->setPath(path);
 
     //Qt::QueuedConnection because these are across threads
@@ -39,8 +40,13 @@ void FileScanner::updated(int value)
 
 void FileScanner::finished(int value)
 {
+     qInfo() << "FileScanner::finished()" << QThread::currentThread();
+    Scanner* scanner = qobject_cast<Scanner*>(sender());
+
     m_timer.stop();
     emit scanFinished(value);
+
+    scanner->deleteLater();
 }
 
 void FileScanner::timeout()

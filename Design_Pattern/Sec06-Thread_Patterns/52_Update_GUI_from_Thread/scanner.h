@@ -28,7 +28,6 @@ private:
     QString m_path;
     int m_count;
     void performScan(QString path);
-
 };
 
 #endif // SCANNER_H

@@ -1,7 +1,3 @@
-#include "dialog.h"
-
-#include <QApplication>
-
 /*
 
   What
@@ -17,6 +13,10 @@
   Count folders via threads and update the GUI
 
  */
+
+#include "dialog.h"
+
+#include <QApplication>
 
 int main(int argc, char *argv[])
 {

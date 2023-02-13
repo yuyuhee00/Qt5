@@ -41,6 +41,7 @@ int FileScanner::performscan(QString path)
     foreach(QFileInfo item, list)
     {
         value = value + performscan(item.filePath());
+        // qInfo() << "Count : " << value;
     }
 
     return value;

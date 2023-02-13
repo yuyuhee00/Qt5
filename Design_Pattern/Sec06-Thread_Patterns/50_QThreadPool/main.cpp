@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -16,6 +14,7 @@
 
  */
 
+#include <QCoreApplication>
 #include <QThread>
 #include "myclassmanager.h"
 

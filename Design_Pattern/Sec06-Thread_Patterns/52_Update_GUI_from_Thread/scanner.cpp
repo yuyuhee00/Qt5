@@ -16,7 +16,6 @@ void Scanner::run()
     performScan(m_path);
 
     emit finished(m_count);
-
 }
 
 QString Scanner::path() const
@@ -31,7 +30,7 @@ void Scanner::setPath(const QString &path)
 
 void Scanner::performScan(QString path)
 {
-    //qInfo() << "performScan" << QThread::currentThread();
+    qInfo() << "Scanner::performScan()" << QThread::currentThread();
     m_count++;
     emit updated(m_count);
 

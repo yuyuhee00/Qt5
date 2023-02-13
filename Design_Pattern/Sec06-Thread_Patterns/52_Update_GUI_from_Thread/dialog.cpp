@@ -21,6 +21,8 @@ Dialog::~Dialog()
 
 void Dialog::on_btnCount_clicked()
 {
+     qInfo() << "Dialog::on_btnCount_clicked" << QThread::currentThread();
+
     ui->btnCount->setEnabled(false);
     filescanner.scan(ui->txtPath->text());
 }
