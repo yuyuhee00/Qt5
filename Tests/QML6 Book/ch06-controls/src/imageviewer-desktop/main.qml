@@ -4,7 +4,12 @@ import Qt.labs.platform as Platform
 
 ApplicationWindow {
     
-    // ...
+    // ApplicationWindow consists of four main areas.
+    // 1. menu bar          - MunuBar
+    // 2. too bar               - ToolBar
+    // 3. Contents area     - Children of the window
+    // 4. status bar            - TabBar
+
     
     visible: true
     width: 640
@@ -61,6 +66,9 @@ ApplicationWindow {
         ]
         onAccepted: {
             image.source = fileOpenDialog.file
+        }
+        onRejected:  {
+
         }
     }
 

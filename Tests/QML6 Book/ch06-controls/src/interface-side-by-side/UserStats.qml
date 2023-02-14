@@ -11,5 +11,13 @@ Page {
     Label {
         text: qsTr("User statistics")
         anchors.centerIn: parent
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked:  function () {
+                console.log("DClicked", swipeView.currentIndex)
+                swipeView.decrementCurrentIndex()
+            }
+        }
     }
 }

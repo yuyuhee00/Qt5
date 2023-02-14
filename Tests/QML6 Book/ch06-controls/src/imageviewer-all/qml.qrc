@@ -6,5 +6,7 @@
         <file>images/baseline-menu-24px.svg</file>
         <file>qtquickcontrols2.conf</file>
         <file>+android/qtquickcontrols2.conf</file>
+        <file>+ios/main.qml</file>
+        <file>+ios/qtquickcontrols2.conf</file>
     </qresource>
 </RCC>
