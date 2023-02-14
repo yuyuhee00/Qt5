@@ -10,7 +10,12 @@
     We take ownership of the memory
 
     Example
-    QSharedPointer
+    - QScopedPointer
+    - QScopedArrayPointer
+    - QSharedPointer
+    - QSharedDataPointer
+    -QExplicitlySharedDataPointer
+    - QWeakPointer
 
 */
 
@@ -26,9 +31,11 @@ void addItems(QList<QSharedPointer<MyClass>>& list)
 {
      for(int i = 0; i < 10; i++)
      {
-         auto myclass = new MyClass(nullptr);
+//         auto myclass = new MyClass(nullptr);
+         auto myclass = QSharedPointer<MyClass>(new MyClass(nullptr));
          myclass->setObjectName("MyClass" + QString::number(i));
-         list.append(QSharedPointer<MyClass>(myclass));
+         //list.append(QSharedPointer<MyClass>(myclass));
+         list.append(myclass);
      }
 }
 

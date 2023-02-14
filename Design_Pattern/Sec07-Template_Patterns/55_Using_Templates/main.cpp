@@ -29,10 +29,10 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    int valueInt = add(3,6);
+    int valueInt = add(3, 6);
     qInfo() << "Int: " << valueInt;
 
-    double valueDouble = add(3.54,6.98);
+    double valueDouble = add(3.54, 6.98);
     qInfo() << "Double: " << valueDouble;
 
     QString valueString = add(QString("Hello"), QString("World"));

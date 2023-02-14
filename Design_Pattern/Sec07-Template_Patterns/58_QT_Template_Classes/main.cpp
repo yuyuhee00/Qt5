@@ -2,6 +2,7 @@
  *
     What
     Qt does use templates for some of its classes
+    - Template classes in QT, are not a QObject
 
     Description
     Special issues using QObjects with Qt templated classes
