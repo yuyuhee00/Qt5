@@ -42,6 +42,7 @@ Background {
         anchors.margins: 20
         spacing: 4
         clip: true
+
         model: 100
         orientation: ListView.Horizontal
         delegate: GreenBox {
