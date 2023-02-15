@@ -31,6 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // #region M1
 import QtQuick
 import "../common"
+import QtQuick.Controls
 
 Background {
     width: 140

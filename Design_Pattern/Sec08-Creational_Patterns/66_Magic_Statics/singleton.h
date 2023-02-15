@@ -1,7 +1,7 @@
 #ifndef SINGLETON_H
 #define SINGLETON_H
 
-template < typename T >
+template <typename T>
 class Singleton final
 {
   public:

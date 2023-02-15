@@ -64,9 +64,9 @@ Column {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.leftMargin: 4
 
+                // Circle
                 width: 16
                 height: 16
-
                 radius: 8
 
                 color: blueBox.surfaceColor

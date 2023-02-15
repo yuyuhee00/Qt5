@@ -38,6 +38,7 @@ Column {
     Repeater {
         model: 10
 
+//        delegate: BlueBox {
         BlueBox {
             required property int index
             width: 100

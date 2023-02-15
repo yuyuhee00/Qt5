@@ -3,7 +3,11 @@
 import QmlProject 1.1
 
 Project {
-    mainFile: ""
+//    mainFile: "screenshots.qml"
+//    mainFile: "repeater/delegate.qml"
+//    mainFile: "repeater/model.qml"
+    mainFile: "listview/basic.qml"
+//    mainFile: "gridview/basic.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {

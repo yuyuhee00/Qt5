@@ -40,6 +40,7 @@ Background {
         anchors.fill: parent
         anchors.margins: 20
         clip: true
+
         model: 100
         delegate: GreenBox {
             required property int index
