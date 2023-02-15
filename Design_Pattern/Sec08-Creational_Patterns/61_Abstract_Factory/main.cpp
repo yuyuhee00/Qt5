@@ -35,20 +35,20 @@ void makeAnimals(QList<iAnimal*> &animals, int count)
         switch (value) {
         case 0:
             animal = factory.createSmall();
+            animals.append(animal);
             break;
         case 1:
             animal = factory.createMedium();
+            animals.append(animal);
             break;
         case 2:
             animal = factory.createLarge();
+            animals.append(animal);
             break;
         default:
             qInfo() << "OTHER";
         }
-
-        animals.append(animal);
     }
-
 }
 
 int main(int argc, char *argv[])

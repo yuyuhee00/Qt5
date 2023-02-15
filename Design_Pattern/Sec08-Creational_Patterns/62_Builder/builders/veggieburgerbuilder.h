@@ -5,7 +5,6 @@
 #include <QDebug>
 #include "../interfaces/iBuilder.h"
 #include "../interfaces/iMeal.h"
-#include "../meals/burger.h"
 
 class VeggieBurgerBuilder : public QObject, public iBuilder
 {

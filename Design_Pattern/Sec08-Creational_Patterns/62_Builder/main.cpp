@@ -8,8 +8,8 @@
   same construction process can create different representations.
   - Builder focuses on constrcuting a complex object step by step.
   . Custormer -> director       ->hamburger builder    -> normal burger
-                                            -> turkeyburger builder  -> turkey burger
-                                            ->veggieburger builder   -> veggie burger
+                                -> turkeyburger builder  -> turkey burger
+                                ->veggieburger builder   -> veggie burger
 
   Why
   Constructors are not always the best answer
@@ -46,21 +46,21 @@ QStringList getToppings()
     return list;
 }
 
-iMeal* buildNormal(iDirector &director)
+iMeal* buildNormal(iDirector& director)
 {
     HamBurgerBuilder builder;
     builder.setIngredients(getToppings());
     return director.create(&builder);
 }
 
-iMeal* buildTurkey(iDirector &director)
+iMeal* buildTurkey(iDirector& director)
 {
     TurkeyBurgerBuilder builder;
     builder.setIngredients(getToppings());
     return director.create(&builder);
 }
 
-iMeal* buildVeggie(iDirector &director)
+iMeal* buildVeggie(iDirector& director)
 {
     VeggieBurgerBuilder builder;
     builder.setIngredients(getToppings());

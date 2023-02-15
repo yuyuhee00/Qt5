@@ -1,4 +1,5 @@
 #include "veggieburgerbuilder.h"
+#include "../meals/burger.h"
 
 
 VeggieBurgerBuilder::VeggieBurgerBuilder(QObject *parent) : QObject(parent)

@@ -9,7 +9,7 @@
 class iBuilder
 {
 public:
-        virtual ~iBuilder() {}; //we are going to make some people mad... but we need to free the memory
+    virtual ~iBuilder() {}; //we are going to make some people mad... but we need to free the memory
 
     virtual void setIngredients(QStringList value) = 0;
     virtual void prepair() = 0;

@@ -1,4 +1,5 @@
 #include "hamburgerbuilder.h"
+#include "../meals/burger.h"
 
 HamBurgerBuilder::HamBurgerBuilder(QObject *parent) : QObject(parent)
 {
