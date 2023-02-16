@@ -36,6 +36,15 @@ Item {
     width: 300
     height: 480
 
+    ListModel {
+        id: planets
+
+        ListElement { name: "Mercury"; imageSource: "images/mercury.jpeg"; facts: "Mercury is the smallest planet in the Solar System. It is the closest planet to the sun. It makes one trip around the Sun once every 87.969 days." }
+        ListElement { name: "Venus"; imageSource: "images/venus.jpeg"; facts: "Venus is the second planet from the Sun. It is a terrestrial planet because it has a solid, rocky surface. The other terrestrial planets are Mercury, Earth and Mars. Astronomers have known Venus for thousands of years." }
+        ListElement { name: "Earth"; imageSource: "images/earth.jpeg"; facts: "The Earth is the third planet from the Sun. It is one of the four terrestrial planets in our Solar System. This means most of its mass is solid. The other three are Mercury, Venus and Mars. The Earth is also called the Blue Planet, 'Planet Earth', and 'Terra'." }
+        ListElement { name: "Mars"; imageSource: "images/mars.jpeg"; facts: "Mars is the fourth planet from the Sun in the Solar System. Mars is dry, rocky and cold. It is home to the largest volcano in the Solar System. Mars is named after the mythological Roman god of war because it is a red planet, which signifies the colour of blood." }
+    }
+
     Rectangle {
         anchors.fill: parent
         gradient: Gradient {
@@ -49,17 +58,8 @@ Item {
 
         anchors.fill: parent
 
-        delegate: detailsDelegate
         model: planets
-    }
-
-    ListModel {
-        id: planets
-
-        ListElement { name: "Mercury"; imageSource: "images/mercury.jpeg"; facts: "Mercury is the smallest planet in the Solar System. It is the closest planet to the sun. It makes one trip around the Sun once every 87.969 days." }
-        ListElement { name: "Venus"; imageSource: "images/venus.jpeg"; facts: "Venus is the second planet from the Sun. It is a terrestrial planet because it has a solid, rocky surface. The other terrestrial planets are Mercury, Earth and Mars. Astronomers have known Venus for thousands of years." }
-        ListElement { name: "Earth"; imageSource: "images/earth.jpeg"; facts: "The Earth is the third planet from the Sun. It is one of the four terrestrial planets in our Solar System. This means most of its mass is solid. The other three are Mercury, Venus and Mars. The Earth is also called the Blue Planet, 'Planet Earth', and 'Terra'." }
-        ListElement { name: "Mars"; imageSource: "images/mars.jpeg"; facts: "Mars is the fourth planet from the Sun in the Solar System. Mars is dry, rocky and cold. It is home to the largest volcano in the Solar System. Mars is named after the mythological Roman god of war because it is a red planet, which signifies the colour of blood." }
+        delegate: detailsDelegate
     }
 
     Component {
@@ -68,12 +68,12 @@ Item {
         Item {
             id: wrapper
 
+            width: listView.width
+            height: 30
+
             required property string name
             required property string imageSource
             required property string facts
-
-            width: listView.width
-            height: 30
 
             Rectangle {
                 anchors.left: parent.left
@@ -84,12 +84,13 @@ Item {
 
                 color: "#333"
                 border.color: Qt.lighter(color, 1.2)
+
                 Text {
                     anchors.left: parent.left
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.leftMargin: 4
 
-                    font.pixelSize: parent.height-4
+                    font.pixelSize: parent.height-14
                     color: '#fff'
 
                     text: wrapper.name
@@ -110,19 +111,17 @@ Item {
 
                 color: "black"
 
-
                 Image {
                     anchors.fill: parent
 
                     fillMode: Image.PreserveAspectFit
-
                     source: wrapper.imageSource
                 }
             }
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: parent.state = "expanded"
+                onClicked: wrapper.state = "expanded"
             }
 
             Item {

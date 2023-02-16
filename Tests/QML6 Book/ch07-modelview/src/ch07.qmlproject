@@ -20,7 +20,12 @@ Project {
 
 //    mainFile: "delegates/basic.qml"
 //    mainFile: "delegates/model-action.qml"
-    mainFile: "delegates/add-remove-effects.qml"
+//    mainFile: "delegates/add-remove-effects.qml"
+//    mainFile: "delegates/expanding.qml"
+//    mainFile: "delegates/objectmodel.qml"
+    mainFile: "pathview/coverview.qml"
+
+
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {
