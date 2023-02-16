@@ -41,18 +41,16 @@ Background {
         id: view
         anchors.fill: parent
         anchors.margins: 20
-        currentIndex: 0
-
-        clip: true
-
-        model: 100
-
-        delegate: numberDelegate
+//        currentIndex: 0
         spacing: 4
+        clip: true
 
         highlight: highlightComponent
         highlightFollowsCurrentItem: false
         focus: true
+
+        model: 100
+        delegate: numberDelegate
     }
 
     // #region highlight-component
@@ -87,6 +85,8 @@ Background {
         Item {
             width: 40
             height: 40
+
+//            required property int index
 
             Text {
                 anchors.centerIn: parent

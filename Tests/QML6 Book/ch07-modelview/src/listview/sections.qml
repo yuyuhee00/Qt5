@@ -44,7 +44,6 @@ Background {
         clip: true
 
         model: spaceMen
-
         delegate: spaceManDelegate
 
         section.property: "nation"

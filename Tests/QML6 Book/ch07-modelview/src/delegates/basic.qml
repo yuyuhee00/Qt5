@@ -44,18 +44,19 @@ Rectangle {
     ListView {
         anchors.fill: parent
         anchors.margins: 20
-
+        spacing: 5
+        clip: true
         focus: true
 
         model: 100
         delegate: numberDelegate
-
-        spacing: 5
-        clip: true
     }
 
     Component {
         id: numberDelegate
+
+        // Component can not declare new properties.
+//        required property int index
 
         Rectangle {
             id: wrapper
@@ -70,9 +71,7 @@ Rectangle {
 
             Text {
                 anchors.centerIn: parent
-
                 font.pixelSize: 10
-
                 text: wrapper.index
             }
         }

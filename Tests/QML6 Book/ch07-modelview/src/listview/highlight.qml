@@ -42,22 +42,44 @@ Background {
 
         anchors.fill: parent
         anchors.margins: 20
+        spacing: 5
+        clip: true
 
         focus: true
+        highlight: highlightComponent
 
         model: 100
         delegate: numberDelegate
-        highlight: highlightComponent
-        
-        spacing: 5
-        clip: true
+        header: headerComponent
+        footer: footerComponent
+    }
+
+    Component {
+        id: headerComponent
+
+        YellowBox {
+            width: ListView.view ? ListView.view.width : 0
+            height: 20
+            text: 'Header'
+
+        }
+    }
+
+    Component {
+        id: footerComponent
+
+        YellowBox {
+            width: ListView.view ? ListView.view.width : 0
+            height: 20
+            text: 'Footer'
+        }
     }
 
     Component {
         id: highlightComponent
 
         GreenBox {
-            width: ListView.view ? ListView.view.width : 0
+//            width: ListView.view ? ListView.view.width : 0
         }
     }
 

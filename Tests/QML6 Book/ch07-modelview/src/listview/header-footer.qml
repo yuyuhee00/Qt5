@@ -55,10 +55,10 @@ Background {
         id: headerComponent
 
         YellowBox {
+            anchors.centerIn: parent
             width: ListView.view ? ListView.view.width : 0
             height: 20
             text: 'Header'
-
         }
     }
 
@@ -68,6 +68,7 @@ Background {
         YellowBox {
             width: ListView.view ? ListView.view.width : 0
             height: 20
+            anchors.topMargin: 100
             text: 'Footer'
         }
     }

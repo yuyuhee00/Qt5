@@ -57,7 +57,7 @@ Rectangle {
     }
 
     Rectangle {
-        property int count: 9
+        property int count: theModel.count
 
         anchors.left: parent.left
         anchors.right: parent.right
@@ -71,14 +71,15 @@ Rectangle {
 
         Text {
             anchors.centerIn: parent
-
             text: "Add item!"
         }
 
         MouseArea {
             anchors.fill: parent
-
             onClicked: {
+
+                // Trigger create new Delegate for new item
+                // And emission of the GridView.onAdd signal.
                 theModel.append({"number": ++parent.count})
             }
         }
@@ -118,26 +119,23 @@ Rectangle {
 
             Text {
                 anchors.centerIn: parent
-
                 font.pixelSize: 10
-
                 text: wrapper.number
             }
 
             MouseArea {
                 anchors.fill: parent
-
                 onClicked: {
                     if (wrapper.index == -1) {
                         return
                     }
+
+                    // Cause GridView.onRemove signal to be emitted
                     theModel.remove(wrapper.index)
                 }
             }
             
-            // #region remove-animation
             GridView.onRemove: removeAnimation.start()
-            
             SequentialAnimation {
                 id: removeAnimation
                 
@@ -145,11 +143,8 @@ Rectangle {
                 NumberAnimation { target: wrapper; property: "scale"; to: 0; duration: 250; easing.type: Easing.InOutQuad }
                 PropertyAction { target: wrapper; property: "GridView.delayRemove"; value: false }
             }
-            // #endregion remove-animation
 
-            // #region add-animation
             GridView.onAdd: addAnimation.start()
-            
             SequentialAnimation {
                 id: addAnimation
                 NumberAnimation { 
@@ -161,8 +156,6 @@ Rectangle {
                     easing.type: Easing.InOutQuad 
                 }
             }
-            // #endregion add-animation
         }
     }
 }
-// #endregion global

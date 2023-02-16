@@ -43,8 +43,10 @@ Background {
         spacing: 4
         clip: true
 
-        model: 100
         orientation: ListView.Horizontal
+        layoutDirection: Qt.RightToLeft
+
+        model: 100
         delegate: GreenBox {
             required property int index
             width: 40

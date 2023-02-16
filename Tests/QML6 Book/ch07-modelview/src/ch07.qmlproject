@@ -4,10 +4,23 @@ import QmlProject 1.1
 
 Project {
 //    mainFile: "screenshots.qml"
+
 //    mainFile: "repeater/delegate.qml"
 //    mainFile: "repeater/model.qml"
-    mainFile: "listview/basic.qml"
+
+//    mainFile: "listview/basic.qml"
+//    mainFile: "listview/clip.qml"
+//    mainFile: "listview/horizontal.qml"
+//    mainFile: "listview/highlight.qml"
+//    mainFile: "listview/highlight-custom.qml"
+//    mainFile: "listview/header-footer.qml"
+//    mainFile: "listview/sections.qml"
+
 //    mainFile: "gridview/basic.qml"
+
+//    mainFile: "delegates/basic.qml"
+//    mainFile: "delegates/model-action.qml"
+    mainFile: "delegates/add-remove-effects.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {

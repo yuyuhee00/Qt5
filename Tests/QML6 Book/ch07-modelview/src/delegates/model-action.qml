@@ -65,6 +65,8 @@ Rectangle {
         anchors.fill: parent
         anchors.margins: 20
 
+        spacing: 5
+        clip: true
         focus: true
 
         model: actionModel
@@ -88,12 +90,11 @@ Rectangle {
             
             MouseArea {
                 anchors.fill: parent
-                onClicked: delegate.hello(delegate.index)
+                onClicked: {
+                    delegate.hello(delegate.index)
+                }
             }
         }
-
-        spacing: 5
-        clip: true
     }
 }
 // #endregion global
