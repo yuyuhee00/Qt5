@@ -5,6 +5,7 @@ class iHotel
 {
 public:
     virtual ~iHotel() {}
+
     virtual void bookRoom() = 0;
 };
 

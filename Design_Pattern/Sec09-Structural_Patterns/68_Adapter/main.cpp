@@ -21,10 +21,7 @@
 #include "filelogger.h"
 #include "logadapter.h"
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
@@ -32,11 +29,11 @@ int main(int argc, char *argv[])
     QString message = "Hello from legacy system";
     FileLogger logger;
 
-    //logger.write(message);
+    logger.write(message);
 
     LogAdapter adapter;
     adapter.setLogger(&logger);
-    adapter.write("Hello new system");
+    adapter.write(message);
 
     return a.exec();
 }

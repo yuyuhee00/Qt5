@@ -1,9 +1,7 @@
 QT -= gui
 
-CONFIG += c++11 console
+CONFIG += c++14 console
 CONFIG -= app_bundle
-
-CONFIG += sdk_no_version_check
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
@@ -19,7 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         Person.cpp \
         PettyCash.cpp \
-        PettyCashProtected.cpp \
+        PettyCashProxy.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -30,4 +28,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
 	Person.h \
 	PettyCash.h \
-	PettyCashProtected.h
+	PettyCashProxy.h

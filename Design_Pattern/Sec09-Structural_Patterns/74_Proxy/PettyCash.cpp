@@ -2,18 +2,19 @@
 
 PettyCash::PettyCash()
 {
-
+    balance = 500;
 }
 
-bool PettyCash::widthdraw(Person& p, int amount)
+bool PettyCash::withdraw(int amount)
 {
-    if(p.getName() == "Tom" || p.getName() == "Harry" || p.getName() == "Bubba")
-        return realThing.withdraw(amount);
-    else
+    if(amount > balance)
         return false;
+
+    balance -= amount;
+    return true;
 }
 
 int PettyCash::getBalance()
 {
-    return realThing.getBalance();
+    return balance;
 }

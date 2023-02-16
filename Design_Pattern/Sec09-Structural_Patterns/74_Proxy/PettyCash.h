@@ -1,8 +1,6 @@
 #ifndef PETTYCASH_H
 #define PETTYCASH_H
 
-#include "Person.h"
-#include "PettyCashProtected.h"
 
 class PettyCash
 {
@@ -10,11 +8,11 @@ public:
     PettyCash();
 
 public:
-    bool widthdraw(Person& p, int amount);
+    bool withdraw(int amount);
     int getBalance();
 
 private:
-    PettyCashProtected realThing;
+    int balance;
 };
 
 #endif // PETTYCASH_H

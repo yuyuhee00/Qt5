@@ -16,7 +16,6 @@
   Logger with interfaces
   You have probably seem this dozens of times
 
-
  */
 
 #include <QCoreApplication>
@@ -32,6 +31,7 @@ void log(iLogger *logger)
         logger->write("Item" + QString::number(i));
     }
 }
+
 
 int main(int argc, char *argv[])
 {

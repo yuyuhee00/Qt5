@@ -1,40 +1,40 @@
 /*
 
   What
-  Flyweight pattern
+  Proxy pattern
 
   Description
-  Flyweight allows you to share bulky data that are common to each object.
+  Proxy provides a substitute or placeholder for another bject.
+  - A proxy controls access to the original object, alowing you to perform something either before or after
+    the request gets through to the original object.
 
   Why
-  Sometimes you want to save resources
 
   Example
-  Coffee Shop
 
  */
 
 #include <QCoreApplication>
 #include <QDebug>
 #include "Person.h"
-#include "PettyCash.h"
-#include "PettyCashProtected.h"
+#include "PettyCashProxy.h"
+//#include "PettyCash.h"
 
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    PettyCash pc;
+    PettyCashProxy proxy;
     Person workers[4];
     for(int i = 0, amount = 100; i < 4; i++,  amount += 100) {
-        if(!pc.widthdraw(workers[i], amount))
+        if(!proxy.widthdraw(workers[i], amount))
             qInfo() << "No moeny for " << workers[i].getName();
         else
             qInfo() << amount << " dollars for" << workers[i].getName();
     }
 
-    qInfo() << "Remaining balance is " << pc.getBalance();
+    qInfo() << "Remaining balance is " << proxy.getBalance();
 
     return a.exec();
 }

@@ -11,6 +11,7 @@ class Booking : public QObject
 
 public:
     explicit Booking(QObject *parent = nullptr);
+
     void book(QString room);
     QString getRoom();
 
