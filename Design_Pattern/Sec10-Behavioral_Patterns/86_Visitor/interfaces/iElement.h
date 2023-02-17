@@ -2,9 +2,7 @@
 #define IELEMENT_H
 
 class iVisitor;
-#include "iVisitor.h"
 
-//think of this as a product
 class iElement
 {
 public:

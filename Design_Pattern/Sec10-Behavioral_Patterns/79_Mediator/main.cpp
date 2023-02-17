@@ -34,12 +34,10 @@ int main(int argc, char *argv[])
         developers.append(dev);
 
         QObject::connect(&manager, &Manager::getToWork, dev, &Developer::createPrograms);
-
         QObject::connect(dev, &Developer::completed, &manager, &Manager::complete);
     }
 
     QObject::connect(&manager, &Manager::getToWork, &marketing,&Marketing::createHype);
-
     QObject::connect(&marketing, &Marketing::finished, &manager, &Manager::complete);
 
     manager.startProject();

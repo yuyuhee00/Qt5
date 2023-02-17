@@ -14,7 +14,7 @@ Project {
 //    mainFile: "listview/highlight.qml"
 //    mainFile: "listview/highlight-custom.qml"
 //    mainFile: "listview/header-footer.qml"
-//    mainFile: "listview/sections.qml"
+
 
 //    mainFile: "gridview/basic.qml"
 
@@ -22,10 +22,15 @@ Project {
 //    mainFile: "delegates/model-action.qml"
 //    mainFile: "delegates/add-remove-effects.qml"
 //    mainFile: "delegates/expanding.qml"
+
+//    mainFile: "pathview/coverview.qml"
+
+//    mainFile: "xmllistmodel/images.qml"
+
+//    mainFile: "listview/sections.qml"
+
 //    mainFile: "delegates/objectmodel.qml"
-    mainFile: "pathview/coverview.qml"
-
-
+    mainFile: "delegates/model-action.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {

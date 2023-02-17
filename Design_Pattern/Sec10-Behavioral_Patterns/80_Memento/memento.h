@@ -11,8 +11,9 @@ public:
     explicit Memento(QObject *parent = nullptr);
 
     void commit();
-    void cancel();
     void rollback();
+    void cancel();
+
     void addTransaction(QString value);
     QString command();
 

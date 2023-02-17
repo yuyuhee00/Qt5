@@ -50,18 +50,22 @@ Background {
             startX: root.width / 2
             startY: 0
 
-            PathAttribute { name: "itemZ"; value: 0 }
             PathAttribute { name: "itemAngle"; value: -90.0; }
             PathAttribute { name: "itemScale"; value: 0.5; }
+            PathAttribute { name: "itemZ"; value: 0 }
+
             PathLine { x: root.width / 2; y: root.height * 0.4; }
             PathPercent { value: 0.48; }
             PathLine { x: root.width / 2; y: root.height * 0.5; }
+
             PathAttribute { name: "itemAngle"; value: 0.0; }
             PathAttribute { name: "itemScale"; value: 1.0; }
             PathAttribute { name: "itemZ"; value: 100 }
+
             PathLine { x: root.width / 2; y: root.height * 0.6; }
             PathPercent { value: 0.52; }
             PathLine { x: root.width / 2; y: root.height; }
+
             PathAttribute { name: "itemAngle"; value: 90.0; }
             PathAttribute { name: "itemScale"; value: 0.5; }
             PathAttribute { name: "itemZ"; value: 0 }

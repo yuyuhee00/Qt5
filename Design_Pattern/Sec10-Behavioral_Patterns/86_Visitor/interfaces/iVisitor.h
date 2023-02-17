@@ -2,9 +2,7 @@
 #define IVISITOR_H
 
 class iElement;
-#include "iElement.h"
 
-//For example a shopping cart
 class iVisitor
 {
 public:

@@ -9,6 +9,7 @@ SpecialValidator::SpecialValidator(QObject *parent) : QObject(parent)
 bool SpecialValidator::check(QString &value)
 {
     qInfo()  << this << "Checking for special chars";
+
     //QRegExp regex;
     //regex.setPattern("\\W+"); // notice the double slash
     //if(!value.contains(regex))

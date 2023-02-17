@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
     {
         Broker broker;
         qInfo() << "Adding orders";
+
         broker.addOrder(new BuyOrder(new Stock("AAPL", 100)));
         broker.addOrder(new SellOrder(new Stock("JNJ", 15)));
         broker.addOrder(new BuyOrder(new Stock("ATVI", 5)));

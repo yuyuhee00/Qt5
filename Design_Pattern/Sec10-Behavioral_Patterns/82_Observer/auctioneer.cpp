@@ -20,7 +20,7 @@ void Auctioneer::sellThing(QString item, int limit)
 void Auctioneer::bid(int value)
 {
     if(!m_timer.isActive()) return;
-    if(! this->sender()) return;
+    if(!this->sender()) return;
 
     m_bids.insert(this->sender(), value);
     qInfo() << this->sender() << " bids: " << value;

@@ -45,6 +45,7 @@ Window {
         // #region tableview
         TableView {
             id: view
+
             anchors.fill: parent
             anchors.margins: 20
 
@@ -53,19 +54,23 @@ Window {
 
             clip: true
 
+            //
+            // It is not possible to create table oriented models directly from QML
+            //
             model: tableModel
             delegate: cellDelegate
         }
-        // #endregion tableview
     }
 
-    // #region delegate
     Component {
         id: cellDelegate
 
         GreenBox {
             id: wrapper
 
+            //
+            // Display Role
+            //
             required property string display
 
             implicitHeight: 40
@@ -77,6 +82,4 @@ Window {
             }
         }
     }
-    // #endregion delegate
 }
-// #endregion global
