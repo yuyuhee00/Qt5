@@ -26,6 +26,7 @@
  */
 
 import QtQuick
+import QtQuick.Controls
 
 Canvas {
     id: root

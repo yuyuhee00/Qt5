@@ -5,7 +5,10 @@ import QmlProject 1.1
 Project {
 
 //    mainFile: "rectangle.qml"
-    mainFile: "convenient.qml"
+//    mainFile: "convenient.qml"
+//    mainFile: "gradient.qml"
+//    mainFile: "gradient.qml"
+    mainFile: "image.qml"
 //    mainFile: "ColorSquare.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */

@@ -35,9 +35,14 @@ Canvas {
     onPaint: {
         var ctx = getContext("2d")
 
+        // start(100,0), end(100, 200)
         var gradient = ctx.createLinearGradient(100,0,100,200)
-        gradient.addColorStop(0, "blue")
+
+        // gradient start 0.0   (100,0)
+        // gradient end   0.5   (100,200)
+        gradient.addColorStop(0.0, "blue")
         gradient.addColorStop(0.5, "lightsteelblue")
+
         ctx.fillStyle = gradient
         ctx.fillRect(50,50,100,100)
     }
