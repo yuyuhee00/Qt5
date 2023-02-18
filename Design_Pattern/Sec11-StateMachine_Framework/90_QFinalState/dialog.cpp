@@ -19,6 +19,7 @@ Dialog::Dialog(QWidget *parent)
 
     // Add our final state
     QFinalState *final = new QFinalState();
+
      // could have used the state machines children!
     QState *p = qobject_cast<QState*>(m_states.last());
     p->addTransition(ui->pushButton, &QPushButton::clicked, final);

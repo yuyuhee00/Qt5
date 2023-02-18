@@ -2,8 +2,9 @@ import QtQuick
 import QtQuick.Controls
 import QtQml.StateMachine as DSM
 
-Window {
+ApplicationWindow {
     id: window
+
     visible: true
     width: 640
     height: 480

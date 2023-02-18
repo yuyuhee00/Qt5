@@ -19,10 +19,12 @@ Dialog::Dialog(QWidget *parent)
     connect(&m_state3, &QState::entered, this, &Dialog::stateEntered);
     connect(&m_state3, &QState::exited, this, &Dialog::stateExited);
 
+
     // Change the properties of the states
-    m_state1.assignProperty(ui->lineEdit, "text", "In State 1");
-    m_state2.assignProperty(ui->lineEdit, "text", "In State 2");
-    m_state3.assignProperty(ui->lineEdit, "text", "In State 3");
+    auto state_ret = [](int index) { return QString("In State %1").arg(index); };
+    m_state1.assignProperty(ui->lineEdit, "text", state_ret(1));
+    m_state2.assignProperty(ui->lineEdit, "text", state_ret(2));
+    m_state3.assignProperty(ui->lineEdit, "text", state_ret(3));
 
     // add transitions from one state to another
     m_state1.addTransition(ui->pushButton, &QPushButton::clicked, &m_state2);
@@ -57,3 +59,4 @@ void Dialog::stateExited()
 {
     qInfo() << this->sender()->objectName() << "\tExited";
 }
+

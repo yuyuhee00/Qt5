@@ -2,6 +2,7 @@ import QtQuick
 
 Item {
     id: element
+
     property color colorOn: "red"
     property color colorOff: "grey"
 
