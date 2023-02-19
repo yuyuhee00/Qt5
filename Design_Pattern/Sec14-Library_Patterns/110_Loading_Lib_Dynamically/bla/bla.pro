@@ -3,8 +3,7 @@ CONFIG += qt
 TEMPLATE = lib
 DEFINES += BLA_LIBRARY
 
-CONFIG += c++11
-CONFIG += sdk_no_version_check
+CONFIG += c++14
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings

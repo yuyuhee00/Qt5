@@ -4,8 +4,7 @@ QT += network
 TEMPLATE = lib
 DEFINES += DOWNLOADER_LIBRARY
 
-CONFIG += c++11
-CONFIG += sdk_no_version_check
+CONFIG += c++14
 
 
 # The following define makes your compiler emit warnings if you use
