@@ -25,24 +25,37 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+// #region M1
 import QtQuick
 
 Canvas {
     id: root
-    width: 400; height: 200
+    width: 240; height: 120
 
-// #region M1
     onPaint: {
-        var ctx = getContext("2d")
-        ctx.globalCompositeOperation = "xor"
-        ctx.fillStyle = "#33a9ff"
+        //var ctx = getContext("2d")
+        var ctx = getContext("2d");
 
-        for(var i=0; i<40; i++) {
-            ctx.beginPath()
-            ctx.arc(Math.random()*400, Math.random()*200, 20, 0, 2*Math.PI)
-            ctx.closePath()
-            ctx.fill()
-        }
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "blue";
+
+        // translate x/y coordinate system
+        ctx.translate(root.width/2, root.height/2);
+
+        // draw path
+        ctx.beginPath();
+        ctx.rect(-20, -20, 40, 40);
+        ctx.stroke();
+
+        // rotate coordinate system
+        ctx.rotate(Math.PI/4);
+
+        ctx.strokeStyle = "green";
+
+        // draw path
+        ctx.beginPath();
+        ctx.rect(-20, -20, 40, 40);
+        ctx.stroke();
     }
-// #endregion M1
 }
+// #endregion M1

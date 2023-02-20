@@ -27,5 +27,6 @@ win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../uploader/release/ -
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../uploader/debug/ -luploader
 else:unix: LIBS += -L$$OUT_PWD/../uploader/ -luploader
 
+# QCreator uses belows
 INCLUDEPATH += $$PWD/../uploader
 DEPENDPATH += $$PWD/../uploader

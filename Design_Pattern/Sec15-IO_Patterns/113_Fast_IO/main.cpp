@@ -18,6 +18,7 @@
  Keep it small and simple
  ReadWrite can be slower then Read or Write (Append is Write with a seek to the end)
  Do not write or read one byte at a time
+
  */
 
 #include <QCoreApplication>

@@ -51,7 +51,8 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    QString path = "/Users/yuyuhee/Language/Qt5/Design_Pattern/Sec14-Library_Patterns/build-110_Loading_Lib_Dynamically-Qt_6_4_2_for_macOS-Debug/bla/libbla.1.0.0.dylib";
+    QString path = "/Users/yuyuhee/Language/Qt5/Design_Pattern/"
+                   "Sec14-Library_Patterns/build-110_Loading_Lib_Dynamically-Qt_6_4_2_for_macOS-Debug/bla/libbla.1.0.0.dylib";
     QLibrary lib;
 
     //load

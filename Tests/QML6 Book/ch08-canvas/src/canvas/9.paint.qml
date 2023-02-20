@@ -84,8 +84,10 @@ Rectangle {
 
         onPaint: {
             var ctx = getContext('2d')
+
             ctx.lineWidth = 1.5
             ctx.strokeStyle = canvas.color
+
             ctx.beginPath()
             ctx.moveTo(lastX, lastY)
             lastX = area.mouseX

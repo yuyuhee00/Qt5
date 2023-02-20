@@ -58,6 +58,7 @@ void Loader::loadPlugins(QString path)
             {
                 qInfo() << "Name" << plugin->name();
                 qInfo() << "Commands" << plugin->commands();
+                qInfo() <<  "IID" << plugin->GetIID();
             }
         }
     }

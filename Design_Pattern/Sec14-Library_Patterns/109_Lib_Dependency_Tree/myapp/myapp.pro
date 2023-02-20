@@ -23,9 +23,9 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/109_Lib_Dependency_Tree/downloader/release/ -ldownloader.1.0.0
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/109_Lib_Dependency_Tree/downloader/debug/ -ldownloader.1.0.0
-else:unix: LIBS += -L$$PWD/../../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/109_Lib_Dependency_Tree/downloader/ -ldownloader.1.0.0
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../build-109_Lib_Dependency_Tree-Qt_6_4_2_for_macOS-Debug/downloader -ldownloader.1.0.0
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../build-109_Lib_Dependency_Tree-Qt_6_4_2_for_macOS-Debug/downloader -ldownloader.1.0.0
+else:unix: LIBS += -L$$PWD/../../build-109_Lib_Dependency_Tree-Qt_6_4_2_for_macOS-Debug/downloader -ldownloader.1.0.0
 
-INCLUDEPATH += $$PWD/../../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/109_Lib_Dependency_Tree/downloader
-DEPENDPATH += $$PWD/../../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/109_Lib_Dependency_Tree/downloader
+INCLUDEPATH += $$PWD/../../build-109_Lib_Dependency_Tree-Qt_6_4_2_for_macOS-Debug/downloader
+DEPENDPATH += $$PWD/../../build-109_Lib_Dependency_Tree-Qt_6_4_2_for_macOS-Debug/downloader

@@ -23,9 +23,9 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/107_Creating_Shared_Library/uploader/release/ -luploader.1.0.0
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/107_Creating_Shared_Library/uploader/debug/ -luploader.1.0.0
-else:unix: LIBS += -L$$PWD/../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/107_Creating_Shared_Library/uploader/ -luploader.1.0.0
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../build-107_Creating_Shared_Library-Qt_6_4_2_for_macOS-Debug/uploader -luploader.1.0.0
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../build-107_Creating_Shared_Library-Qt_6_4_2_for_macOS-Debug/uploader -luploader.1.0.0
+else:unix: LIBS += -L$$PWD/../build-107_Creating_Shared_Library-Qt_6_4_2_for_macOS-Debug/uploader -luploader.1.0.0
 
-INCLUDEPATH += $$PWD/../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/107_Creating_Shared_Library/uploader
-DEPENDPATH += $$PWD/../../../build-Design_Pattern-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Sec14-Library_Patterns/107_Creating_Shared_Library/uploader
+INCLUDEPATH += $$PWD/../build-107_Creating_Shared_Library-Qt_6_4_2_for_macOS-Debug/uploader
+DEPENDPATH += $$PWD/../build-107_Creating_Shared_Library-Qt_6_4_2_for_macOS-Debug/uploader

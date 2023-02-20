@@ -1,6 +1,5 @@
-#include <QCoreApplication>
-
 /*
+ *
  What
  QPluginLoader
 
@@ -22,6 +21,7 @@
  Copy them to the plugin directory
  */
 
+#include <QCoreApplication>
 #include "loader.h"
 
 int main(int argc, char *argv[])
@@ -29,8 +29,9 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     QString path = a.applicationDirPath();
+
     //path.append("/plugins");
-    path.append("/../../PluginOne/debug");
+    path.append("/../PluginOne");
     qInfo() << "Path : " << path;
 
     Loader loader;

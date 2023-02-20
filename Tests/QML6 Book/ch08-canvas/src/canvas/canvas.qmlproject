@@ -4,12 +4,24 @@ import QmlProject 1.1
 
 Project {
 
-//    mainFile: "rectangle.qml"
-//    mainFile: "convenient.qml"
-//    mainFile: "gradient.qml"
-//    mainFile: "gradient.qml"
-    mainFile: "image.qml"
 //    mainFile: "ColorSquare.qml"
+
+//    mainFile: "0.convenient.qml"
+//    mainFile: "1.line.qml"
+//    mainFile: "2.rectangle.qml"
+//    mainFile: "convenient.qml"
+//    mainFile: "3.gradient.qml"
+//    mainFile: "4.shadow.qml"
+//    mainFile: "5.image.qml"
+//    mainFile: "6.transform.qml"
+//    mainFile: "7.composition.qml"
+//    mainFile: "7-1.compositeoperation.qml"
+//    mainFile: "8.imagedata.qml"
+//    mainFile: "9.paint.qml"
+//    mainFile: "10.spirograph.qml"
+    mainFile: "11.glowlines.qml"
+
+
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {

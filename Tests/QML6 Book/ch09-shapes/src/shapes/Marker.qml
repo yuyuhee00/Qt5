@@ -33,6 +33,7 @@ import QtQuick
 import QtQuick.Shapes
 
 Shape {
+
     ShapePath {
         strokeWidth: 3
         strokeColor: "red"

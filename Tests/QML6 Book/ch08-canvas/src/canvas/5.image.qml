@@ -25,34 +25,46 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-// #region M1
 import QtQuick
+import QtQuick.Controls
 
 Canvas {
     id: root
-    width: 240; height: 120
+    width: 400; height: 120
+
+// #region M1
     onPaint: {
         var ctx = getContext("2d")
-            var ctx = getContext("2d");
-            ctx.lineWidth = 4;
-            ctx.strokeStyle = "blue";
 
-            // translate x/y coordinate system
-            ctx.translate(root.width/2, root.height/2);
+        // draw an image
+        ctx.drawImage('assets/ball.png', 10, 10)
 
-            // draw path
-            ctx.beginPath();
-            ctx.rect(-20, -20, 40, 40);
-            ctx.stroke();
+        // store current context setup
+        ctx.save()
+        ctx.strokeStyle = '#ff2a68'
 
-            // rotate coordinate system
-            ctx.rotate(Math.PI/4);
-            ctx.strokeStyle = "green";
+        // create a triangle as clip region
+        ctx.beginPath()
+        ctx.moveTo(110,10)
+        ctx.lineTo(155,10)
+        ctx.lineTo(135,55)
+        ctx.closePath()
 
-            // draw path
-            ctx.beginPath();
-            ctx.rect(-20, -20, 40, 40);
-            ctx.stroke();
+        // translate coordinate system
+        ctx.clip()  // create clip from the path
+
+        // draw image with clip applied
+        ctx.drawImage('assets/ball.png', 100, 10)
+
+        // draw stroke around path
+        ctx.stroke()
+
+        // restore previous context
+        ctx.restore()
     }
-}
+
+    Component.onCompleted: {
+        loadImage("assets/ball.png")
+    }
 // #endregion M1
+}

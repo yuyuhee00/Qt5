@@ -1,5 +1,3 @@
-#include <QCoreApplication>
-
 /*
 
   What
@@ -30,6 +28,7 @@ myapp$ ldd ./myapp
     https://doc.qt.io/qt-5/deployment.html
  */
 
+#include <QCoreApplication>
 #include "../uploader/uploader_global.h"
 #include "../uploader/uploader.h"
 

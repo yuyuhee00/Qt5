@@ -30,6 +30,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // #region global
 import QtQuick
+import QtQuick.Controls
 import QtQuick.Shapes
 
 Rectangle {
@@ -39,6 +40,8 @@ Rectangle {
 
 // #region oddeven
     Shape {
+        id: shape1
+
         ShapePath {
             strokeWidth: 3
             strokeColor: "darkgray"
@@ -62,6 +65,8 @@ Rectangle {
 
 // #region winding
     Shape {
+        id: shape2
+
         ShapePath {
             strokeWidth: 3
             strokeColor: "darkgray"
@@ -90,6 +95,10 @@ Rectangle {
         
         text: "OddEvenFill"
         horizontalAlignment: Text.AlignHCenter
+        MouseArea {
+            anchors.fill: parent
+            onClicked: console.log(shape1.x, shape1.y, shape1.width, shape1.height)
+        }
     }
     Text {
         x: 200
@@ -98,6 +107,10 @@ Rectangle {
         
         text: "WindingFill"
         horizontalAlignment: Text.AlignHCenter
+        MouseArea {
+            anchors.fill: parent
+            onClicked: console.log(shape2.x, shape2.y, shape2.width, shape2.height)
+        }
     }
 
     
