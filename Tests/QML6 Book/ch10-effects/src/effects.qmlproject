@@ -4,8 +4,29 @@ import QmlProject 1.1
 
 Project {
 
-    mainFile: "particles/simple.qml"
+//    mainFile: "particles/simple.qml"
+//    mainFile: "particles/simple2.qml"
+//    mainFile: "particles/directionexample.qml"
+//    mainFile: "particles/angledirection.qml"
+//    mainFile: "particles/angledirection2.qml"
+//    mainFile: "particles/pointdirection.qml"
+//    mainFile: "particles/targetdirection.qml"
 
+//    mainFile: "particles/age.qml"
+//    mainFile: "particles/attractor.qml"
+//    mainFile: "particles/friction.qml"
+//    mainFile: "particles/gravity.qml"
+//    mainFile: "particles/turbulence.qml"
+//    mainFile: "particles/wander.qml"
+
+//    mainFile: "particles/firework1.qml"
+//    mainFile: "particles/firework.qml"
+
+//    mainFile: "particles/itemparticle.qml"
+
+
+//    mainFile: "effects/default/defaultshader.qml"
+    mainFile: "effects/wave/wave.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {
