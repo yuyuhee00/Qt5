@@ -15,8 +15,9 @@ public:
 signals:
 
 public slots:
-    void start(const QString &program, const QVariantList &arguments);
+     void start(const QString &program, const QVariantList &arguments);
     QString readAll();
+    QString readyReadStandardOutput();
 };
 
 #endif // TASK_H

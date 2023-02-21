@@ -1,9 +1,5 @@
-#include "dialog.h"
-
-#include <QApplication>
-#include <QDesktopServices>
-
 /*
+ *
  What
  Desktop services
 
@@ -17,6 +13,11 @@
  Opening URLs and making a custom handler
 
  */
+
+#include "dialog.h"
+
+#include <QApplication>
+#include <QDesktopServices>
 
 int main(int argc, char *argv[])
 {

@@ -41,5 +41,7 @@ void Downloader::finished()
     qInfo() << "File:" << m_file.fileName();
     qInfo() << "File will be removed when the class is destroyed!";
 
+//    m_file.copy("text.txt");
+
     m_file.remove();
 }

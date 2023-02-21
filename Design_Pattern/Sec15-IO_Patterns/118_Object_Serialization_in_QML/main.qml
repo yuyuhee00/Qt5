@@ -12,6 +12,20 @@ Window {
     height: 480
     title: qsTr("Hello World")
 
+    Animal {
+        id: animal
+        onFinished: {
+          updateGUI();
+        }
+        onError: {
+            console.log(message)
+        }
+
+        Component.onCompleted: {
+            updateGUI();
+        }
+    }
+
     Column {
         id: column
         width: 344
@@ -150,19 +164,5 @@ Window {
         var d = new Date(animal.fed)
         console.log("Date: " + d)
         txtFed.text = d
-    }
-
-    Animal {
-        id: animal
-        onFinished: {
-          updateGUI();
-        }
-        onError: {
-            console.log(message)
-        }
-
-        Component.onCompleted: {
-            updateGUI();
-        }
     }
 }

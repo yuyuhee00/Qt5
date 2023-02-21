@@ -12,10 +12,15 @@ Window {
 
     Task {
         id: task
-//        onReadyRead: {
-        onReadyReadStandardOutput: {
-            console.log("onReadyReadStandardOutput")
+
+//        onReadyReadStandardOutput: {
+//           txtOut.text = task.readAllStandardOutput();
+//            console.log(txtOut.text)
+//        }
+
+        onReadyRead: {
             txtOut.text = task.readAll();
+            console.log(txtOut.text)
         }
     }
 
@@ -61,8 +66,7 @@ Window {
             text: qsTr("Go")
             anchors.horizontalCenter: parent.horizontalCenter
             onClicked: {
-//                console.log(txtCommand.text )
-                task.start(txtCommand.text,[txtArg.text])
+                task.start(txtCommand.text, [txtArg.text])
             }
         }
     }

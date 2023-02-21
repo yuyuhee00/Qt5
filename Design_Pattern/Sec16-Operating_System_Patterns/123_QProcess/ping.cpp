@@ -126,7 +126,9 @@ void Ping::startPing()
 {
     QByteArray command;
     command.append("ping " + m_address.toUtf8());
-    if(QSysInfo::productType() == "windows") command.append("\r");
+    if(QSysInfo::productType() == "windows")
+        command.append("\r");
     command.append("\n");
+
     m_process.write(command);
 }
