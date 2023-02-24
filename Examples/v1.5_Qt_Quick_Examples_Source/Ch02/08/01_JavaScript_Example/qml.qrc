@@ -2,5 +2,9 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>js/jslib.js</file>
+        <file>property_binding.qml</file>
+        <file>function_binding.qml</file>
+        <file>signal_handler.qml</file>
+        <file>qml_type.qml</file>
     </qresource>
 </RCC>

@@ -1,6 +1,6 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.5
-import QtQuick.Dialogs 1.2
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Dialogs
 
 ApplicationWindow {
     width: 300; height: 300; visible: true
@@ -11,8 +11,9 @@ ApplicationWindow {
     }
 
     Dialog {
-        id: myDial; visible: false
+        id: myDial
         title: "Blue sky dialog"
+        visible: false
 
         contentItem: Rectangle {
             color: "lightskyblue"
