@@ -1,5 +1,4 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
+import QtQuick
 import "content"
 
 Window {
@@ -11,7 +10,6 @@ Window {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
 
-        onMyChecked: checkValue ? root.color = "red"
-                                :  root.color = "lightblue"
+        onMyChecked: checkValue ? root.color = "red"  :  root.color = "lightblue"
     }
 }

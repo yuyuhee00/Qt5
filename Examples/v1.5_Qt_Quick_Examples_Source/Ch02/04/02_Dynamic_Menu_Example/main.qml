@@ -1,5 +1,5 @@
-import QtQuick 2.0
-import QtQuick.Window 2.12
+import QtQuick
+import QtQuick.Window
 
 Window {
     visible: true; width: 400; height: 400

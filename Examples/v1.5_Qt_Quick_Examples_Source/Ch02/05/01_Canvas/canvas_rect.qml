@@ -11,6 +11,7 @@ Window {
         width: 120; height: 120
         onPaint: {
             var ctx = getContext("2d")
+
             ctx.fillStyle = 'green'
             ctx.strokeStyle = "blue"
             ctx.lineWidth = 4

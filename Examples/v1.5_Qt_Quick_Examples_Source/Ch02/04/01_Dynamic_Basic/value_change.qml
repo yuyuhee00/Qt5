@@ -1,5 +1,6 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Window
 
 Window {
     visible: true
@@ -12,9 +13,9 @@ Window {
         }
     }
     Component.onCompleted: {
-        squareLoader.setSource("ExComponent.qml",
-                               { "color": "blue" });
+        squareLoader.setSource( "ExComponent.qml", { "color": "blue" } )
     }
+
     Rectangle {
         anchors.top: squareLoader.bottom
         width: 200; height: 100
@@ -22,8 +23,7 @@ Window {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                squareLoader.setSource("ExComponent.qml",
-                                       {"width": 200})
+                squareLoader.setSource( "ExComponent.qml", {"width": 200} )
             }
         }
     }

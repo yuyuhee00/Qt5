@@ -1,11 +1,10 @@
-import QtQuick 2.12
+import QtQuick
 
 Item {
     Item {
         focus: true
-        Keys.onPressed: {
-            console.log("Loaded captured:",
-                        event.text);
+        Keys.onPressed: (event)=> {
+            console.log("Loaded captured:",  event.text);
             event.accepted = true;
         }
     }

@@ -1,4 +1,4 @@
-import QtQuick 2.12
+import QtQuick
 
 Item {
     width: textItem.width + checkImage.width
@@ -38,7 +38,7 @@ Item {
 
     MouseArea {
         anchors.fill: checkImage
-        onClicked: if (parent.state == "checked") {
+        onClicked: if (parent.state === "checked") {
                        parent.state = "unchecked";
                        parent.myChecked(false);
                    } else {

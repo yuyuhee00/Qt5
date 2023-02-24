@@ -30,6 +30,5 @@ Window {
             ctx.stroke()
         }
     }
-
 }
 

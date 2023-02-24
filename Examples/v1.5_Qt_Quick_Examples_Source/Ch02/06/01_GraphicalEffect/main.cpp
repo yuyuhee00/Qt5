@@ -6,23 +6,23 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/effect1.qml"))); // Blend Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect2.qml"))); // BrightnessContrast Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect3.qml"))); // ColorOverlay Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect4.qml"))); // Colorize Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect5.qml"))); // Desaturate Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect6.qml"))); // GammaAdjust Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect7.qml"))); // HueSaturation Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect8.qml"))); // LevelAdjust Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect_Gradient.qml"))); // Gradient Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect9.qml"))); // Displace Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect10.qml"))); // DropShadow Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect11.qml"))); // FastBlur Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect12.qml"))); // GaussianBlur Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect13.qml"))); // DirectionBlur Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect14.qml"))); // RadialBlur Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect15.qml"))); // Glow Effect
-    //engine.load(QUrl(QStringLiteral("qrc:/effect16.qml"))); // RectangularGlow Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/blend.qml"))); // Blend Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/brightness_contrast.qml"))); // BrightnessContrast Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/color_overlay.qml"))); // ColorOverlay Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/colorize.qml"))); // Colorize Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/desaturate.qml"))); // Desaturate Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/gamma_adjust.qml"))); // GammaAdjust Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/hue_saturation.qml"))); // HueSaturation Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/level_adjust.qml"))); // LevelAdjust Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/effect_Gradient.qml"))); // Gradient Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/displace.qml"))); // Displace Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/drop_shadow.qml"))); // DropShadow Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/fast_blur.qml"))); // FastBlur Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/gaussian_blur.qml"))); // GaussianBlur Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/direction_blur.qml"))); // DirectionBlur Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/radial_blur.qml"))); // RadialBlur Effect
+//    engine.load(QUrl(QStringLiteral("qrc:/glow.qml"))); // Glow Effect
+    engine.load(QUrl(QStringLiteral("qrc:/rectangular_glow.qml"))); // RectangularGlow Effect
 
     return app.exec();
 }

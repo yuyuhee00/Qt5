@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    engine.load(QUrl(QStringLiteral("qrc:/rectangle.qml"))); // Rectangle 예제
+//    engine.load(QUrl(QStringLiteral("qrc:/rectangle.qml"))); // Rectangle 예제
     //engine.load(QUrl(QStringLiteral("qrc:/image.qml"))); // Image 예제
     //engine.load(QUrl(QStringLiteral("qrc:/animatedimage.qml"))); // AnimatedImage 예제
     //engine.load(QUrl(QStringLiteral("qrc:/anchors.qml"))); // anchors 예제
@@ -20,6 +20,10 @@ int main(int argc, char *argv[])
     //engine.load(QUrl(QStringLiteral("qrc:/image.qml"))); // Image
     //engine.load(QUrl(QStringLiteral("qrc:/transformation.qml"))); // Transformation
     //engine.load(QUrl(QStringLiteral("qrc:/simple_accessible.qml"))); // Accessible
+//    engine.load(QUrl(QStringLiteral("qrc:/main.qml"))); // Mouse 예제
+
+//        engine.load(QUrl(QStringLiteral("qrc:/dynamic_main.qml"))); // Loader 예제
+        engine.load(QUrl(QStringLiteral("qrc:/dynamic_component.qml"))); // Loader 예제
 
     return app.exec();
 }

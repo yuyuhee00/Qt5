@@ -10,7 +10,8 @@ function addCall(msg)
     var result = src1 + src2;
 
     var data = {
-        expression : result
+        expression : "",
+        result: 0
     }
 
     data.expression = src1 + ' + ' + src2;

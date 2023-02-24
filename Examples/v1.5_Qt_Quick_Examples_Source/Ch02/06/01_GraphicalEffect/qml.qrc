@@ -1,21 +1,21 @@
 <RCC>
     <qresource prefix="/">
-        <file>effect1.qml</file>
-        <file>effect2.qml</file>
-        <file>effect3.qml</file>
-        <file>effect4.qml</file>
-        <file>effect5.qml</file>
-        <file>effect6.qml</file>
-        <file>effect7.qml</file>
-        <file>effect8.qml</file>
-        <file>effect9.qml</file>
-        <file>effect10.qml</file>
-        <file>effect11.qml</file>
-        <file>effect12.qml</file>
-        <file>effect13.qml</file>
-        <file>effect14.qml</file>
-        <file>effect15.qml</file>
-        <file>effect16.qml</file>
+        <file>blend.qml</file>
+        <file>brightness_contrast.qml</file>
+        <file>color_overlay.qml</file>
+        <file>colorize.qml</file>
+        <file>desaturate.qml</file>
+        <file>gamma_adjust.qml</file>
+        <file>hue_saturation.qml</file>
+        <file>level_adjust.qml</file>
+        <file>displace.qml</file>
+        <file>drop_shadow.qml</file>
+        <file>fast_blur.qml</file>
+        <file>gaussian_blur.qml</file>
+        <file>direction_blur.qml</file>
+        <file>radial_blur.qml</file>
+        <file>glow.qml</file>
+        <file>rectangular_glow.qml</file>
         <file>images/butterfly.png</file>
         <file>images/lenna.png</file>
         <file>images/bug.jpg</file>

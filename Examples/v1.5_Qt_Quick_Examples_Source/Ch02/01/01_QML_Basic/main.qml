@@ -4,7 +4,9 @@ import QtQuick.Window 2.12
 Window {
     visible: true
     id: root
-    width: 512; height: 320; color: "#D8D8D8"
+    width: 512
+    height: 320
+    color: "#D8D8D8"
 
     property int rotationStep: 45
 

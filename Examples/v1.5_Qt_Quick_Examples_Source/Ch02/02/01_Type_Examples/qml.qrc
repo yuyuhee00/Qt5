@@ -25,5 +25,7 @@
         <file>fontloader.qml</file>
         <file>repeater.qml</file>
         <file>images/ani.gif</file>
+        <file>dynamic_main.qml</file>
+        <file>dynamic_component.qml</file>
     </qresource>
 </RCC>

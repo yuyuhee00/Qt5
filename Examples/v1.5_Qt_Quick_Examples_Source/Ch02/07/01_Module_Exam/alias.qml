@@ -1,5 +1,4 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
+import QtQuick
 import "content" as MyContent
 
 Window {
@@ -8,5 +7,9 @@ Window {
      MyContent.NewCheckBox      {
           anchors.horizontalCenter: parent.horizontalCenter
           anchors.verticalCenter: parent.verticalCenter
+
+          onMyChecked: {
+              console.log("Clicked...")
+          }
      }
 }

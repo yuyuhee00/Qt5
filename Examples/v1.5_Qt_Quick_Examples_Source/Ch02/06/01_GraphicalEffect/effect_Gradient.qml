@@ -1,6 +1,6 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
-import QtGraphicalEffects 1.0
+import QtQuick
+import QtQuick.Window
+import Qt5Compat.GraphicalEffects
 
 Window {
     visible: true; width: 600; height: 200
