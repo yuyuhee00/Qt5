@@ -51,5 +51,9 @@ Rectangle {
             root.clicked()
         }
     }
+
+    onClicked: {
+        console.log("Clicked...")
+    }
 }
 // #endregion global
