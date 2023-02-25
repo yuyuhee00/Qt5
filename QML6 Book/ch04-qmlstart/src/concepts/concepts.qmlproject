@@ -4,7 +4,11 @@ import QmlProject 1.1
 
 Project {
 
-    mainFile: ""
+//    mainFile: "RectangleExample.qml"
+//    mainFile: "RectangleExample2.qml"
+//    mainFile: "RectangleExample3.qml"
+//    mainFile: "TextExample.qml"
+    mainFile: "ImageExample.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {
@@ -18,4 +22,6 @@ Project {
     }
     /* List of plugin directories passed to QML runtime */
     // importPaths: [ "../exampleplugin" ]
+
+    mainUiFile: "tst_concepts.qml"
 }

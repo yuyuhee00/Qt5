@@ -4,7 +4,10 @@ import QmlProject 1.1
 
 Project {
 
-    mainFile: "transformation.qml"
+//    mainFile: "TransformationExample.qml"
+
+    mainFile: "tst_transformation.qml"
+
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {
@@ -18,4 +21,6 @@ Project {
     }
     /* List of plugin directories passed to QML runtime */
     // importPaths: [ "../exampleplugin" ]
+
+    mainUiFile: "test_transformation.qml"
 }
