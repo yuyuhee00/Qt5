@@ -8,7 +8,8 @@ Project {
 //    mainFile: "RectangleExample2.qml"
 //    mainFile: "RectangleExample3.qml"
 //    mainFile: "TextExample.qml"
-    mainFile: "ImageExample.qml"
+//    mainFile: "ImageExample.qml"
+    mainFile: "MouseAreaExample.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {
