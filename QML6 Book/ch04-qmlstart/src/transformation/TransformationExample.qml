@@ -2,12 +2,16 @@ import QtQuick
 
 Item {
     // set width based on given background
-    width: bg.width
-    height: bg.height
+    implicitWidth: bg.implicitWidth
+    implicitHeight: bg.implicitHeight
+
 
     Image { // nice background image
         id: bg
+        width: parent.width
+        height: parent.height
         source: "assets/background.png"
+        scale: Qt.KeepAspectRatio
     }
 
     MouseArea {
