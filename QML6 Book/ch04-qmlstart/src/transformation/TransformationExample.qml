@@ -56,6 +56,7 @@ Item {
         x: 248; y: 68
         source: "assets/triangle_red.png"
         antialiasing: true
+//        smooth: true
         onClicked: {
             // several transformations
             rotation += 15
