@@ -13,7 +13,6 @@ Image {
         source: "images/pole.png"
     }
 
-
     Image {
         id: wheel
         anchors.centerIn: parent
