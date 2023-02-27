@@ -22,6 +22,10 @@ Image {
                 duration: 250
             }
         }
+
+        onRotationChanged: {
+            console.log("rotation: " + rotation)
+        }
     }
 
     MouseArea {
@@ -29,5 +33,9 @@ Image {
         onPressed: {
             wheel.rotation += 90
         }
+    }
+
+    onWidthChanged: {
+        console.log("Width: " + width)
     }
 }

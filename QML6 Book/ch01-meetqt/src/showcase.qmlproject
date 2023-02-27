@@ -3,7 +3,9 @@
 import QmlProject 1.1
 
 Project {
-    mainFile: "Showcase.qml"
+
+//    mainFile: "Showcase.qml"
+    mainFile: "test_showcase.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {
@@ -17,4 +19,6 @@ Project {
     }
     /* List of plugin directories passed to QML runtime */
     // importPaths: [ "../exampleplugin" ]
+
+    mainUiFile: "test_showcase.qml"
 }
