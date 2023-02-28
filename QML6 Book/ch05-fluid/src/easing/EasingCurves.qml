@@ -24,6 +24,7 @@ Rectangle {
                     box.toggle = !box.toggle
                 }
             }
+
             EasingType {
                 easingType: Easing.InExpo
                 title: "InExpo"
@@ -97,6 +98,7 @@ Rectangle {
                 }
             }
         }
+
         Item {
             height: 80
             Layout.fillWidth: true
@@ -119,4 +121,3 @@ Rectangle {
         }
     }
 }
-// #endregion global
