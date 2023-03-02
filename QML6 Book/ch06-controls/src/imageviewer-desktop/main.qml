@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
 import Qt.labs.platform as Platform
 
 ApplicationWindow {
@@ -10,11 +11,10 @@ ApplicationWindow {
     // 3. Contents area     - Children of the window
     // 4. status bar            - TabBar
 
-    
-    visible: true
     width: 640
     height: 480
     title: qsTr("Image Viewer")
+    visible: true
     
     menuBar: MenuBar {
         Menu {
@@ -57,6 +57,16 @@ ApplicationWindow {
         asynchronous: true
     }
 
+    footer: Rectangle   {
+        width: parent.width; height: 20
+        anchors.top: image.bottom
+        Flow {
+            Label {
+                text: qsTr("Image: " + image.source)
+            }
+        }
+    }
+
     Platform.FileDialog {
         id: fileOpenDialog
         title: "Select an image file"
@@ -83,7 +93,4 @@ ApplicationWindow {
 
         standardButtons: Dialog.Ok
     }
-
-    // ...
-
 }

@@ -26,6 +26,12 @@ Window {
         onCountChanged: {
             lblStatus.text = "Running: " + machine.count + " of " + machine.max
         }
+        onMaxChanged: {
+            lblStatus.text = "Running: " + machine.count + " of " + machine.max
+        }
+        onNameChanged: {
+            console.log("Name Changed: " + machine.name)
+        }
     }
 
     Column {
@@ -85,9 +91,9 @@ Window {
             onClicked: {
                 console.log("Clicked test")
 
-//                 machine.max = 1000
+                 machine.max = 1000
 //                setMax() is in slot:
-                machine.setMax(100)
+//                machine.setMax(100)
 
             }
         }

@@ -12,7 +12,7 @@ class Machine : public QObject
     // Properties can be used in QML
     Q_PROPERTY(int count READ count WRITE setCount NOTIFY countChanged) // getter, setter, signal
     Q_PROPERTY(int max READ max WRITE setMax NOTIFY maxChanged) // getter, setter, signal
-    Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged) // getter, setter
+    Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged) // getter, setter, signal
 
 public:
     explicit Machine(QObject *parent = nullptr);

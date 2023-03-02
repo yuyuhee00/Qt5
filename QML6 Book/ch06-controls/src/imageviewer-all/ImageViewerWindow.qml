@@ -5,8 +5,6 @@ import Qt.labs.platform as Platform
 
 ApplicationWindow {
 
-    // ...
-
     function openFileDialog() { fileOpenDialog.open(); }
     function openAboutDialog() { aboutDialog.open(); }
 
@@ -26,9 +24,6 @@ ApplicationWindow {
 
     Platform.FileDialog {
         id: fileOpenDialog
-
-        // ...
-
         title: "Select an image file"
         folder: Platform.StandardPaths.writableLocation(Platform.StandardPaths.DocumentsLocation)
         nameFilters: [ "Image files (*.png *.jpeg *.jpg)" ]
@@ -37,19 +32,12 @@ ApplicationWindow {
 
     Dialog {
         id: aboutDialog
-
-        // ...
-
         title: qsTr("About")
         standardButtons: Dialog.Ok
-
         Label {
             anchors.fill: parent
             text: qsTr("QML Image Viewer\nA part of the QmlBook\nhttp://qmlbook.org")
             horizontalAlignment: Text.AlignHCenter
         }
     }
-
-    // ...
-
 }

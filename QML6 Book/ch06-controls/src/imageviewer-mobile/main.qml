@@ -5,14 +5,17 @@ import Qt.labs.platform as Platform
 
 ApplicationWindow {
     
-    // ...
-    
+
     id: window
 
     visible: true
     width: 360
     height: 520
     title: qsTr("Image Viewer")
+
+    background: Rectangle {
+        color: "darkGray"
+    }
 
     // Side panel that can be opened and closed using a swipe gesture.
     Drawer {
@@ -45,6 +48,36 @@ ApplicationWindow {
                     text: qsTr("About...")
                     triggered: function(){ aboutDialog.open(); }
                 }
+                ListElement {
+                    text: qsTr("Test ")
+                }
+                ListElement {
+                    text: qsTr("Test ")
+                }
+                ListElement {
+                    text: qsTr("Test ")
+                }
+                ListElement {
+                    text: qsTr("Test ")
+                }
+                ListElement {
+                    text: qsTr("Test ")
+                }
+                ListElement {
+                    text: qsTr("Test ")
+                }
+                ListElement {
+                    text: qsTr("Test ")
+                }
+                ListElement {
+                    text: qsTr("Test ")
+                }
+                ListElement {
+                    text: qsTr("Test ")
+                }
+                ListElement {
+                    text: qsTr("Test ")
+                }
             }
 
             ScrollIndicator.vertical: ScrollIndicator { }
@@ -69,15 +102,22 @@ ApplicationWindow {
         }
     }
 
-    background: Rectangle {
-        color: "darkGray"
-    }
-
     Image {
         id: image
         anchors.fill: parent
         fillMode: Image.PreserveAspectFit
         asynchronous: true
+    }
+
+    footer: Rectangle   {
+        width: parent.width; height: 20
+        anchors.top: image.bottom
+        color: "orange"
+        Flow {
+            Label {
+                text: qsTr("Image: " + image.source)
+            }
+        }
     }
 
     Platform.FileDialog {
@@ -103,7 +143,4 @@ ApplicationWindow {
 
         standardButtons: Dialog.Ok
     }
-
-    // ...
-
 }

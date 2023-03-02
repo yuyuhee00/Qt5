@@ -2,8 +2,6 @@ import QtQuick
 import QtQuick.Controls
 
 ImageViewerWindow {
-    
-    // ...
 
     id: window
     
@@ -39,7 +37,4 @@ ImageViewerWindow {
             }
         }
     }
-
-    // ...
-
 }

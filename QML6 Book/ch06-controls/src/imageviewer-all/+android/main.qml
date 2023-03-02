@@ -4,8 +4,6 @@ import QtQuick.Controls.Material 2.1
 
 ImageViewerWindow {
 
-    // ...
-
     id: window
 
     width: 360
@@ -14,15 +12,10 @@ ImageViewerWindow {
     Drawer {
         id: drawer
 
-        // ...
-
         width: Math.min(window.width, window.height) / 3 * 2
         height: window.height
 
         ListView {
-
-            // ...
-
             focus: true
             currentIndex: -1
             anchors.fill: parent
@@ -48,16 +41,11 @@ ImageViewerWindow {
                 }
             }
 
-            // ...
-
             ScrollIndicator.vertical: ScrollIndicator { }
         }
     }
 
     header: ToolBar {
-
-        // ...
-
         Material.background: Material.Orange
 
         ToolButton {
@@ -75,7 +63,4 @@ ImageViewerWindow {
             elide: Label.ElideRight
         }
     }
-
-    // ...
-
 }
