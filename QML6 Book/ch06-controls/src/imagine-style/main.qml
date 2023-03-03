@@ -3,8 +3,6 @@ import QtQuick.Controls
 
 ApplicationWindow {
 
-    // ...
-
     visible: true
     width: 640
     height: 480
@@ -26,7 +24,6 @@ ApplicationWindow {
 
             // Button image : Control-Element-State Pattern
             // The stateless file , button-background.9.png is used for all state without a specific asset.
-
 
             delegate: Button {
                 width: parent.width

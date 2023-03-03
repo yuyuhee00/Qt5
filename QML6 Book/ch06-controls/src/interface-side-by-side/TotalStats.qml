@@ -8,8 +8,6 @@ Page {
         padding: 10
     }
 
-    // ...
-
     Column {
         anchors.centerIn: parent
         spacing: 10

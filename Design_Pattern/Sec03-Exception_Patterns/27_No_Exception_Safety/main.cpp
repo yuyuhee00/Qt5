@@ -26,7 +26,7 @@
 #include <QString>
 #include <QDebug>
 
-//perfect code that never fails...
+// perfect code that never fails...
 int getInt(QString data)
 {
     bool ok;
@@ -35,7 +35,7 @@ int getInt(QString data)
     return value;
 }
 
-//Live in the real world...
+// Live in the real world...
 void userIO(QTextStream *stream, QList<QString> *list)
 {
     qInfo() << "Enter a number and a name (1 Bryan)";

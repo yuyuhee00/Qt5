@@ -1,11 +1,9 @@
 import QtQuick
 import QtQuick.Controls
-import Qt.labs.platform as NativeDialogs
+import Qt.labs.platform as Platform
 
 ApplicationWindow {
     id: root
-
-    // ...
 
     title: (fileName.length===0?qsTr("Document"):fileName) + (isDirty?"*":"")
 
@@ -17,9 +15,6 @@ ApplicationWindow {
     property bool tryingToClose: false // Is the window trying to close (but needs a file name first)?
 
     menuBar: MenuBar {
-
-        // ...
-
         Menu {
             title: qsTr("&File")
             MenuItem {
@@ -86,10 +81,10 @@ ApplicationWindow {
         }
     }
 
-    NativeDialogs.FileDialog {
+    Platform.FileDialog {
         id: openDialog
         title: "Open"
-        folder: NativeDialogs.StandardPaths.writableLocation(NativeDialogs.StandardPaths.DocumentsLocation)
+        folder: Platform.StandardPaths.writableLocation(Platform.StandardPaths.DocumentsLocation)
         onAccepted: {
             var window = root.createNewDocument();
             window.fileName = openDialog.file;
@@ -97,10 +92,10 @@ ApplicationWindow {
         }
     }
 
-    NativeDialogs.FileDialog {
+    Platform.FileDialog {
         id: saveAsDialog
         title: "Save As"
-        folder: NativeDialogs.StandardPaths.writableLocation(NativeDialogs.StandardPaths.DocumentsLocation)
+        folder: Platform.StandardPaths.writableLocation(Platform.StandardPaths.DocumentsLocation)
         onAccepted: {
             root.fileName = saveAsDialog.file
             saveDocument();
@@ -117,11 +112,11 @@ ApplicationWindow {
         }
     }
 
-    NativeDialogs.MessageDialog {
+    Platform.MessageDialog {
         id: closeWarningDialog
         title: "Closing document"
         text: "You have unsaved changed. Do you want to save your changes?"
-        buttons: NativeDialogs.MessageDialog.Yes | NativeDialogs.MessageDialog.No | NativeDialogs.MessageDialog.Cancel
+        buttons: Platform.MessageDialog.Yes | Platform.MessageDialog.No | Platform.MessageDialog.Cancel
         onYesClicked: {
             // Attempt to save the document
             root.tryingToClose = true;
@@ -136,7 +131,4 @@ ApplicationWindow {
             // Do nothing, aborting the closing of the window
         }
     }
-
-    // ...
-
 }
