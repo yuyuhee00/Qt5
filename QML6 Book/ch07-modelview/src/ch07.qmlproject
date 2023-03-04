@@ -5,15 +5,20 @@ import QmlProject 1.1
 Project {
 //    mainFile: "screenshots.qml"
 
-//    mainFile: "repeater/delegate.qml"
+//    mainFile: "repeater/number.qml"
+//    mainFile: "repeater/array.qml"
 //    mainFile: "repeater/model.qml"
+//    mainFile: "repeater/delegate.qml"
+
 
 //    mainFile: "listview/basic.qml"
-//    mainFile: "listview/clip.qml"
 //    mainFile: "listview/horizontal.qml"
 //    mainFile: "listview/highlight.qml"
 //    mainFile: "listview/highlight-custom.qml"
-//    mainFile: "listview/header-footer.qml"
+    mainFile: "listview/header-footer.qml"
+//    mainFile: "listview/clip.qml"
+
+
 
 
 //    mainFile: "gridview/basic.qml"
@@ -30,7 +35,8 @@ Project {
 //    mainFile: "listview/sections.qml"
 
 //    mainFile: "delegates/objectmodel.qml"
-    mainFile: "delegates/model-action.qml"
+//    mainFile: "delegates/model-action.qml"
+
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {
