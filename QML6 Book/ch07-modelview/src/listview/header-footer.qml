@@ -18,6 +18,7 @@ Background {
         header: headerComponent
         footer: footerComponent
 
+//        orientation: ListView.Horizontal
         spacing: 2
     }
 
@@ -36,9 +37,10 @@ Background {
         id: footerComponent
 
         YellowBox {
+            anchors.bottom: rec.bottom
             width: ListView.view ? ListView.view.width : 0
             height: 20
-            anchors.topMargin: 100
+//            anchors.topMargin: 100
             text: 'Footer'
         }
     }
