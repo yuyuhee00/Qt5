@@ -67,9 +67,9 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    // MyClass m;
+     MyClass m;
     // Test copy
-    // testCopy(m);
+     testCopy(m);
 
     // testPointer(&m); //Basically same things
 

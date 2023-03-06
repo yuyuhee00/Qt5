@@ -47,11 +47,11 @@ void createChildren(MyClass *parent, int count)
 
     for(int i = 0; i < count; i++)
     {
-        MyClass *child = new MyClass(parent); //heap
+        // Heap
+        MyClass *child = new MyClass(parent);
         child->setObjectName("Child " + QString::number(i));
     }
 }
-
 
 void listChild(MyClass *parent)
 {
@@ -63,7 +63,7 @@ void listChild(MyClass *parent)
         MyClass *child = qobject_cast<MyClass*>(obj);
 
         // test child
-        qInfo() << child;
+        qInfo() << "Child: " << child;
     }
 }
 

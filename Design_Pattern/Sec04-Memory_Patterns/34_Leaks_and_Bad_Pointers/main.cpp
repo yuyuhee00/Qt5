@@ -88,11 +88,11 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    // demoLeak();
+//     demoLeak();
 
-    demoDanglingPointer();
+//    demoDanglingPointer();
 
-   // demoCorrect();
+    demoCorrect();
 
     return a.exec();
 }

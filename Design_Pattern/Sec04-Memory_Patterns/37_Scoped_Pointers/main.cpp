@@ -92,6 +92,26 @@ void testCustomDelete()
     // List automatically clears and deletes and pointers
 }
 
+void testCustomDelete2()
+{
+    QList<MyClass*> list;
+    QScopedPointer<QList<MyClass*>> p(&list);
+
+    for(int i = 0; i < 10; i++)
+    {
+        list.append(makeClass("List" + QString::number(i)));
+    }
+
+    foreach(MyClass *item, list)
+    {
+        item->test();
+    }
+
+    qInfo() << "Custom Cleanup 2";
+    qDeleteAll(list);
+    list.clear();
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -103,6 +123,8 @@ int main(int argc, char *argv[])
     testScopedArray();
 
     testCustomDelete();
+
+    testCustomDelete2();
 
     return a.exec();
 }

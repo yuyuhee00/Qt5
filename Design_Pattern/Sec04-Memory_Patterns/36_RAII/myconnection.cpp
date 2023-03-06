@@ -59,5 +59,3 @@ void MyConnection::setHandle(const qintptr &handle)
 {
     m_handle = handle;
 }
-
-

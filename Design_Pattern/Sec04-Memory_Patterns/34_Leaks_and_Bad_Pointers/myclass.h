@@ -15,5 +15,4 @@ signals:
 
 };
 
-
 #endif // MYCLASS_H
