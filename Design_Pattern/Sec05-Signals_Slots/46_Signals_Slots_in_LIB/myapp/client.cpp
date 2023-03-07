@@ -36,6 +36,7 @@ void Client::triggered(QString value)
     m_count++;
     if(m_count >= 5)
     {
+//        stop();
         emit limit();
         return;
     }

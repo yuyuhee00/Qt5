@@ -3,7 +3,6 @@
 
 Server::Server(QObject *parent) : QTcpServer(parent)
 {
-
 }
 
 Server::~Server()
@@ -28,7 +27,6 @@ void Server::close()
 
     QTcpServer::close();
 }
-
 
 void Server::incomingConnection(qintptr handle)
 {
@@ -87,14 +85,12 @@ void Server::readyRead()
     QTcpSocket *socket = qobject_cast<QTcpSocket*>(QObject::sender());
     if(!socket) return;
 
-
-    // Check the socket for other possible issues
 //    QString socketIP = socket->peerAddress().toString();
 //    int port = socket->peerPort();
 
-    //QString line = readLine(socket);
 //    QByteArray value = socket->readAll();
 //    QString line(value.trimmed());
+
     QString line = readLine(socket);
     qInfo() << "Input : " << line;
 
@@ -129,6 +125,12 @@ void Server::disconnected()
      socket->deleteLater();
 }
 
+QString Server::clientName(QTcpSocket *socket)
+{
+    if(!socket) return QString("Unknown");
+    return socket->objectName();
+}
+
 void Server::sendAll(QString value)
 {
     value.append("\r\n");
@@ -139,10 +141,4 @@ void Server::sendAll(QString value)
 
         if(socket) socket->write(data);
     }
-}
-
-QString Server::clientName(QTcpSocket *socket)
-{
-    if(!socket) return QString("Unknown");
-    return socket->objectName();
 }

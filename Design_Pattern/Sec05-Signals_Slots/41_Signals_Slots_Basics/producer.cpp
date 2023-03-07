@@ -19,8 +19,8 @@ void Producer::start()
 
 void Producer::stop()
 {
-    m_timer.stop();
     qInfo() << this << "Producer stopped";
+    m_timer.stop();
 }
 
 void Producer::produced()

@@ -31,11 +31,12 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     Producer producer;
-//    QObject::connect(&a, &QCoreApplication::aboutToQuit, &producer, &Producer::stop);
 
     Consumer consumer;
 
     ConnectProduerToConsumer(producer, consumer);
+
+    QObject::connect(&a, &QCoreApplication::aboutToQuit, &producer, &Producer::stop);
 
     producer.start();
 

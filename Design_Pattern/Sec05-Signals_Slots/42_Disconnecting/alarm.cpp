@@ -30,7 +30,7 @@ void Alarm::timeout()
     if(QTime::currentTime() >= m_limit)
     {
         //Sound the alarm
-        qInfo() << this << "Alarm";
+        qInfo() << this << "Alarm : " << QTime::currentTime();
 
         QObject::disconnect(timer, &QTimer::timeout, this, &Alarm::timeout);
     }

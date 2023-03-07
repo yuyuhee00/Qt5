@@ -68,11 +68,6 @@ int main(int argc, char *argv[])
 
     QThread::currentThread()->setObjectName("Main Thread");
 
-    QThread thread;
-    thread.start();
-    thread.setObjectName("Seperate Thread");
-
-
     ////////////////////////
     // ---Non-Threaded--- //
     ////////////////////////
@@ -96,6 +91,10 @@ int main(int argc, char *argv[])
     ////////////////////
     // ---Threaded--- //
     ////////////////////
+
+    QThread thread;
+    thread.start();
+    thread.setObjectName("Seperate Thread");
 
     // Auto threaded - works across thread - sometimes
     //test(&source,&destination,Qt::AutoConnection, &thread);

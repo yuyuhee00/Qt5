@@ -19,7 +19,6 @@ signals:
 
 public slots:
     void onTest();
-
 };
 
 #endif // MYCLASS_H
