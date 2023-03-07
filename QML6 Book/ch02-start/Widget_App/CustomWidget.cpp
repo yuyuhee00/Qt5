@@ -32,7 +32,7 @@ void CustomWidget::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);
     QRect r1 = rect().adjusted(10,10,-10,-10);
-    painter.setPen(QColor("#33B5E5"));
+    painter.setPen(QColor(51, 229, 181)); //"#33B5E5"));
     painter.drawRect(r1);
 
     QRect r2(QPoint(0,0), QSize(40,40));
@@ -41,6 +41,6 @@ void CustomWidget::paintEvent(QPaintEvent *event)
     } else {
         r2.moveCenter(m_lastPos);
     }
-    painter.fillRect(r2, QColor("#FFBB33"));
+    painter.fillRect(r2, QColor(255, 187, 51)); //"#FFBB33"));
 }
 

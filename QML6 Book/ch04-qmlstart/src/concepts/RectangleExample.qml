@@ -11,12 +11,21 @@ Rectangle {
     // color property
     color: "#4A4A4A"
 
+    // border property
+//    border.width: 2
+//    border.color: 'red'
+    border {
+        width: 2
+        color: 'red'
+    }
+
     // Declare a nested element (child of root)
     Image {
         id: triangle
 
         // reference the parent
-        x: (parent.width - width)/2; y: 40
+        x: (parent.width - width)/2
+        y: (parent.height - height)/2
 
         source: 'assets/triangle_red.png'
     }
@@ -33,6 +42,7 @@ Rectangle {
 
         color: 'white'
         horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
         text: 'Triangle'
     }
 }
