@@ -18,13 +18,13 @@ Rectangle {
     }
     MouseArea {
         anchors.fill: parent
-        onClicked: {
+        onClicked: function() {
             root.clicked()
         }
     }
 
-    onClicked: {
-        console.log("Clicked...")
-    }
+//    onClicked: {
+//        console.log("Clicked...")
+//    }
 }
 

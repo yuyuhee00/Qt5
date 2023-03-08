@@ -11,12 +11,16 @@ void MyClassManager::run()
     qInfo() << "Max Threads" << QThreadPool::globalInstance()->maxThreadCount();
     for(int  i = 0; i < 25; i++)
     {
+        //
         // No parent - on main thread
+        //
         MyClass *myclass = new MyClass(nullptr);
 
+        //
         // true will cause issues in this video
         // - myclass will be deleted before finished slot is called
         // - we have to manage the memory by ourself, when we are using signal/slot
+        //
         myclass->setAutoDelete(false);
 
         myclass->setObjectName("MyClass" + QString::number(i));
@@ -25,7 +29,9 @@ void MyClassManager::run()
         connect(myclass, &MyClass::progress, this, &MyClassManager::progress, Qt::QueuedConnection);
         connect(myclass, &MyClass::finished, this, &MyClassManager::finished, Qt::QueuedConnection);
 
+        //
         // The apps global thread pool
+        //
         QThreadPool::globalInstance()->start(myclass);
     }
 }
@@ -47,8 +53,10 @@ void MyClassManager::finished()
     // This is on the main thread!
     qInfo() << myclass << "Finished slot" << QThread::currentThread();
 
+    //
     // Done with our object
     // - on the main thread
+    //
     myclass->deleteLater();
 }
 

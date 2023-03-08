@@ -4,12 +4,16 @@ import QmlProject 1.1
 
 Project {
 
-    mainFile: "RectangleExample.qml"
+//        mainFile: "PropertiesExample.qml"
+
+//    mainFile: "ScriptingExample.qml"
+
+//    mainFile: "RectangleExample.qml"
 //    mainFile: "RectangleExample2.qml"
 //    mainFile: "RectangleExample3.qml"
 //    mainFile: "TextExample.qml"
 //    mainFile: "ImageExample.qml"
-//    mainFile: "MouseAreaExample.qml"
+    mainFile: "MouseAreaExample.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {

@@ -4,7 +4,6 @@ Rectangle {
     width: 240
     height: 120
 
-    // #region text
     Text {
         id: label
 
@@ -15,32 +14,36 @@ Rectangle {
 
         text: "Space pressed: " + spacePresses + " times"
 
+//        onTextChanged: {
+//            console.log("text changed to:", text)
+//        }
+
+        //
         // (1) handler for text changes. Need to use function to capture parameters
-        onTextChanged: function(text) { 
+        //
+//        onTextChanged: function(text) {
+//            console.log("text changed to:", text)
+//        }
+        onTextChanged: (text) => {
             console.log("text changed to:", text)
         }
+
 
         // need focus to receive key events
         focus: true
 
-        // (2) handler with some JS
         Keys.onSpacePressed: {
             increment()
         }
 
-        // clear the text on escape
-        // #region clear-binding
         Keys.onEscapePressed: {
+//             spacePresses = 0
             label.text = ''
-        }
-        // #endregion clear-binding
 
-        // (3) a JS function
+        }
+
         function increment() {
             spacePresses = spacePresses + 1
         }
     }
-    // #endregion text
 }
-
-// #endregion global

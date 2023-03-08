@@ -18,14 +18,16 @@ Item {
 //        // SVG
 //        color: "lightsteelblue"
 
-//        // RGB string
-//        color: '#000000' //'#FFFFFF'
+        // RGB string
+        color: '#FFFFFF'
 
-        // Random (JavaScript)
-        color: Qt.rgba(Math.random(), Math.random(), Math.random())
+//        // Random (JavaScript)
+//        color: Qt.rgba(Math.random(), Math.random(), Math.random())
 
-        border.color: "lightsteelblue"
-        border.width: 4
         radius: 8
+        border {
+            color: "lightsteelblue"
+            width: 4
+        }
     }
 }

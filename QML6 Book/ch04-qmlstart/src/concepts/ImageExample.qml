@@ -5,7 +5,6 @@ Rectangle {
 
     color: '#333333'
 
-
     Image {
         x: 12; y: 12
         // width: 72
@@ -21,5 +20,4 @@ Rectangle {
         fillMode: Image.PreserveAspectCrop
         clip: true
     }
-
 }

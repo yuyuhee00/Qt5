@@ -53,7 +53,9 @@ int main(int argc, char *argv[])
 //    qInfo() << path;
 
     FileScanner fs;
-    fs.scan("/");
+    fs.scan(".");
+
+    qInfo() << "Doing... ";
 
     return a.exec();
 }

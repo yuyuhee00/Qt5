@@ -11,6 +11,9 @@ Rectangle {
     // color property
     color: "#4A4A4A"
 
+    // radius property
+    radius: 5
+
     // border property
 //    border.width: 2
 //    border.color: 'red'
@@ -18,6 +21,8 @@ Rectangle {
         width: 2
         color: 'red'
     }
+
+
 
     // Declare a nested element (child of root)
     Image {

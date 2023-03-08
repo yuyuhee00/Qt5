@@ -57,8 +57,10 @@ int main(int argc, char *argv[])
 
     timer = new QTimer(&a);
 
+    //
     // NO PARENT!!!!
     // - Cann't move objects with parent
+    //
     //   myclass = new MyClass(&a);
     myclass = new MyClass(nullptr);
 

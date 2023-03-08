@@ -1,9 +1,11 @@
 import QtQuick
 
 Rectangle {
+    id: root
     width: 140
     height: 120
 
+    property bool clicked: false
 
     // our inlined button ui
     Rectangle {
@@ -19,7 +21,8 @@ Rectangle {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                status.text = "Button clicked!"
+                root.clicked = !root.clicked
+//                status.text = "Button clicked!"
             }
         }
     }
@@ -29,7 +32,7 @@ Rectangle {
         id: status
         x: 12; y: 76
         width: 116; height: 26
-        text: "waiting ..."
+        text: root.clicked ? "Button clicked!" : "waiting ..."
         horizontalAlignment: Text.AlignHCenter
     }
 }
