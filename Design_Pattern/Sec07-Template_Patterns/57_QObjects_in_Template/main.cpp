@@ -19,6 +19,7 @@
 
 #include <QCoreApplication>
 #include <QDebug>
+#include <QList>
 #include "myclass.h"
 #include "notqt.h"
 

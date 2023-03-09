@@ -19,7 +19,9 @@
 #include <QDebug>
 #include "myclass.h"
 
+#include <QSharedPointer>
 #include <vector>
+
 
 //void addItem(QList<MyClass*>& list)
 //{
@@ -57,7 +59,6 @@
 //    }
 //}
 
-
 //int main(int argc, char *argv[])
 //{
 //    QCoreApplication a(argc, argv);
@@ -79,56 +80,104 @@
 //    return a.exec();
 //}
 
-void addItem(std::vector<std::unique_ptr<MyClass>>& list)
+void addItem(QList<QSharedPointer<MyClass>>& list)
 {
-    list.push_back(std::make_unique<MyClass>());
+    list.append(QSharedPointer<MyClass>(new MyClass()));
 }
 
-void removeItem(std::vector<std::unique_ptr<MyClass>>& list, std::size_t index)
+void removeItem(QList<QSharedPointer<MyClass>>& list, int index)
 {
-    if(index < list.size())
-    {
-        list.erase(list.begin()+index);
-    }
+    if(index >= list.length()) return;
+
+    list.removeAt(index);
 }
 
-void fillList(std::vector<std::unique_ptr<MyClass>>& list)
+void fillList(QList<QSharedPointer<MyClass>>& list)
 {
-    for(int i = 0; i < 20; i++)
+    for(int i = 0; i < 10; i++)
     {
         addItem(list);
     }
 }
 
-void printList(std::vector<std::unique_ptr<MyClass>>& list)
+void printList(QList<QSharedPointer<MyClass>>& list)
 {
-    for(auto iter = list.begin(); iter != list.end();  iter++)
+    foreach(auto myclass, list)
     {
-        qInfo() << iter->get();
+        qInfo() << myclass;
     }
-}
-
-void testList()
-{
-    std::vector<std::unique_ptr<MyClass>> list;
-    addItem(list);
-
-    fillList(list);
-
-    qInfo() << list.size();
-
-    removeItem(list,  0);
-
-    printList(list);
-
-    qInfo() << list.size();
 }
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    testList();
+    QList<QSharedPointer<MyClass>> list;
+    addItem(list);
+
+    fillList(list);
+
+    qInfo() << list.length();
+
+    removeItem(list, 0);
+
+    printList(list);
+
+    list.clear();
 
     return a.exec();
 }
+
+//void addItem(std::vector<std::unique_ptr<MyClass>>& list)
+//{
+//    list.push_back(std::make_unique<MyClass>());
+//}
+
+//void removeItem(std::vector<std::unique_ptr<MyClass>>& list, std::size_t index)
+//{
+//    if(index < list.size())
+//    {
+//        list.erase(list.begin()+index);
+//    }
+//}
+
+//void fillList(std::vector<std::unique_ptr<MyClass>>& list)
+//{
+//    for(int i = 0; i < 20; i++)
+//    {
+//        addItem(list);
+//    }
+//}
+
+//void printList(std::vector<std::unique_ptr<MyClass>>& list)
+//{
+//    for(auto iter = list.begin(); iter != list.end();  iter++)
+//    {
+//        qInfo() << iter->get();
+//    }
+//}
+
+//void testList()
+//{
+//    std::vector<std::unique_ptr<MyClass>> list;
+//    addItem(list);
+
+//    fillList(list);
+
+//    qInfo() << list.size();
+
+//    removeItem(list,  0);
+
+//    printList(list);
+
+//    qInfo() << list.size();
+//}
+
+//int main(int argc, char *argv[])
+//{
+//    QCoreApplication a(argc, argv);
+
+//    testList();
+
+//    return a.exec();
+//}

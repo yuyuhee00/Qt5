@@ -29,21 +29,21 @@
 
 void addItems(QList<QSharedPointer<MyClass>>& list)
 {
-     for(int i = 0; i < 10; i++)
-     {
-//         auto myclass = new MyClass(nullptr);
-         auto myclass = QSharedPointer<MyClass>(new MyClass(nullptr));
-         myclass->setObjectName("MyClass" + QString::number(i));
-         //list.append(QSharedPointer<MyClass>(myclass));
-         list.append(myclass);
-     }
+    for(int i = 0; i < 10; i++)
+    {
+        auto myclass = QSharedPointer<MyClass>(new MyClass(nullptr));
+        myclass->setObjectName("MyClass" + QString::number(i));
+        list.append(myclass);
+    }
 }
 
 void testList()
 {
     QList<QSharedPointer<MyClass>> list;
+
     addItems(list);
     qInfo() << "Count:" << list.length();
+
     list.removeAt(2);
 
     foreach (auto item, list)

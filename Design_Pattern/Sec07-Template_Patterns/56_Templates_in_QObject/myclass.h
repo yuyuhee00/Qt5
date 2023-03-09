@@ -3,7 +3,7 @@
 
 #include <QObject>
 
-
+//template<typename T>
 class MyClass : public QObject
 {
     Q_OBJECT
