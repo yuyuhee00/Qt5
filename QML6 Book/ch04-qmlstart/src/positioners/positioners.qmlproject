@@ -4,20 +4,17 @@ import QmlProject 1.1
 
 Project {
 
-    //    mainFile: "PositionersExample.qml"
-
 //    mainFile: "ColumnExample.qml"
+//    mainFile: "RawRowExample.qml"
 //    mainFile: "RowExample.qml"
+//    mainFile: "RowExample2.qml"
 //    mainFile: "GridExample.qml"
+//     mainFile: "GridsystemExample.qml"
 //    mainFile: "FlowExample.qml"
-
 //    mainFile: "RepeaterExample.qml"
 
-//    mainFile: "RawRowExample.qml"
-//    mainFile: "MixedExample.qml"
-//    mainFile: "RowExample2.qml"
-    mainFile: "GridsystemExample.qml"
-
+//    mainFile: "PositionersExample.qml"
+    mainFile: "MixedExample.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {

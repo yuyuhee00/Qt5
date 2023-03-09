@@ -8,6 +8,7 @@ BrightSquare {
     Flow {
         anchors.fill: parent
         anchors.margins: 20
+        flow: Qt.RightToLeft
         spacing: 20
         RedSquare { }
         BlueSquare { }

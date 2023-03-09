@@ -45,6 +45,4 @@ BrightSquare {
             print('cellHeight=', cellHeight)
         }
     }
-
-
 }

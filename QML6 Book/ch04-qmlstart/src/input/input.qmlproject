@@ -9,10 +9,9 @@ Project {
 //    mainFile: "TextInputExample3.qml"
 //    mainFile: "TextInputExample4.qml"
 
-    mainFile: "TextEditExample.qml"
+//    mainFile: "TextEditExample.qml"
 
-//    mainFile: "KeysExample.qml"
-
+    mainFile: "KeysExample.qml"
 
     /* Include .qml, .js, and image files from current directory and subdirectories */
     QmlFiles {

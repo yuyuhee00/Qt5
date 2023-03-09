@@ -7,7 +7,6 @@ FocusScope {
         anchors.fill: parent
         color: "lightsteelblue"
         border.color: "gray"
-
     }
 
     property alias text: input.text
@@ -23,6 +22,5 @@ FocusScope {
     Component.onCompleted: {
         console.log("input.height: " + input.height)
     }
-
 }
 

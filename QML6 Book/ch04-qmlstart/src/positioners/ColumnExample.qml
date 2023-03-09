@@ -14,4 +14,3 @@ DarkSquare {
         BlueSquare { }
     }
 }
-// #endregion global

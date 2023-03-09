@@ -10,7 +10,10 @@ Rectangle {
         x: 8; y: 8
         width: 96; height: 20
         focus: true
-        text: "Text Input 1"
+//        text: "Text Input 2-1"
+        validator: RegularExpressionValidator {
+            regularExpression: RegExp("[a-zA-Z0-9]+")
+        }
         KeyNavigation.tab: input2
     }
 
@@ -18,8 +21,7 @@ Rectangle {
         id: input2
         x: 8; y: 36
         width: 96; height: 20
-        text: "Text Input 2"
+        text: "Text Input 2-2"
         KeyNavigation.tab: input1
     }
 }
-// <<M1

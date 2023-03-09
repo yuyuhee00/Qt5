@@ -18,7 +18,7 @@ DarkSquare {
                 property int colorIndex: Math.floor(Math.random()*3)
 
                 width: 56; height: 56
-                color: colorArray[colorIndex]
+                color: root.colorArray[colorIndex]
                 border.color: Qt.lighter(color)
 
                 Text {
@@ -30,4 +30,3 @@ DarkSquare {
         }
     }
 }
-// #endregion global

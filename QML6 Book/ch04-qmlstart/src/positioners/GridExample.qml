@@ -7,15 +7,15 @@ BrightSquare {
 
     Grid {
         id: grid
-        rows: 2
+        rows: 3
         columns: 2
         anchors.centerIn: parent
+        layoutDirection: Qt.RightToLeft
         spacing: 8
         RedSquare { }
+        BlueSquare { }
+        GreenSquare { }
         RedSquare { }
-        RedSquare { }
-        RedSquare { }
+        BlueSquare { }
     }
-
 }
-// #endregion global

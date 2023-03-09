@@ -12,6 +12,7 @@ DarkSquare {
     Keys.onRightPressed: square.x += 8
     Keys.onUpPressed: square.y -= 8
     Keys.onDownPressed: square.y += 8
+
     Keys.onPressed: function (event) {
         switch(event.key) {
             case Qt.Key_Plus:

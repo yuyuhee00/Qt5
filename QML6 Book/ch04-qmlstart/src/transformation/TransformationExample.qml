@@ -64,6 +64,21 @@ Item {
         }
     }
 
+//    MouseArea {
+//        id: backgroundClicker
+//        // needs to be before the images as order matters
+//        // otherwise this mousearea would be before the other elements
+//        // and consume the mouse events
+//        anchors.fill: parent
+//        onClicked: {
+//            // reset our little scene
+//            circle.x = 84
+//            box.rotation = 0
+//            triangle.rotation = 0
+//            triangle.scale = 1.0
+//        }
+//    }
+
     function _test_transformed() {
         circle.x += 20
         box.rotation = 15

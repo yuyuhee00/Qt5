@@ -7,6 +7,7 @@ BrightSquare {
     Row {
         id: row
         anchors.centerIn: parent
+        layoutDirection: Qt.RightToLeft
         spacing: 20
         BlueSquare { }
         GreenSquare { }

@@ -31,6 +31,7 @@ DarkSquare {
 
         GreenSquare {
             BlueSquare {
+//                x: parent.width+13
                 width: 48
                 anchors.left: parent.right
                 text: '(3)'
