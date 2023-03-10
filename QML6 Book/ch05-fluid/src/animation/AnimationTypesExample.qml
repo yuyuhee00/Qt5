@@ -38,6 +38,7 @@ Item {
         // onClicked: y = 40 + Math.random() * (205-40)
 
         Behavior on y {
+            enabled: true
             NumberAnimation { duration: 4000 }
         } 
     }
@@ -55,6 +56,7 @@ Item {
             id: anim
             target: redBox
             properties: "y"
+            from: root.height-redBox.height
             to: 40
             duration: 4000
         }

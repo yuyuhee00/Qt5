@@ -7,8 +7,8 @@ Project {
 //    mainFile: "AnimationExample.qml"
 //    mainFile: "AnimationTypesExample.qml"
 
-//    mainFile: "SequentialAnimationExample.qml"
 //    mainFile: "ParallelAnimationExample.qml"
+//    mainFile: "SequentialAnimationExample.qml"
 
 //    mainFile: "BouncingBallExample.qml"
 

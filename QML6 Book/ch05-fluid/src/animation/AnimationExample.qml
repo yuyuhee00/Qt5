@@ -42,6 +42,13 @@ Image {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: root.running = true
+        onClicked: {
+            box.x = root.padding
+            box.y = (root.height-box.height)/2
+            box.rotation = 0
+            box.opacity = 1
+            box.scale = 1
+            root.running = !root.running
+        }
     }
 }
