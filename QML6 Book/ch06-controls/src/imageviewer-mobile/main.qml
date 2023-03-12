@@ -29,16 +29,6 @@ ApplicationWindow {
             currentIndex: -1
             anchors.fill: parent
 
-            delegate: ItemDelegate {
-                width: parent.width
-                text: model.text
-                highlighted: ListView.isCurrentItem
-                onClicked: {
-                    drawer.close()
-                    model.triggered()
-                }
-            }
-
             model: ListModel {
                 ListElement {
                     text: qsTr("Open...")
@@ -80,13 +70,22 @@ ApplicationWindow {
                 }
             }
 
+            delegate: ItemDelegate {
+                width: parent.width
+                text: model.text
+                highlighted: ListView.isCurrentItem
+                onClicked: {
+                    drawer.close()
+                    model.triggered()
+                }
+            }
+
             ScrollIndicator.vertical: ScrollIndicator { }
         }
     }
     
     header: ToolBar {
         Material.background: Material.Orange
-
         ToolButton {
             id: menuButton
             anchors.left: parent.left
@@ -109,11 +108,10 @@ ApplicationWindow {
         asynchronous: true
     }
 
-    footer: Rectangle   {
-        width: parent.width; height: 20
-        anchors.top: image.bottom
-        color: "orange"
+    footer: ToolBar   {
+        Material.background: Material.Orange
         Flow {
+            anchors.fill: parent
             Label {
                 text: qsTr("Image: " + image.source)
             }

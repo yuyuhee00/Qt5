@@ -5,11 +5,15 @@ import Qt.labs.platform as Platform
 
 ApplicationWindow {
 
+    id: root
+
     function openFileDialog() { fileOpenDialog.open(); }
     function openAboutDialog() { aboutDialog.open(); }
 
     visible: true
     title: qsTr("Image Viewer")
+
+    property alias image: image.source
 
     background: Rectangle {
         color: "darkGray"

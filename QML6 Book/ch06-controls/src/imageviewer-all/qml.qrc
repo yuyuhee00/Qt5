@@ -8,5 +8,7 @@
         <file>+android/qtquickcontrols2.conf</file>
         <file>+ios/main.qml</file>
         <file>+ios/qtquickcontrols2.conf</file>
+        <file>+osx/main.qml</file>
+        <file>+osx/qtquickcontrols2.conf</file>
     </qresource>
 </RCC>

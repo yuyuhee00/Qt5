@@ -2,9 +2,8 @@ import QtQuick
 import QtQuick.Controls
 import Qt.labs.platform as Platform
 
+
 ApplicationWindow {
-    
-    // ...
     
     visible: true
     width: 640
@@ -75,7 +74,4 @@ ApplicationWindow {
 
         standardButtons: Dialog.Ok
     }
-
-    // ...
-
 }

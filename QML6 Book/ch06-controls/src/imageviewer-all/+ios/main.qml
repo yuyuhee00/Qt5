@@ -63,4 +63,14 @@ ImageViewerWindow {
             elide: Label.ElideRight
         }
     }
+
+    footer: ToolBar   {
+        Material.background: Material.Orange
+        Flow {
+            anchors.fill: parent
+            Label {
+//                text: qsTr("Image: " + window.image)
+            }
+        }
+    }
 }

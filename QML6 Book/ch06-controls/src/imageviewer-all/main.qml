@@ -37,4 +37,13 @@ ImageViewerWindow {
             }
         }
     }
+
+    footer: ToolBar   {
+        Flow {
+            anchors.fill: parent
+            Label {
+//                text: qsTr("Image: " + window.image)
+            }
+        }
+    }
 }

@@ -2,13 +2,10 @@
 #include <QQmlApplicationEngine>
 #include <QQuickStyle>
 
-// ...
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-
-    // ...
 
     QQmlApplicationEngine engine;
     QQuickStyle::setStyle("Fusion");
