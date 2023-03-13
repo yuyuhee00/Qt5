@@ -1,7 +1,9 @@
 import QtQuick
 import QtQuick.Controls
-import Qt.labs.platform as Platform
 
+//import QtCore
+//import QtQuick.Dialogs
+import Qt.labs.platform as Platform
 
 ApplicationWindow {
     
@@ -51,15 +53,19 @@ ApplicationWindow {
         asynchronous: true
     }
 
+//    FileDialog {
     Platform.FileDialog {
         id: fileOpenDialog
         title: "Select an image file"
+//        currentFolder:  StandardPaths.standardLocations(StandardPaths.PicturesLocation)[0]
         folder: Platform.StandardPaths.writableLocation(Platform.StandardPaths.DocumentsLocation)
         nameFilters: [
             "Image files (*.png *.jpeg *.jpg)",
         ]
         onAccepted: {
+//             image.source = fileOpenDialog.selectedFile
             image.source = fileOpenDialog.file
+
         }
     }
 

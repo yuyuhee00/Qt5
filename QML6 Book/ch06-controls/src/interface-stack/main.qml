@@ -34,15 +34,14 @@ ApplicationWindow {
         id: drawer
         width: window.width * 0.66
         height: window.height
-
         Column {
             anchors.fill: parent
-
             ItemDelegate {
                 text: qsTr("Profile")
                 width: parent.width
                 onClicked: {
-                    stackView.push("Profile.qml")
+//                    stackView.push("Profile.qml")
+                    stackView.push(profilePage)
                     drawer.close()
                 }
             }
@@ -50,6 +49,7 @@ ApplicationWindow {
                 text: qsTr("About")
                 width: parent.width
                 onClicked: {
+//                    stackView.push("About.qml")
                     stackView.push(aboutPage)
                     drawer.close()
                 }
@@ -64,8 +64,12 @@ ApplicationWindow {
     }
 
     Component {
-        id: aboutPage
+        id: profilePage
+        Profile {}
+    }
 
+    Component {
+        id: aboutPage
         About {}
     }
 }

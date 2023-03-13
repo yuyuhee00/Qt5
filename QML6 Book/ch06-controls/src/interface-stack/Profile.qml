@@ -14,7 +14,14 @@ Page {
         Button {
             anchors.horizontalCenter: parent.horizontalCenter
             text: qsTr("Edit");
-            onClicked: stackView.push("EditProfile.qml")
+//            onClicked: stackView.push("EditProfile.qml")
+            onClicked: stackView.push(profieEditPage)
         }
+    }
+
+    Component {
+        id: profieEditPage
+
+        EditProfile {}
     }
 }

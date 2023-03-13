@@ -5,7 +5,7 @@ import Qt.labs.platform as Platform
 ApplicationWindow {
     id: root
 
-    title: (fileName.length===0?qsTr("Document"):fileName) + (isDirty?"*":"")
+    title: (fileName.length===0 ? qsTr("Document"):fileName) + (isDirty?"*":"")
 
     width: 640
     height: 480

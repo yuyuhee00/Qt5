@@ -14,10 +14,7 @@ ApplicationWindow {
         anchors.margins: 10
 
         width: parent.width/2
-
         spacing: 10
-
-        // ...
 
         Repeater {
             model: 5
@@ -39,10 +36,7 @@ ApplicationWindow {
         anchors.margins: 10
 
         columns: 2
-
         spacing: 10
-
-        // ...
 
         Repeater {
             model: 10

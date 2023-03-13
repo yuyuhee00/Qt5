@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 
 Page {
+
     header: Label {
         text: qsTr("Community Stats")
         font.pixelSize: Qt.application.font.pixelSize * 2

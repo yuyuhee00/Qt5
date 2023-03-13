@@ -5,8 +5,20 @@ import QtQuick.Controls
 Page {
     title: qsTr("Home")
 
-    Label {
-        anchors.centerIn: parent
-        text: qsTr("Home Screen")
-    }
+//     header: ToolBar {
+//        contentHeight: toolButton.implicitHeight
+//        ToolButton {
+//            id: toolButton
+//            text: "=="
+//        }
+//        Label {
+//            anchors.centerIn: parent
+//            text: qsTr("Home Heder")
+//        }
+//     }
+
+     Label {
+         anchors.centerIn: parent
+         text: qsTr("Home Screen")
+     }
 }
