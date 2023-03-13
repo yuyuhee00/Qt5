@@ -14,6 +14,39 @@ Window {
         light2.state = "off"
     }
 
+    Row {
+        width:  300
+        height: 100
+        anchors.centerIn: parent
+        spacing: 100
+
+        Light {
+            id: light1
+            width: 100
+            height: 100
+            state: "off"
+            onStateChanged: enforce(light1, light2)
+            MouseArea {
+                anchors.fill: parent
+                onClicked: toggle(parent)
+            }
+
+        }
+
+        Light {
+            id: light2
+            width: 100
+            height: 100
+            state: "off"
+            onStateChanged: enforce(light2, light1)
+            MouseArea {
+                anchors.fill: parent
+                onClicked: toggle(parent)
+            }
+
+        }
+    }
+
     function toggle(obj)
     {
         if(obj.state === "on")
@@ -34,40 +67,4 @@ Window {
             secondary.state = "on"
         }
     }
-
-    Row {
-        width:  300
-        height: 100
-        anchors.centerIn: parent
-        spacing: 100
-
-        Light {
-            id: light1
-            width: 100
-            height: 100
-            state: "off"
-            onStateChanged: enforce(light1,light2)
-            MouseArea {
-                anchors.fill: parent
-                onClicked: toggle(parent)
-            }
-
-        }
-
-        Light {
-            id: light2
-            width: 100
-            height: 100
-            state: "off"
-            onStateChanged: enforce(light2,light1)
-            MouseArea {
-                anchors.fill: parent
-                onClicked: toggle(parent)
-            }
-
-        }
-    }
-
 }
-
-

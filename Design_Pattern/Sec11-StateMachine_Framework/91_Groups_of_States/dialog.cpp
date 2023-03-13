@@ -107,9 +107,3 @@ void Dialog::createFinal()
     connect(&m_statemachine, &QStateMachine::finished, this, &Dialog::stateFinished);
     m_statemachine.addState(final);
 }
-
-
-
-
-
-

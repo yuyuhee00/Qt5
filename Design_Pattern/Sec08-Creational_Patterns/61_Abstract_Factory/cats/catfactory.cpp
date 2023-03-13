@@ -1,10 +1,11 @@
 #include "catfactory.h"
+#include "housecat.h"
+#include "bobcat.h"
+#include "lion.h"
 
 CatFactory::CatFactory(QObject *parent) : QObject(parent)
 {
-
 }
-
 
 iAnimal *CatFactory::createSmall()
 {

@@ -30,9 +30,3 @@ Item {
     ]
 
 }
-
-/*##^##
-Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.5;height:480;width:640}D{i:1;anchors_height:200;anchors_width:200}
-}
-##^##*/

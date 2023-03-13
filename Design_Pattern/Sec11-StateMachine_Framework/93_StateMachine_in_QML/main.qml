@@ -19,6 +19,7 @@ ApplicationWindow {
         DSM.State {
             id: state1
             onEntered: label.text = "State 1"
+//            onExited:
             DSM.SignalTransition {
                 targetState: state2
                 signal:  next.clicked
@@ -32,6 +33,7 @@ ApplicationWindow {
         DSM.State {
             id: state2
             onEntered: label.text = "State 2"
+//            onExit:
             DSM.SignalTransition {
                 targetState: state3
                 signal:  next.clicked
@@ -45,6 +47,7 @@ ApplicationWindow {
         DSM.State {
             id: state3
             onEntered: label.text = "State 3"
+//            onExit:
             DSM.SignalTransition {
                 targetState: state1
                 signal:  next.clicked
@@ -55,7 +58,7 @@ ApplicationWindow {
             }
         }
         DSM.FinalState {
-            id: f
+            id: fin
         }
     }
 
@@ -88,9 +91,3 @@ ApplicationWindow {
         }
     }
 }
-
-/*##^##
-Designer {
-    D{i:0;formeditorZoom:1.5}
-}
-##^##*/

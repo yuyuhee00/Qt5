@@ -80,7 +80,6 @@ void Dialog::createStates()
     m_statemachine.setInitialState(&m_root);
 }
 
-
 void Dialog::on_lineEdit_textEdited(const QString &arg1)
 {
     if(!m_current) return;

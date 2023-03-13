@@ -18,7 +18,8 @@
 
 class iAnimal {
 public:
-    virtual ~iAnimal() {}; //we are going to make some people mad... but we need to free the memory
+    // we are going to make some people mad... but we need to free the memory
+    virtual ~iAnimal() {};
 
     virtual void eat() = 0;
     virtual void sleep() = 0;

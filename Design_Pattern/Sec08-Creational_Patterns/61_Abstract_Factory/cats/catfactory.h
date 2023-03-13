@@ -2,9 +2,6 @@
 #define CATFACTORY_H
 
 #include <QObject>
-#include "housecat.h"
-#include "bobcat.h"
-#include "lion.h"
 #include "../interfaces/iAnimalFactory.h"
 
 class CatFactory : public QObject, public iAnimalFactory

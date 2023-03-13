@@ -53,8 +53,4 @@ ApplicationWindow {
             }
         }
     }
-
-
 }
-
-

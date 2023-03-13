@@ -14,7 +14,6 @@ Item {
     states: [
         State {
             name: "on"
-
             PropertyChanges {
                 target: rectangle
                 color: colorOn
